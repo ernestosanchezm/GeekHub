@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="15c88579-0aca-4fa0-b25a-3b1f27ab6ad2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cca48b33-ee55-4046-8089-122c54a4263c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,11 +19,11 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:61027/servicios_tf.asmx" Protocol="http" SourceId="1" />
+    <MetadataSource Address="https://localhost:44383/GeekHubWS.asmx" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="servicios_tf.wsdl" MetadataType="Wsdl" ID="95519564-ac97-41d6-b188-2401b3f4d96d" SourceId="1" SourceUrl="http://localhost:61027/servicios_tf.asmx?wsdl" />
-    <MetadataFile FileName="servicios_tf.disco" MetadataType="Disco" ID="017bc79a-43aa-42ca-b845-568909e57462" SourceId="1" SourceUrl="http://localhost:61027/servicios_tf.asmx?disco" />
+    <MetadataFile FileName="GeekHubWS.wsdl" MetadataType="Wsdl" ID="9111781f-acb4-4ee0-8337-f451d0762107" SourceId="1" SourceUrl="https://localhost:44383/GeekHubWS.asmx?wsdl" />
+    <MetadataFile FileName="GeekHubWS.disco" MetadataType="Disco" ID="f6cb0529-db5a-480d-ac28-79239c3e2740" SourceId="1" SourceUrl="https://localhost:44383/GeekHubWS.asmx?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

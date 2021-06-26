@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GeekHub.Presentation;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,7 +25,33 @@ namespace GeekHub
 
         private void btLogin_Click(object sender, EventArgs e)
         {
-            
+            GeekHubWS.GeekHubWSSoapClient instWS = new GeekHubWS.GeekHubWSSoapClient();
+            var resLogin=instWS.loginFindByEmailAndPassword("hans.sotor@gmail.com", "1234");
+
+            if (resLogin != null)
+            {
+                switch (resLogin.RoleId)
+                {
+                    case 1:
+                        var frmAdm = new frmAdminMain();
+                        frmAdm.Show();
+                        break;
+                    case 2:
+                        var frmSeller = new frmSellerMain();
+                        frmSeller.Show();
+                        break;
+                    case 3:
+                        var frmClient = new frmClientMain();
+                        frmClient.Show();
+                        break;
+                }
+                this.Hide();
+            }         
+            else
+            {
+                MessageBox.Show("Credenciales erradas", "Error Login", MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+
         }
     }
 }

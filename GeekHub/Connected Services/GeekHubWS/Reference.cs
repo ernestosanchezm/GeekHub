@@ -13,8 +13,8 @@ namespace GeekHub.GeekHubWS {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="GeekHubWS.TF_NETSoap")]
-    public interface TF_NETSoap {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="GeekHubWS.GeekHubWSSoap")]
+    public interface GeekHubWSSoap {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/FiltroSkus", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -25,10 +25,10 @@ namespace GeekHub.GeekHubWS {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/loginFindByEmailAndPassword", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        bool loginFindByEmailAndPassword(string email, string password);
+        GeekHub.GeekHubWS.UserLogin loginFindByEmailAndPassword(string email, string password);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/loginFindByEmailAndPassword", ReplyAction="*")]
-        System.Threading.Tasks.Task<bool> loginFindByEmailAndPasswordAsync(string email, string password);
+        System.Threading.Tasks.Task<GeekHub.GeekHubWS.UserLogin> loginFindByEmailAndPasswordAsync(string email, string password);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/registerUser", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -45,30 +45,104 @@ namespace GeekHub.GeekHubWS {
         System.Threading.Tasks.Task<string> SendEmailAsync(string subject, string body);
     }
     
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class UserLogin : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string nameField;
+        
+        private string lastNameField;
+        
+        private string emailField;
+        
+        private int roleIdField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+                this.RaisePropertyChanged("Name");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        public string LastName {
+            get {
+                return this.lastNameField;
+            }
+            set {
+                this.lastNameField = value;
+                this.RaisePropertyChanged("LastName");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        public string Email {
+            get {
+                return this.emailField;
+            }
+            set {
+                this.emailField = value;
+                this.RaisePropertyChanged("Email");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        public int RoleId {
+            get {
+                return this.roleIdField;
+            }
+            set {
+                this.roleIdField = value;
+                this.RaisePropertyChanged("RoleId");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface TF_NETSoapChannel : GeekHub.GeekHubWS.TF_NETSoap, System.ServiceModel.IClientChannel {
+    public interface GeekHubWSSoapChannel : GeekHub.GeekHubWS.GeekHubWSSoap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class TF_NETSoapClient : System.ServiceModel.ClientBase<GeekHub.GeekHubWS.TF_NETSoap>, GeekHub.GeekHubWS.TF_NETSoap {
+    public partial class GeekHubWSSoapClient : System.ServiceModel.ClientBase<GeekHub.GeekHubWS.GeekHubWSSoap>, GeekHub.GeekHubWS.GeekHubWSSoap {
         
-        public TF_NETSoapClient() {
+        public GeekHubWSSoapClient() {
         }
         
-        public TF_NETSoapClient(string endpointConfigurationName) : 
+        public GeekHubWSSoapClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public TF_NETSoapClient(string endpointConfigurationName, string remoteAddress) : 
+        public GeekHubWSSoapClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public TF_NETSoapClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public GeekHubWSSoapClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public TF_NETSoapClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public GeekHubWSSoapClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
@@ -80,11 +154,11 @@ namespace GeekHub.GeekHubWS {
             return base.Channel.FiltroSkusAsync(categoriaId, nombre, precioMin, precioMax, orden);
         }
         
-        public bool loginFindByEmailAndPassword(string email, string password) {
+        public GeekHub.GeekHubWS.UserLogin loginFindByEmailAndPassword(string email, string password) {
             return base.Channel.loginFindByEmailAndPassword(email, password);
         }
         
-        public System.Threading.Tasks.Task<bool> loginFindByEmailAndPasswordAsync(string email, string password) {
+        public System.Threading.Tasks.Task<GeekHub.GeekHubWS.UserLogin> loginFindByEmailAndPasswordAsync(string email, string password) {
             return base.Channel.loginFindByEmailAndPasswordAsync(email, password);
         }
         

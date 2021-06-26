@@ -53,14 +53,38 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\frmAdminMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmAdminMain.Designer.cs">
+      <DependentUpon>frmAdminMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmClientMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmClientMain.Designer.cs">
+      <DependentUpon>frmClientMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentation\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\frmSellerMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmSellerMain.Designer.cs">
+      <DependentUpon>frmSellerMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Presentation\frmAdminMain.resx">
+      <DependentUpon>frmAdminMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmClientMain.resx">
+      <DependentUpon>frmClientMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -73,7 +97,10 @@
     <EmbeddedResource Include="Presentation\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Connected Services\GeekHubWS\servicios_tf.wsdl" />
+    <None Include="Connected Services\GeekHubWS\GeekHub.GeekHubWS.UserLogin.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\GeekHubWS\GeekHubWS.wsdl" />
     <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -98,7 +125,7 @@
     <WCFMetadataStorage Include="Connected Services\GeekHubWS\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\GeekHubWS\servicios_tf.disco" />
+    <None Include="Connected Services\GeekHubWS\GeekHubWS.disco" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\GeekHubWS\configuration91.svcinfo" />

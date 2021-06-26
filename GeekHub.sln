@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeekHub", "GeekHub\GeekHub.csproj", "{6C5A2F12-45D6-4B7B-81E8-3D6AF1D79A77}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9FF8080C-9C37-4ED5-B783-CA9D01FC69C0} = {9FF8080C-9C37-4ED5-B783-CA9D01FC69C0}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeekHub_WS", "GeekHub_WS\GeekHub_WS.csproj", "{9FF8080C-9C37-4ED5-B783-CA9D01FC69C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{6C5A2F12-45D6-4B7B-81E8-3D6AF1D79A77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C5A2F12-45D6-4B7B-81E8-3D6AF1D79A77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C5A2F12-45D6-4B7B-81E8-3D6AF1D79A77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FF8080C-9C37-4ED5-B783-CA9D01FC69C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FF8080C-9C37-4ED5-B783-CA9D01FC69C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FF8080C-9C37-4ED5-B783-CA9D01FC69C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FF8080C-9C37-4ED5-B783-CA9D01FC69C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
