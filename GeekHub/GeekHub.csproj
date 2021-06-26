@@ -75,6 +75,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -88,6 +89,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ropa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WebtoonsFisicos.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webtoons Fisicos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Merchandising kpop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Merchandising anime.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lighstick.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\figuras.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Discos KPopo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comics.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Animes fisicos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GeekHub.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +26,7 @@ namespace GeekHub
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
             populateItems();
         }
 
@@ -35,8 +37,18 @@ namespace GeekHub
             for (int i = 0; i < listItems.Count; i++)
             {
                 listItems[i].NameProduct = "name";
-
+                if(i%2 == 0)
+                {
+                    listItems[i].ImageProduct = Resources.ropa1;
+                    listItems[i].CategoryProduct = "Category: Ropa";
+                }
+                else
+                {
+                    listItems[i].ImageProduct = Resources.comics1;
+                    listItems[i].CategoryProduct = "Category: Comics";
+                }
                 flowLayoutPanel1.Controls.Add(listItems[i]);
+
             }
 
         }

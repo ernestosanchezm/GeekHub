@@ -18,6 +18,7 @@ namespace GeekHub
         }
         #region Properties
         private string _nameProduct;
+        private string _categoryProduct;
         private Image _imageProduct;
 
         [Category("Product props")]
@@ -26,6 +27,13 @@ namespace GeekHub
             get { return _nameProduct; }
             set { _nameProduct = value; lblNameProduct.Text = value; }
         }
+        [Category("Product props")]
+        public string CategoryProduct
+        {
+            get { return _categoryProduct; }
+            set { _categoryProduct = value; lblCategoryProduct.Text = value; }
+        }
+
         [Category("Product props")]
         public Image ImageProduct
         {

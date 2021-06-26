@@ -32,13 +32,14 @@ namespace GeekHub
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblNameProduct = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblCategoryProduct = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(8, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(154, 90);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -51,7 +52,7 @@ namespace GeekHub
             this.lblNameProduct.BackColor = System.Drawing.Color.MediumAquamarine;
             this.lblNameProduct.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameProduct.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblNameProduct.Location = new System.Drawing.Point(3, 120);
+            this.lblNameProduct.Location = new System.Drawing.Point(3, 105);
             this.lblNameProduct.Name = "lblNameProduct";
             this.lblNameProduct.Size = new System.Drawing.Size(173, 33);
             this.lblNameProduct.TabIndex = 1;
@@ -61,12 +62,22 @@ namespace GeekHub
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.panel1.Controls.Add(this.lblCategoryProduct);
             this.panel1.Controls.Add(this.lblNameProduct);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(32, 44);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(179, 165);
+            this.panel1.Size = new System.Drawing.Size(176, 163);
             this.panel1.TabIndex = 2;
+            // 
+            // lblCategoryProduct
+            // 
+            this.lblCategoryProduct.AutoSize = true;
+            this.lblCategoryProduct.Location = new System.Drawing.Point(5, 138);
+            this.lblCategoryProduct.Name = "lblCategoryProduct";
+            this.lblCategoryProduct.Size = new System.Drawing.Size(73, 17);
+            this.lblCategoryProduct.TabIndex = 2;
+            this.lblCategoryProduct.Text = "Category: ";
             // 
             // ListItem
             // 
@@ -74,9 +85,10 @@ namespace GeekHub
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
             this.Name = "ListItem";
-            this.Size = new System.Drawing.Size(179, 165);
+            this.Size = new System.Drawing.Size(238, 255);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -86,5 +98,6 @@ namespace GeekHub
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblNameProduct;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblCategoryProduct;
     }
 }
