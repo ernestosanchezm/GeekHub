@@ -32,12 +32,11 @@ namespace GeekHub
         {
             ListItem[] items = new ListItem[20];
             //loop through each item
-            for (int i = 0; i < items.Length; i++)
+            for (int i = 0; i < listItems.Count; i++)
             {
-                items[i] = new ListItem();
-                items[i].NameProduct = "name";
+                listItems[i].NameProduct = "name";
 
-                flowLayoutPanel1.Controls.Add(items[i]);
+                flowLayoutPanel1.Controls.Add(listItems[i]);
             }
 
         }
