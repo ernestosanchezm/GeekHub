@@ -30,10 +30,14 @@ namespace GeekHub
 
         private void populateItems()
         {
+            ListItem[] items = new ListItem[20];
             //loop through each item
-            for (int i = 0; i < this.listItems.Count; i++)
+            for (int i = 0; i < items.Length; i++)
             {
-                this.listItems[i].NameProduct = "name";
+                items[i] = new ListItem();
+                items[i].NameProduct = "name";
+
+                flowLayoutPanel1.Controls.Add(items[i]);
             }
 
         }
