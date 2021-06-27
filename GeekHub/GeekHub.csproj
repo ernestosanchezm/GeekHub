@@ -250,6 +250,9 @@
     <EmbeddedResource Include="Presentation\OtherEditUsuario.resx">
       <DependentUpon>OtherEditUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\PerfilSerllerUserView.resx">
+      <DependentUpon>PerfilSerllerUserView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\PerfilUsuario.resx">
       <DependentUpon>PerfilUsuario.cs</DependentUpon>
     </EmbeddedResource>
