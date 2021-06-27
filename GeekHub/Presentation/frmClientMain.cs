@@ -32,12 +32,8 @@ namespace GeekHub.Presentation
 
                 foreach (var elem in resultCats)
                 {
-                    
-                    //WebClient client = new WebClient();
-                    //Stream stream = client.OpenRead(imageUrl);
-                    Bitmap bitmap= ConvertHelper.ToBitmap("https://localhost:44383/Fileserver/Categorias", "cat" + elem.CateogoriaId.ToString(),"jpg"); 
-                    //bitmap = new Bitmap(stream);
-
+                    Bitmap bitmap= ConvertHelper.ToBitmap(Constants.URL_BASE_FILESERVER+"/Categorias", "cat" + elem.CateogoriaId.ToString(),"jpg"); 
+               
                     flowLayoutPanelCateg.Controls.Add(new ListItemCategory
                     {
                         NameCategory=elem.NCategoria,
