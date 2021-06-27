@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4, processorArchitecture=MSIL">
-      <HintPath>..\packages\ObjectListView.Official.2.9.1\lib\net20\ObjectListView.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
@@ -105,14 +102,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ListItemCategory.resx">
       <DependentUpon>ListItemCategory.cs</DependentUpon>
-      <Compile Include="Contactos.cs">
-        <SubType>UserControl</SubType>
-      </Compile>
-      <Compile Include="Contactos.Designer.cs">
-        <DependentUpon>Contactos.cs</DependentUpon>
-      </Compile>
-      <EmbeddedResource Include="Form1.resx">
-        <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -124,10 +113,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Contactos.resx">
-      <DependentUpon>Contactos.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -180,7 +165,5 @@
   <ItemGroup>
     <None Include="Resources\user.png" />
   </ItemGroup>
-  <Content Include="Imagenes\wsplogo.png" />
-
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
