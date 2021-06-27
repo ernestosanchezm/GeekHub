@@ -53,7 +53,7 @@ namespace GeekHub.Presentation
             this.listItems = new List<ListItem>();
             for (int i = 0; i < 20; i++)
             {
-                this.listItems.Add(new ListItem());
+                this.listItems.Add(new ListItem("","",""));
             }
         }
 
