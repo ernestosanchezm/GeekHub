@@ -29,7 +29,6 @@ namespace GeekHub.Presentation
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnAdd = new System.Windows.Forms.Button();
             this.bttLogOut = new System.Windows.Forms.Button();
             this.bttOptions = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -42,20 +41,6 @@ namespace GeekHub.Presentation
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAdd.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdd.Font = new System.Drawing.Font("Quicksand", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(903, 19);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(202, 69);
-            this.btnAdd.TabIndex = 4;
-            this.btnAdd.Text = "AGREGAR";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // bttLogOut
             // 
@@ -91,7 +76,6 @@ namespace GeekHub.Presentation
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnEdit);
-            this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.bttLogOut);
             this.panel1.Controls.Add(this.bttOptions);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -106,7 +90,7 @@ namespace GeekHub.Presentation
             this.btnEdit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnEdit.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnEdit.Font = new System.Drawing.Font("Quicksand", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.Location = new System.Drawing.Point(620, 19);
+            this.btnEdit.Location = new System.Drawing.Point(828, 17);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(2);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(263, 71);
@@ -195,8 +179,6 @@ namespace GeekHub.Presentation
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button bttLogOut;
         private System.Windows.Forms.Button bttOptions;
         private System.Windows.Forms.PictureBox pictureBox1;

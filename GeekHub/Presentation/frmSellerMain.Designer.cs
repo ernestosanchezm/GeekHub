@@ -33,7 +33,6 @@ namespace GeekHub.Presentation
             this.bttOptions = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_Filtrar = new System.Windows.Forms.Button();
             this.Panel01 = new System.Windows.Forms.FlowLayoutPanel();
@@ -84,7 +83,6 @@ namespace GeekHub.Presentation
             this.panel1.AllowDrop = true;
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.bttLogOut);
             this.panel1.Controls.Add(this.bttOptions);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -93,19 +91,6 @@ namespace GeekHub.Presentation
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1562, 106);
             this.panel1.TabIndex = 6;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAdd.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdd.Font = new System.Drawing.Font("Quicksand", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(855, 17);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(202, 69);
-            this.btnAdd.TabIndex = 4;
-            this.btnAdd.Text = "AGREGAR";
-            this.btnAdd.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -179,6 +164,5 @@ namespace GeekHub.Presentation
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_Filtrar;
         private System.Windows.Forms.FlowLayoutPanel Panel01;
-        private System.Windows.Forms.Button btnAdd;
     }
 }
