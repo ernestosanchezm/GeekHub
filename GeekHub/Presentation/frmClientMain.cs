@@ -39,7 +39,7 @@ namespace GeekHub.Presentation
                 {
                     Bitmap bitmap= ConvertHelper.ToBitmap(Constants.URL_BASE_FILESERVER+"/Categorias", "cat" + elem.CateogoriaId.ToString(),"jpg"); 
                
-                    flowLayoutPanelCateg.Controls.Add(new ListItemCategory
+                    flowLayoutPanelCateg.Controls.Add(new ListItemCategory("","")
                     {
                         NameCategory=elem.NCategoria,
                         ImageCategory=bitmap

@@ -30,8 +30,8 @@ namespace GeekHub.Presentation.itemsList
         private void InitializeComponent()
         {
             this.lblNameCategory = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.categoryImage = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryImage)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNameCategory
@@ -47,25 +47,25 @@ namespace GeekHub.Presentation.itemsList
             this.lblNameCategory.Text = "Category";
             this.lblNameCategory.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pictureBox1
+            // categoryImage
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(29, 23);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(184, 180);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.categoryImage.Location = new System.Drawing.Point(29, 23);
+            this.categoryImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.categoryImage.Name = "categoryImage";
+            this.categoryImage.Size = new System.Drawing.Size(184, 180);
+            this.categoryImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.categoryImage.TabIndex = 2;
+            this.categoryImage.TabStop = false;
             // 
             // ListItemCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lblNameCategory);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.categoryImage);
             this.Name = "ListItemCategory";
             this.Size = new System.Drawing.Size(243, 260);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -73,6 +73,6 @@ namespace GeekHub.Presentation.itemsList
         #endregion
 
         private System.Windows.Forms.Label lblNameCategory;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox categoryImage;
     }
 }

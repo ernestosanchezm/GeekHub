@@ -35,7 +35,7 @@ namespace GeekHub.Presentation
             this.listProductsDetail = new List<ListItemProductDetail>();
             for (int i = 0; i < 20; i++)
             {
-                this.listProductsDetail.Add(new ListItemProductDetail());
+                this.listProductsDetail.Add(new ListItemProductDetail("","","",""));
             }
         }
         private void instanceListFilterCategory()
