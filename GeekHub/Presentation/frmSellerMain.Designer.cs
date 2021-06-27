@@ -46,7 +46,7 @@ namespace GeekHub.Presentation
             this.bttLogOut.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bttLogOut.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.bttLogOut.Font = new System.Drawing.Font("Quicksand", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttLogOut.Location = new System.Drawing.Point(1394, 13);
+            this.bttLogOut.Location = new System.Drawing.Point(1393, 19);
             this.bttLogOut.Margin = new System.Windows.Forms.Padding(2);
             this.bttLogOut.Name = "bttLogOut";
             this.bttLogOut.Size = new System.Drawing.Size(154, 71);
@@ -60,7 +60,7 @@ namespace GeekHub.Presentation
             this.bttOptions.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bttOptions.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.bttOptions.Font = new System.Drawing.Font("Quicksand", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttOptions.Location = new System.Drawing.Point(1143, 13);
+            this.bttOptions.Location = new System.Drawing.Point(1142, 19);
             this.bttOptions.Margin = new System.Windows.Forms.Padding(2);
             this.bttOptions.Name = "bttOptions";
             this.bttOptions.Size = new System.Drawing.Size(202, 69);
@@ -82,6 +82,7 @@ namespace GeekHub.Presentation
             // 
             this.panel1.AllowDrop = true;
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.bttLogOut);
             this.panel1.Controls.Add(this.bttOptions);
@@ -89,7 +90,7 @@ namespace GeekHub.Presentation
             this.panel1.Location = new System.Drawing.Point(11, 11);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1562, 93);
+            this.panel1.Size = new System.Drawing.Size(1562, 106);
             this.panel1.TabIndex = 6;
             // 
             // btnAdd
@@ -97,7 +98,7 @@ namespace GeekHub.Presentation
             this.btnAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAdd.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnAdd.Font = new System.Drawing.Font("Quicksand", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(856, 11);
+            this.btnAdd.Location = new System.Drawing.Point(855, 17);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(202, 69);
@@ -108,11 +109,12 @@ namespace GeekHub.Presentation
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Image = global::GeekHub.Properties.Resources.user;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(-1, -9);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(95, 104);
+            this.pictureBox1.Size = new System.Drawing.Size(104, 121);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;

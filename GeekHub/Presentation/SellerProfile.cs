@@ -12,9 +12,22 @@ namespace GeekHub.Presentation
 {
     public partial class SellerProfile : Form
     {
+        private LoginSellers login;
         public SellerProfile()
         {
             InitializeComponent();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bttLogOut_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            login = new LoginSellers();
+            login.Show();
         }
     }
 }
