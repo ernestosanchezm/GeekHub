@@ -70,6 +70,8 @@
     <Content Include="Fileserver\Categorias\cat1.jpg" />
     <Content Include="Fileserver\Categorias\cat10.jpg" />
     <Content Include="Fileserver\Categorias\cat11.jpg" />
+    <Content Include="Fileserver\Categorias\cat12.jpg" />
+    <Content Include="Fileserver\Categorias\cat2.jpg" />
     <Content Include="Fileserver\Categorias\cat3.jpg" />
     <Content Include="Fileserver\Categorias\cat4.jpg" />
     <Content Include="Fileserver\Categorias\cat5.jpg" />
