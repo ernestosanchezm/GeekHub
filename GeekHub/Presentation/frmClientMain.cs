@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GeekHub
+namespace GeekHub.Presentation
 {
-    public partial class Form1 : Form
+    public partial class frmClientMain : Form
     {
-        public Form1()
+        public frmClientMain()
         {
             InitializeComponent();
+        }
+
+        private void frmClientMain_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
