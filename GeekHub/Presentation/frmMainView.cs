@@ -23,23 +23,23 @@ namespace GeekHub.Presentation
 
         private void populateItems()
         {
-            //loop through each item
-            for (int i = 0; i < listItems.Count; i++)
-            {
-                listItems[i].NameProduct = "name";
-                if (i % 2 == 0)
-                {
-                    listItems[i].ImageProduct = Resources.ropa;
-                    listItems[i].CategoryProduct = "Category: Ropa";
-                }
-                else
-                {
-                    listItems[i].ImageProduct = Resources.comics;
-                    listItems[i].CategoryProduct = "Category: Comics";
-                }
-                flowLayoutPanelProducts.Controls.Add(listItems[i]);
+            ////loop through each item
+            //for (int i = 0; i < listItems.Count; i++)
+            //{
+            //    listItems[i].NameProduct = "name";
+            //    if (i % 2 == 0)
+            //    {
+            //        listItems[i].ImageProduct = Resources.ropa;
+            //        listItems[i].CategoryProduct = "Category: Ropa";
+            //    }
+            //    else
+            //    {
+            //        listItems[i].ImageProduct = Resources.comics;
+            //        listItems[i].CategoryProduct = "Category: Comics";
+            //    }
+            //    flowLayoutPanelProducts.Controls.Add(listItems[i]);
 
-            }
+            //}
 
         }
         private void instanceListItems()

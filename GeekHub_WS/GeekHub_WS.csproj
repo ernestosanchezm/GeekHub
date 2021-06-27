@@ -67,6 +67,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Fileserver\Categorias\cat1.jpg" />
+    <Content Include="Fileserver\Categorias\cat10.jpg" />
+    <Content Include="Fileserver\Categorias\cat11.jpg" />
+    <Content Include="Fileserver\Categorias\cat3.jpg" />
+    <Content Include="Fileserver\Categorias\cat4.jpg" />
+    <Content Include="Fileserver\Categorias\cat5.jpg" />
+    <Content Include="Fileserver\Categorias\cat6.jpg" />
+    <Content Include="Fileserver\Categorias\cat7.jpg" />
+    <Content Include="Fileserver\Categorias\cat8.jpg" />
+    <Content Include="Fileserver\Categorias\cat9.jpg" />
     <Content Include="GeekHubWS.asmx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -75,6 +85,7 @@
       <DependentUpon>GeekHubWS.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Models\ItCategoria.cs" />
     <Compile Include="Models\UserLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -87,6 +98,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

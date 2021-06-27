@@ -26,7 +26,7 @@ namespace GeekHub
         private void btLogin_Click(object sender, EventArgs e)
         {
             GeekHubWS.GeekHubWSSoapClient instWS = new GeekHubWS.GeekHubWSSoapClient();
-            var resLogin=instWS.loginFindByEmailAndPassword("hans.sotor@gmail.com", "1234");
+            var resLogin=instWS.loginFindByEmailAndPassword("solange.s@gmail.com", "1234");
 
             if (resLogin != null)
             {

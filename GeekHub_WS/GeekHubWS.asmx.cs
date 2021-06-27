@@ -28,6 +28,30 @@ namespace GeekHub_WS
             return false;
         }
 
+
+
+        [WebMethod]
+        public List<ItCategoria> ListarCategorias()
+        {
+            DataSet dataSet = default(DataSet);
+            List<ItCategoria> ListCategorias= default(List<ItCategoria>);
+            try
+            {
+                string query = "select * from CategoriesWithProducts";
+                SqlDataAdapter cmd = new SqlDataAdapter(query, Conexion.Conectar());
+                dataSet = new DataSet();
+                cmd.Fill(dataSet, "DevuelveLista");
+                ListCategorias = dataSet.Tables[0].AsEnumerable()
+                              .Select(dataRow => new ItCategoria
+                              {
+                                  NCategoria = dataRow.Field<string>("nameCategory"),
+                                  CateogoriaId= dataRow.Field<int>("categoryId")                           
+                              }).ToList();
+            }
+            catch { }
+            return ListCategorias;
+        }
+
         [WebMethod]
         public DataSet FiltroSkus(string categoriaId, string nombre, string precioMin, string precioMax, string orden)
         {

@@ -2,6 +2,27 @@
 <wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
     <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ListarCategorias">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListarCategoriasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarCategoriasResult" type="tns:ArrayOfItCategoria" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfItCategoria">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ItCategoria" nillable="true" type="tns:ItCategoria" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ItCategoria">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="NCategoria" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CateogoriaId" type="s:int" />
+        </s:sequence>
+      </s:complexType>
       <s:element name="FiltroSkus">
         <s:complexType>
           <s:sequence>
@@ -90,6 +111,12 @@
       </s:element>
     </s:schema>
   </wsdl:types>
+  <wsdl:message name="ListarCategoriasSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarCategorias" />
+  </wsdl:message>
+  <wsdl:message name="ListarCategoriasSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarCategoriasResponse" />
+  </wsdl:message>
   <wsdl:message name="FiltroSkusSoapIn">
     <wsdl:part name="parameters" element="tns:FiltroSkus" />
   </wsdl:message>
@@ -115,6 +142,10 @@
     <wsdl:part name="parameters" element="tns:SendEmailResponse" />
   </wsdl:message>
   <wsdl:portType name="GeekHubWSSoap">
+    <wsdl:operation name="ListarCategorias">
+      <wsdl:input message="tns:ListarCategoriasSoapIn" />
+      <wsdl:output message="tns:ListarCategoriasSoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="FiltroSkus">
       <wsdl:input message="tns:FiltroSkusSoapIn" />
       <wsdl:output message="tns:FiltroSkusSoapOut" />
@@ -134,6 +165,15 @@
   </wsdl:portType>
   <wsdl:binding name="GeekHubWSSoap" type="tns:GeekHubWSSoap">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListarCategorias">
+      <soap:operation soapAction="http://tempuri.org/ListarCategorias" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="FiltroSkus">
       <soap:operation soapAction="http://tempuri.org/FiltroSkus" style="document" />
       <wsdl:input>
@@ -173,6 +213,15 @@
   </wsdl:binding>
   <wsdl:binding name="GeekHubWSSoap12" type="tns:GeekHubWSSoap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListarCategorias">
+      <soap12:operation soapAction="http://tempuri.org/ListarCategorias" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="FiltroSkus">
       <soap12:operation soapAction="http://tempuri.org/FiltroSkus" style="document" />
       <wsdl:input>

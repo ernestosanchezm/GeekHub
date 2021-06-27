@@ -69,7 +69,7 @@ namespace GeekHub.Presentation
                     listProductsDetail[i].PriceProduct = "25";
                     listProductsDetail[i].DescuentoProducto = "225";
                     listProductsDetail[i].DetailProduct = "Detail products";
-                    listProductsDetail[i].ImageProduct = Resources.ropa;
+                    //listProductsDetail[i].ImageProduct = Resources.ropa;
                 }
                 else
                 {
@@ -78,7 +78,7 @@ namespace GeekHub.Presentation
                     listProductsDetail[i].PriceProduct = "25";
                     listProductsDetail[i].DescuentoProducto = "225";
                     listProductsDetail[i].DetailProduct = "Detail products";
-                    listProductsDetail[i].ImageProduct = Resources.manga;
+                   // listProductsDetail[i].ImageProduct = Resources.manga;
                 }
                 flowLayoutPanelProduct.Controls.Add(listProductsDetail[i]);
 

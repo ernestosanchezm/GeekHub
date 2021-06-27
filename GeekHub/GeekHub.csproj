@@ -57,6 +57,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\ConvertHelper.cs" />
+    <Compile Include="Helpers\Constants.cs" />
     <Compile Include="Presentation\DetallesContacto\MuestraDetalles.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,12 +70,6 @@
     </Compile>
     <Compile Include="Presentation\frmAdminMain.Designer.cs">
       <DependentUpon>frmAdminMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Presentation\frmClientMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentation\frmClientMain.Designer.cs">
-      <DependentUpon>frmClientMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\frmLogin.cs">
       <SubType>Form</SubType>
@@ -93,11 +89,11 @@
     <Compile Include="Presentation\frmSellerMain.Designer.cs">
       <DependentUpon>frmSellerMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\frmViewCategory.cs">
+    <Compile Include="Presentation\frmClientMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\frmViewCategory.Designer.cs">
-      <DependentUpon>frmViewCategory.cs</DependentUpon>
+    <Compile Include="Presentation\frmClientMain.Designer.cs">
+      <DependentUpon>frmClientMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\itemsList\ListItem.cs">
       <SubType>UserControl</SubType>
@@ -137,14 +133,11 @@
     <EmbeddedResource Include="Presentation\frmAdminMain.resx">
       <DependentUpon>frmAdminMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\frmClientMain.resx">
-      <DependentUpon>frmClientMain.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmMainView.resx">
       <DependentUpon>frmMainView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\frmViewCategory.resx">
-      <DependentUpon>frmViewCategory.cs</DependentUpon>
+    <EmbeddedResource Include="Presentation\frmClientMain.resx">
+      <DependentUpon>frmClientMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\itemsList\ListItem.resx">
       <DependentUpon>ListItem.cs</DependentUpon>
@@ -160,17 +153,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Presentation\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Connected Services\GeekHubWS\GeekHub.GeekHubWS.ItCategoria.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\GeekHubWS\GeekHub.GeekHubWS.UserLogin.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -180,6 +171,11 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -190,46 +186,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\GeekHubWS\" />
-  </ItemGroup>
-  <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Animes fisicos.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\comics.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Discos KPopo.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\figuras.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fundas.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Lighstick.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\manga.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Merchandising anime.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Merchandising kpop.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ropa.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\user.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Webtoons Fisicos.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\GeekHubWS\GeekHubWS.disco" />
@@ -241,6 +204,9 @@
     </None>
     <Content Include="Files\Logos\wsplogo.png" />
     <None Include="Resources\btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\GeekHubWS\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -16,6 +16,13 @@ namespace GeekHub.GeekHubWS {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="GeekHubWS.GeekHubWSSoap")]
     public interface GeekHubWSSoap {
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ListarCategorias", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        GeekHub.GeekHubWS.ItCategoria[] ListarCategorias();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ListarCategorias", ReplyAction="*")]
+        System.Threading.Tasks.Task<GeekHub.GeekHubWS.ItCategoria[]> ListarCategoriasAsync();
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/FiltroSkus", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Data.DataSet FiltroSkus(string categoriaId, string nombre, string precioMin, string precioMax, string orden);
@@ -43,6 +50,52 @@ namespace GeekHub.GeekHubWS {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SendEmail", ReplyAction="*")]
         System.Threading.Tasks.Task<string> SendEmailAsync(string subject, string body);
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class ItCategoria : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string nCategoriaField;
+        
+        private int cateogoriaIdField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public string NCategoria {
+            get {
+                return this.nCategoriaField;
+            }
+            set {
+                this.nCategoriaField = value;
+                this.RaisePropertyChanged("NCategoria");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        public int CateogoriaId {
+            get {
+                return this.cateogoriaIdField;
+            }
+            set {
+                this.cateogoriaIdField = value;
+                this.RaisePropertyChanged("CateogoriaId");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
     }
     
     /// <remarks/>
@@ -144,6 +197,14 @@ namespace GeekHub.GeekHubWS {
         
         public GeekHubWSSoapClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
+        }
+        
+        public GeekHub.GeekHubWS.ItCategoria[] ListarCategorias() {
+            return base.Channel.ListarCategorias();
+        }
+        
+        public System.Threading.Tasks.Task<GeekHub.GeekHubWS.ItCategoria[]> ListarCategoriasAsync() {
+            return base.Channel.ListarCategoriasAsync();
         }
         
         public System.Data.DataSet FiltroSkus(string categoriaId, string nombre, string precioMin, string precioMax, string orden) {
