@@ -57,10 +57,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\DetallesContacto\MuestraDetalles.cs">
+    <Compile Include="Presentation\DetallesContacto\SellerMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\DetallesContacto\SellerMain.Designer.cs">
+      <DependentUpon>SellerMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\MuestraDetalles.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\DetallesContacto\MuestraDetalles.Designer.cs">
+    <Compile Include="Presentation\MuestraDetalles.Designer.cs">
       <DependentUpon>MuestraDetalles.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\frmAdminMain.cs">
@@ -131,7 +137,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Presentation\DetallesContacto\MuestraDetalles.resx">
+    <EmbeddedResource Include="Presentation\DetallesContacto\DetallesContacto.resx">
+      <DependentUpon>DetallesContacto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\DetallesContacto\SellerMain.resx">
+      <DependentUpon>SellerMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\MuestraDetalles.resx">
       <DependentUpon>MuestraDetalles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmAdminMain.resx">
@@ -142,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmMainView.resx">
       <DependentUpon>frmMainView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmSellerMain.resx">
+      <DependentUpon>frmSellerMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmViewCategory.resx">
       <DependentUpon>frmViewCategory.cs</DependentUpon>
@@ -160,14 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Presentation\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +190,11 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>

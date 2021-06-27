@@ -21,6 +21,9 @@ namespace GeekHub
             this._Link = link;
             ContactImage.ImageLocation = image;
             NombreContacto.Text = _title;
+
+
+
             ContactImage.Refresh();
             
         }

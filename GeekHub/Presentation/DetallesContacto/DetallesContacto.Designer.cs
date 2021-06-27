@@ -29,23 +29,11 @@ namespace GeekHub
         /// </summary>
         private void InitializeComponent()
         {
-            this.ContactImage = new System.Windows.Forms.PictureBox();
             this.NombreContacto = new System.Windows.Forms.Label();
             this.Btn_Contact = new System.Windows.Forms.Button();
+            this.ContactImage = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ContactImage)).BeginInit();
             this.SuspendLayout();
-            // 
-            // ContactImage
-            // 
-            this.ContactImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ContactImage.ImageLocation = "";
-            this.ContactImage.Location = new System.Drawing.Point(15, 20);
-            this.ContactImage.Name = "ContactImage";
-            this.ContactImage.Size = new System.Drawing.Size(122, 113);
-            this.ContactImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ContactImage.TabIndex = 0;
-            this.ContactImage.TabStop = false;
-            this.ContactImage.Click += new System.EventHandler(this.ContactImage_Click);
             // 
             // NombreContacto
             // 
@@ -73,6 +61,18 @@ namespace GeekHub
             this.Btn_Contact.Text = "Contactar!";
             this.Btn_Contact.UseVisualStyleBackColor = false;
             this.Btn_Contact.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // ContactImage
+            // 
+            this.ContactImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ContactImage.ImageLocation = "";
+            this.ContactImage.Location = new System.Drawing.Point(15, 20);
+            this.ContactImage.Name = "ContactImage";
+            this.ContactImage.Size = new System.Drawing.Size(122, 113);
+            this.ContactImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ContactImage.TabIndex = 0;
+            this.ContactImage.TabStop = false;
+            this.ContactImage.Click += new System.EventHandler(this.ContactImage_Click);
             // 
             // Detail_Control
             // 
