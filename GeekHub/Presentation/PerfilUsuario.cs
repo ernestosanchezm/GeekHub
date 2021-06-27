@@ -12,6 +12,7 @@ namespace GeekHub.Presentation
 {
     public partial class PerfilUsuario : Form
     {
+        private EditarUsuario eu;
         public PerfilUsuario()
         {
             InitializeComponent();
@@ -24,7 +25,9 @@ namespace GeekHub.Presentation
 
         private void btnEditDatos_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            eu = new EditarUsuario();
+            eu.Show();
         }
 
         private void PerfilUsuario_Load(object sender, EventArgs e)
