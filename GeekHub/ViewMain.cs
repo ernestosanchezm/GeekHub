@@ -11,28 +11,22 @@ using System.Windows.Forms;
 
 namespace GeekHub
 {
-    public partial class Form1 : Form
+    public partial class ViewMain : Form
     {
         List<ListItem> listItems;
-        public Form1()
+        public ViewMain()
         {
-            this.listItems = new List<ListItem>();
-            for (int i = 0; i < 20; i++)
-            {
-                this.listItems.Add(new ListItem());
-            }
+            instanceListItems();
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
             populateItems();
         }
 
         private void populateItems()
         {
-            ListItem[] items = new ListItem[20];
             //loop through each item
             for (int i = 0; i < listItems.Count; i++)
             {
@@ -50,6 +44,18 @@ namespace GeekHub
                 flowLayoutPanel1.Controls.Add(listItems[i]);
 
             }
+
+        }
+        private void instanceListItems()
+        {
+            this.listItems = new List<ListItem>();
+            for (int i = 0; i < 20; i++)
+            {
+                this.listItems.Add(new ListItem());
+            }
+        }
+        private void Search_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
