@@ -34,5 +34,11 @@ namespace GeekHub.Presentation
         {
 
         }
+
+        private void btnEditFoto_Click(object sender, EventArgs e)
+        {
+            //logica del edit de la foto
+
+        }
     }
 }

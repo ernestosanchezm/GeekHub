@@ -161,6 +161,7 @@ namespace GeekHub.Presentation
             this.btnEditFoto.Size = new System.Drawing.Size(57, 57);
             this.btnEditFoto.TabIndex = 27;
             this.btnEditFoto.UseVisualStyleBackColor = true;
+            this.btnEditFoto.Click += new System.EventHandler(this.btnEditFoto_Click);
             // 
             // PerfilUsuario
             // 
