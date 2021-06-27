@@ -52,6 +52,7 @@ namespace GeekHub.Presentation
             this.flowLayoutPanelProducts.Padding = new System.Windows.Forms.Padding(1);
             this.flowLayoutPanelProducts.Size = new System.Drawing.Size(1502, 566);
             this.flowLayoutPanelProducts.TabIndex = 2;
+            this.flowLayoutPanelProducts.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanelProducts_Paint);
             // 
             // label1
             // 
@@ -85,6 +86,7 @@ namespace GeekHub.Presentation
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel1
             // 
@@ -127,6 +129,7 @@ namespace GeekHub.Presentation
             this.bttLogOut.TabIndex = 3;
             this.bttLogOut.Text = "Cerrar sesion";
             this.bttLogOut.UseVisualStyleBackColor = true;
+            this.bttLogOut.Click += new System.EventHandler(this.bttLogOut_Click);
             // 
             // frmMainView
             // 

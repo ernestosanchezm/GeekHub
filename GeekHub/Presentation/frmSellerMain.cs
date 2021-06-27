@@ -67,9 +67,15 @@ namespace GeekHub.Presentation
 
         private void bttLogOut_Click(object sender, EventArgs e)
         {
+            //Logica Cerrar Sesion
             this.Hide();
             login = new LoginSellers();
             login.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

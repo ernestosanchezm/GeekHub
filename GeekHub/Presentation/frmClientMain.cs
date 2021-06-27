@@ -79,6 +79,7 @@ namespace GeekHub.Presentation
 
         private void bttLogOut_Click(object sender, EventArgs e)
         {
+            //Logica Cerrar Sesion
             this.Hide();
             login = new frmLogin();
             perfil.Show();

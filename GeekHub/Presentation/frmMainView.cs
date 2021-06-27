@@ -9,11 +9,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GeekHub.Presentation;
 
 namespace GeekHub.Presentation
 {
     public partial class frmMainView : Form
     {
+        private PerfilUsuario perfil;
+        private frmLogin login;
+
         List<ListItem> listItems;
         public frmMainView()
         {
@@ -59,6 +63,26 @@ namespace GeekHub.Presentation
         private void bttOptions_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            perfil = new PerfilUsuario();
+            perfil.Show();
+        }
+
+        private void flowLayoutPanelProducts_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bttLogOut_Click(object sender, EventArgs e)
+        {
+            //Logica Cerrar Sesion
+            this.Hide();
+            login = new frmLogin();
+            login.Show();
         }
     }
 }

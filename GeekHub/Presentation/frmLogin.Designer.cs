@@ -1,5 +1,5 @@
 ﻿
-namespace GeekHub
+namespace GeekHub.Presentation
 {
     partial class frmLogin
     {
