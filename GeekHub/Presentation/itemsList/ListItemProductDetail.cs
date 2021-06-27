@@ -22,9 +22,7 @@ namespace GeekHub.Presentation.itemsList
         #region Properties
         private string _nameProduct;
         private string _categoryProduct;
-        private string _detailProduct;
         private string _priceProduct;
-        private string _descuentoProduct;
         private Image _imageProduct;
 
         [Category("Product props")]

@@ -30,8 +30,8 @@ namespace GeekHub.Presentation.DetallesContacto
         private void InitializeComponent()
         {
             this.Contact_Methods = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.Panel01 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnclose = new System.Windows.Forms.Button();
             this.Panel01.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,22 +48,11 @@ namespace GeekHub.Presentation.DetallesContacto
             this.Contact_Methods.Location = new System.Drawing.Point(10, 10);
             this.Contact_Methods.Margin = new System.Windows.Forms.Padding(0);
             this.Contact_Methods.Name = "Contact_Methods";
-            this.Contact_Methods.Size = new System.Drawing.Size(710, 52);
+            this.Contact_Methods.Size = new System.Drawing.Size(677, 52);
             this.Contact_Methods.TabIndex = 0;
             this.Contact_Methods.Text = "MEDIOS DE CONTACTO";
             this.Contact_Methods.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Contact_Methods.Click += new System.EventHandler(this.Contact_Methods_Click);
-            // 
-            // button1
-            // 
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Panel01
             // 
@@ -73,23 +62,36 @@ namespace GeekHub.Presentation.DetallesContacto
             this.Panel01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Panel01.Controls.Add(this.Contact_Methods);
             this.Panel01.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.Panel01.Location = new System.Drawing.Point(42, 46);
+            this.Panel01.Location = new System.Drawing.Point(0, -1);
             this.Panel01.Margin = new System.Windows.Forms.Padding(100);
             this.Panel01.Name = "Panel01";
             this.Panel01.Padding = new System.Windows.Forms.Padding(10);
-            this.Panel01.Size = new System.Drawing.Size(737, 253);
+            this.Panel01.Size = new System.Drawing.Size(793, 320);
             this.Panel01.TabIndex = 2;
             this.Panel01.Visible = false;
             this.Panel01.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel01_Paint);
             // 
-            // Form1
+            // btnclose
+            // 
+            this.btnclose.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnclose.BackgroundImage = global::GeekHub.Properties.Resources.btn;
+            this.btnclose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnclose.Location = new System.Drawing.Point(746, -1);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.Size = new System.Drawing.Size(47, 40);
+            this.btnclose.TabIndex = 1;
+            this.btnclose.UseVisualStyleBackColor = true;
+            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
+            // 
+            // DetallesContacto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(793, 319);
+            this.Controls.Add(this.btnclose);
             this.Controls.Add(this.Panel01);
-            this.Controls.Add(this.button1);
-            this.Name = "Form1";
+            this.Name = "DetallesContacto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Panel01.ResumeLayout(false);
@@ -98,9 +100,9 @@ namespace GeekHub.Presentation.DetallesContacto
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.FlowLayoutPanel Panel01;
         private System.Windows.Forms.Label Contact_Methods;
+        private System.Windows.Forms.Button btnclose;
     }
 }
 

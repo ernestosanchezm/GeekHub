@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GeekHub.Presentation.DetallesContacto;
 
 namespace GeekHub
 {
@@ -19,7 +20,7 @@ namespace GeekHub
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmClientMain());
+            Application.Run(new DetallesContacto());
         }
     }
 }

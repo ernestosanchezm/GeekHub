@@ -105,6 +105,7 @@ namespace GeekHub.Presentation
             this.bttLogOut.TabIndex = 3;
             this.bttLogOut.Text = "Cerrar sesion";
             this.bttLogOut.UseVisualStyleBackColor = true;
+            this.bttLogOut.Click += new System.EventHandler(this.bttLogOut_Click);
             // 
             // bttOptions
             // 
@@ -296,6 +297,7 @@ namespace GeekHub.Presentation
             this.bt_SelProf.TabIndex = 37;
             this.bt_SelProf.Text = "PERFIL DE LA TIENDA";
             this.bt_SelProf.UseVisualStyleBackColor = true;
+            this.bt_SelProf.Click += new System.EventHandler(this.bt_SelProf_Click);
             // 
             // bt_contactos
             // 
@@ -306,6 +308,7 @@ namespace GeekHub.Presentation
             this.bt_contactos.TabIndex = 38;
             this.bt_contactos.Text = "Medios de Contacto";
             this.bt_contactos.UseVisualStyleBackColor = true;
+            this.bt_contactos.Click += new System.EventHandler(this.bt_contactos_Click);
             // 
             // DetalleProducto
             // 

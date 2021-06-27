@@ -18,6 +18,11 @@ namespace GeekHub.Presentation.DetallesContacto
         public DetallesContacto()
         {
             InitializeComponent();
+            Panel01.Visible = true;
+            cargarMetodos();
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.ControlBox = false;
+            this.Text = String.Empty;
         }
 
         private void cargarMetodos()
@@ -62,12 +67,7 @@ namespace GeekHub.Presentation.DetallesContacto
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Panel01.Visible = true;
-            cargarMetodos();
 
-        }
 
         private void Contact_Methods_Click(object sender, EventArgs e)
         {
@@ -82,6 +82,11 @@ namespace GeekHub.Presentation.DetallesContacto
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnclose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
