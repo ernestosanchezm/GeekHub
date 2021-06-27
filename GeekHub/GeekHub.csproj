@@ -33,11 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,12 +49,19 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connected Services\GeekHubWS\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DetallesContacto\MuestraDetalles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\DetallesContacto\MuestraDetalles.Designer.cs">
+      <DependentUpon>MuestraDetalles.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\frmAdminMain.cs">
       <SubType>Form</SubType>
@@ -72,25 +81,82 @@
     <Compile Include="Presentation\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\frmMainView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmMainView.Designer.cs">
+      <DependentUpon>frmMainView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\frmSellerMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentation\frmSellerMain.Designer.cs">
       <DependentUpon>frmSellerMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\ListItem.cs">
+    <Compile Include="Presentation\frmViewCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmViewCategory.Designer.cs">
+      <DependentUpon>frmViewCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\itemsList\ListItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\ListItem.Designer.cs">
+    <Compile Include="Presentation\itemsList\ListItem.Designer.cs">
       <DependentUpon>ListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\itemsList\ListItemCategory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\itemsList\ListItemCategory.Designer.cs">
+      <DependentUpon>ListItemCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\itemsList\ListItemProductDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\itemsList\ListItemProductDetail.Designer.cs">
+      <DependentUpon>ListItemProductDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmViewProductsDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmViewProductsDetail.Designer.cs">
+      <DependentUpon>frmViewProductsDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DetallesContacto\DetallesContacto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\DetallesContacto\DetallesContacto.Designer.cs">
+      <DependentUpon>DetallesContacto.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Presentation\ListItem.resx">
+    <EmbeddedResource Include="Presentation\DetallesContacto\MuestraDetalles.resx">
+      <DependentUpon>MuestraDetalles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmAdminMain.resx">
+      <DependentUpon>frmAdminMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmClientMain.resx">
+      <DependentUpon>frmClientMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmMainView.resx">
+      <DependentUpon>frmMainView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmViewCategory.resx">
+      <DependentUpon>frmViewCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\itemsList\ListItem.resx">
       <DependentUpon>ListItem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\frmSellerMain.resx">
-      <DependentUpon>frmSellerMain.cs</DependentUpon>
+    <EmbeddedResource Include="Presentation\itemsList\ListItemCategory.resx">
+      <DependentUpon>ListItemCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\itemsList\ListItemProductDetail.resx">
+      <DependentUpon>ListItemProductDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmViewProductsDetail.resx">
+      <DependentUpon>frmViewProductsDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -123,45 +189,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ropa.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\WebtoonsFisicos.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Webtoons Fisicos.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Merchandising kpop.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Merchandising anime.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\manga.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Lighstick.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fundas.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\figuras.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Discos KPopo.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\comics.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Animes fisicos.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\user.png" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
@@ -182,6 +210,46 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Animes fisicos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comics.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Discos KPopo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\figuras.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lighstick.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Merchandising anime.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Merchandising kpop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ropa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webtoons Fisicos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Files\Logos\wsplogo.png" />
+    <None Include="Resources\btn.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

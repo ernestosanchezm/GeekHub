@@ -10,8 +10,8 @@
 
 namespace GeekHub.Properties {
     using System;
-    
-    
+
+
     /// <summary>
     ///   Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
     /// </summary>
@@ -23,15 +23,15 @@ namespace GeekHub.Properties {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
-        
+
         private static global::System.Resources.ResourceManager resourceMan;
-        
+
         private static global::System.Globalization.CultureInfo resourceCulture;
-        
+
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal Resources() {
         }
-        
+
         /// <summary>
         ///   Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
         /// </summary>
@@ -45,7 +45,7 @@ namespace GeekHub.Properties {
                 return resourceMan;
             }
         }
-        
+
         /// <summary>
         ///   Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
         ///   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
@@ -57,7 +57,7 @@ namespace GeekHub.Properties {
             }
             set {
                 resourceCulture = value;
-            }          
+            }
         }
 
         /// <summary>
@@ -190,109 +190,6 @@ namespace GeekHub.Properties {
             get {
                 object obj = ResourceManager.GetObject("btn", resourceCulture);
                 
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-    
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Animes_fisicos1 {
-            get {
-                object obj = ResourceManager.GetObject("Animes_fisicos1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-    
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap comics1 {
-            get {
-                object obj = ResourceManager.GetObject("comics1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a .
-        /// </summary>
-        internal static string Discos_Popo {
-            get {
-                return ResourceManager.GetString("Discos Popo", resourceCulture);
-            }
-        }
-        
-
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap figuras1 {
-            get {
-                object obj = ResourceManager.GetObject("figuras1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
- 
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap fundas1 {
-            get {
-                object obj = ResourceManager.GetObject("fundas1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
- 
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Lighstick1 {
-            get {
-                object obj = ResourceManager.GetObject("Lighstick1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap manga1 {
-            get {
-                object obj = ResourceManager.GetObject("manga1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
- 
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ropa1 {
-            get {
-                object obj = ResourceManager.GetObject("ropa1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap user1 {
-            get {
-                object obj = ResourceManager.GetObject("user1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
