@@ -27,12 +27,8 @@ namespace GeekHub.Presentation
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnsave_Click(object sender, EventArgs e)
         {
             bool condition = true;
             this.Close();

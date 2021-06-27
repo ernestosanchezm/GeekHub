@@ -34,11 +34,11 @@ namespace GeekHub.Presentation
             this.bttOptions = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnEdit = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Panel01 = new System.Windows.Forms.FlowLayoutPanel();
             this.lblApell = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -83,6 +83,7 @@ namespace GeekHub.Presentation
             this.bttOptions.TabIndex = 2;
             this.bttOptions.Text = "Opciones";
             this.bttOptions.UseVisualStyleBackColor = true;
+            this.bttOptions.Click += new System.EventHandler(this.bttOptions_Click);
             // 
             // panel1
             // 
@@ -113,54 +114,6 @@ namespace GeekHub.Presentation
             this.btnEdit.Text = "EDITAR PERFIL";
             this.btnEdit.UseVisualStyleBackColor = true;
             // 
-            // Panel01
-            // 
-            this.Panel01.AllowDrop = true;
-            this.Panel01.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Panel01.AutoScroll = true;
-            this.Panel01.BackColor = System.Drawing.Color.White;
-            this.Panel01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Panel01.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.Panel01.Location = new System.Drawing.Point(54, 358);
-            this.Panel01.Margin = new System.Windows.Forms.Padding(100);
-            this.Panel01.Name = "Panel01";
-            this.Panel01.Padding = new System.Windows.Forms.Padding(10);
-            this.Panel01.Size = new System.Drawing.Size(1496, 394);
-            this.Panel01.TabIndex = 8;
-            // 
-            // lblApell
-            // 
-            this.lblApell.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblApell.Font = new System.Drawing.Font("Quicksand", 30F, System.Drawing.FontStyle.Bold);
-            this.lblApell.Location = new System.Drawing.Point(754, 186);
-            this.lblApell.Name = "lblApell";
-            this.lblApell.Size = new System.Drawing.Size(654, 70);
-            this.lblApell.TabIndex = 28;
-            this.lblApell.Text = "APELLIDO";
-            this.lblApell.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblName
-            // 
-            this.lblName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblName.Font = new System.Drawing.Font("Quicksand", 30F, System.Drawing.FontStyle.Bold);
-            this.lblName.Location = new System.Drawing.Point(101, 184);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(521, 74);
-            this.lblName.TabIndex = 27;
-            this.lblName.Text = "NOMBRE COMPLETO";
-            this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.Font = new System.Drawing.Font("Quicksand", 30F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(54, 279);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(765, 74);
-            this.label1.TabIndex = 29;
-            this.label1.Text = "TODOS LOS PRODUCTOS HISTORICOS";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -173,6 +126,54 @@ namespace GeekHub.Presentation
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // Panel01
+            // 
+            this.Panel01.AllowDrop = true;
+            this.Panel01.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Panel01.AutoScroll = true;
+            this.Panel01.BackColor = System.Drawing.Color.White;
+            this.Panel01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Panel01.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.Panel01.Location = new System.Drawing.Point(54, 358);
+            this.Panel01.Margin = new System.Windows.Forms.Padding(100);
+            this.Panel01.Name = "Panel01";
+            this.Panel01.Padding = new System.Windows.Forms.Padding(10);
+            this.Panel01.Size = new System.Drawing.Size(1496, 402);
+            this.Panel01.TabIndex = 8;
+            // 
+            // lblApell
+            // 
+            this.lblApell.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblApell.Font = new System.Drawing.Font("Quicksand", 30F, System.Drawing.FontStyle.Bold);
+            this.lblApell.Location = new System.Drawing.Point(752, 159);
+            this.lblApell.Name = "lblApell";
+            this.lblApell.Size = new System.Drawing.Size(654, 70);
+            this.lblApell.TabIndex = 28;
+            this.lblApell.Text = "APELLIDO";
+            this.lblApell.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblName
+            // 
+            this.lblName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblName.Font = new System.Drawing.Font("Quicksand", 30F, System.Drawing.FontStyle.Bold);
+            this.lblName.Location = new System.Drawing.Point(101, 157);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(521, 74);
+            this.lblName.TabIndex = 27;
+            this.lblName.Text = "NOMBRE COMPLETO";
+            this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.Font = new System.Drawing.Font("Quicksand", 30F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(54, 280);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(765, 74);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "TODOS LOS PRODUCTOS HISTORICOS";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SellerProfile
             // 

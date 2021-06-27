@@ -67,6 +67,7 @@ namespace GeekHub.Presentation
             this.bttOptions.TabIndex = 2;
             this.bttOptions.Text = "Opciones";
             this.bttOptions.UseVisualStyleBackColor = true;
+            this.bttOptions.Click += new System.EventHandler(this.bttOptions_Click);
             // 
             // textBox1
             // 

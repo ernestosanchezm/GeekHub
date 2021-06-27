@@ -14,6 +14,7 @@ namespace GeekHub.Presentation
     {
         private LoginSellers login;
         private SellerProfile perfil;
+        private OtherEditSeller other;
 
         public SellerProfile()
         {
@@ -37,6 +38,13 @@ namespace GeekHub.Presentation
             this.Hide();
             perfil = new SellerProfile();
             perfil.Show();
+        }
+
+        private void bttOptions_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            other = new OtherEditSeller();
+            other.Show();
         }
     }
 }

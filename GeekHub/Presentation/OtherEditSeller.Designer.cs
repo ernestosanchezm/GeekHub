@@ -174,7 +174,7 @@ namespace GeekHub.Presentation
             this.btnsave.TabIndex = 57;
             this.btnsave.Text = "GUARDAR";
             this.btnsave.UseVisualStyleBackColor = true;
-            this.btnsave.Click += new System.EventHandler(this.button1_Click);
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // btnCancel
             // 

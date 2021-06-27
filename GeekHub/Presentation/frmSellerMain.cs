@@ -14,6 +14,11 @@ namespace GeekHub.Presentation
 {
     public partial class frmSellerMain : Form
     {
+        private OtherEditSeller other;
+        private LoginSellers login;
+        private SellerProfile profile;
+
+
         public frmSellerMain()
         {
             InitializeComponent();
@@ -21,7 +26,6 @@ namespace GeekHub.Presentation
 
         }
 
-        LoginSellers login;
 
         private void cargarMetodos()
         {
@@ -75,7 +79,16 @@ namespace GeekHub.Presentation
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            profile = new SellerProfile();
+            profile.Show();
+        }
 
+        private void bttOptions_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            other = new OtherEditSeller();
+            other.Show();
         }
     }
 }
