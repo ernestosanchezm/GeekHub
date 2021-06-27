@@ -21,6 +21,8 @@ namespace GeekHub.Presentation
 
         }
 
+        LoginSellers login;
+
         private void cargarMetodos()
         {
             string titulo, precio, date;
@@ -61,6 +63,13 @@ namespace GeekHub.Presentation
         {
             cargarMetodos();
 
+        }
+
+        private void bttLogOut_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            login = new LoginSellers();
+            login.Show();
         }
     }
 }

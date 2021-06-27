@@ -53,6 +53,7 @@ namespace GeekHub.Presentation
             this.bttLogOut.TabIndex = 3;
             this.bttLogOut.Text = "Cerrar sesion";
             this.bttLogOut.UseVisualStyleBackColor = true;
+            this.bttLogOut.Click += new System.EventHandler(this.bttLogOut_Click);
             // 
             // bttOptions
             // 

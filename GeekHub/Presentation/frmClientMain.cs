@@ -17,6 +17,9 @@ namespace GeekHub.Presentation
 {
     public partial class frmClientMain : Form
     {
+        private PerfilUsuario perfil;
+        private frmLogin login;
+
         List<ListItemCategory> listCategory;
         public frmClientMain()
         {
@@ -65,6 +68,20 @@ namespace GeekHub.Presentation
         private void frmClientMain_Load(object sender, EventArgs e)
         {
             CargarCategorias();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            perfil = new PerfilUsuario();
+            perfil.Show();
+        }
+
+        private void bttLogOut_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            login = new frmLogin();
+            perfil.Show();
         }
     }
 }
