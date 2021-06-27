@@ -59,6 +59,7 @@
     <Compile Include="ViewCategory.Designer.cs">
       <DependentUpon>ViewCategory.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="ViewProductsDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +104,10 @@
     <EmbeddedResource Include="ListItemCategory.resx">
       <DependentUpon>ListItemCategory.cs</DependentUpon>
     </EmbeddedResource>
+=======
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+>>>>>>> parent of fc9258e (Primer avance)
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -111,7 +116,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -126,6 +130,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup>
     <None Include="Resources\ropa.jpg" />
   </ItemGroup>
@@ -165,5 +170,7 @@
   <ItemGroup>
     <None Include="Resources\user.png" />
   </ItemGroup>
+=======
+>>>>>>> parent of fc9258e (Primer avance)
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
