@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
@@ -77,13 +78,19 @@
     <Compile Include="Presentation\frmSellerMain.Designer.cs">
       <DependentUpon>frmSellerMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListItem.Designer.cs">
+      <DependentUpon>ListItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Presentation\frmAdminMain.resx">
-      <DependentUpon>frmAdminMain.cs</DependentUpon>
+    <EmbeddedResource Include="ListItem.resx">
+      <DependentUpon>ListItem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\frmClientMain.resx">
-      <DependentUpon>frmClientMain.cs</DependentUpon>
+    <EmbeddedResource Include="Presentation\frmSellerMain.resx">
+      <DependentUpon>frmSellerMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -93,6 +100,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Presentation\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -116,7 +124,43 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Files\" />
+    <None Include="Resources\ropa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WebtoonsFisicos.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webtoons Fisicos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Merchandising kpop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Merchandising anime.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lighstick.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\figuras.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Discos KPopo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comics.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Animes fisicos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
