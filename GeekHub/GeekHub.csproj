@@ -81,11 +81,47 @@
     <Compile Include="Presentation\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\frmMainView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmMainView.Designer.cs">
+      <DependentUpon>frmMainView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\frmSellerMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentation\frmSellerMain.Designer.cs">
       <DependentUpon>frmSellerMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmViewCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmViewCategory.Designer.cs">
+      <DependentUpon>frmViewCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\itemsList\ListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\itemsList\ListItem.Designer.cs">
+      <DependentUpon>ListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\itemsList\ListItemCategory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\itemsList\ListItemCategory.Designer.cs">
+      <DependentUpon>ListItemCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\itemsList\ListItemProductDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\itemsList\ListItemProductDetail.Designer.cs">
+      <DependentUpon>ListItemProductDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmViewProductsDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmViewProductsDetail.Designer.cs">
+      <DependentUpon>frmViewProductsDetail.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\DetallesContacto\DetallesContacto.cs">
       <SubType>UserControl</SubType>
@@ -103,6 +139,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmClientMain.resx">
       <DependentUpon>frmClientMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmMainView.resx">
+      <DependentUpon>frmMainView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmViewCategory.resx">
+      <DependentUpon>frmViewCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\itemsList\ListItem.resx">
+      <DependentUpon>ListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\itemsList\ListItemCategory.resx">
+      <DependentUpon>ListItemCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\itemsList\ListItemProductDetail.resx">
+      <DependentUpon>ListItemProductDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmViewProductsDetail.resx">
+      <DependentUpon>frmViewProductsDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -156,6 +210,42 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Animes fisicos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comics.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Discos KPopo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\figuras.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lighstick.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Merchandising anime.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Merchandising kpop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ropa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webtoons Fisicos.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Files\Logos\wsplogo.png" />
