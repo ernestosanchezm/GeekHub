@@ -47,28 +47,29 @@ namespace GeekHub.Presentation
             // flowLayoutPanelProduct
             // 
             this.flowLayoutPanelProduct.AutoScroll = true;
-            this.flowLayoutPanelProduct.Location = new System.Drawing.Point(8, 122);
-            this.flowLayoutPanelProduct.Margin = new System.Windows.Forms.Padding(4);
+            this.flowLayoutPanelProduct.Location = new System.Drawing.Point(6, 99);
             this.flowLayoutPanelProduct.Name = "flowLayoutPanelProduct";
-            this.flowLayoutPanelProduct.Size = new System.Drawing.Size(1216, 670);
+            this.flowLayoutPanelProduct.Size = new System.Drawing.Size(912, 544);
             this.flowLayoutPanelProduct.TabIndex = 18;
+            this.flowLayoutPanelProduct.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanelProduct_Paint);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 88);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 72);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 30);
+            this.label1.Size = new System.Drawing.Size(132, 20);
             this.label1.TabIndex = 12;
             this.label1.Text = "Products Detail";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(133, 26);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Location = new System.Drawing.Point(100, 21);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(1141, 22);
+            this.textBox1.Size = new System.Drawing.Size(857, 20);
             this.textBox1.TabIndex = 4;
             // 
             // panel1
@@ -79,29 +80,29 @@ namespace GeekHub.Presentation
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1582, 74);
+            this.panel1.Size = new System.Drawing.Size(1186, 60);
             this.panel1.TabIndex = 13;
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("Quicksand", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(1415, 17);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(1061, 14);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(124, 39);
+            this.button3.Size = new System.Drawing.Size(93, 32);
             this.button3.TabIndex = 2;
             this.button3.Text = "Cerrar session";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("Quicksand", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(1304, 17);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(978, 14);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(87, 39);
+            this.button4.Size = new System.Drawing.Size(65, 32);
             this.button4.TabIndex = 1;
             this.button4.Text = "opciones";
             this.button4.UseVisualStyleBackColor = true;
@@ -109,10 +110,10 @@ namespace GeekHub.Presentation
             // pictureBox2
             // 
             this.pictureBox2.Image = global::GeekHub.Properties.Resources.user;
-            this.pictureBox2.Location = new System.Drawing.Point(13, 14);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(10, 11);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(85, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(64, 41);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -120,48 +121,44 @@ namespace GeekHub.Presentation
             // lblFilterCategory
             // 
             this.lblFilterCategory.AutoSize = true;
-            this.lblFilterCategory.Font = new System.Drawing.Font("Quicksand", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFilterCategory.Location = new System.Drawing.Point(1352, 226);
-            this.lblFilterCategory.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblFilterCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFilterCategory.Location = new System.Drawing.Point(1014, 184);
             this.lblFilterCategory.Name = "lblFilterCategory";
-            this.lblFilterCategory.Size = new System.Drawing.Size(94, 25);
+            this.lblFilterCategory.Size = new System.Drawing.Size(78, 17);
             this.lblFilterCategory.TabIndex = 17;
             this.lblFilterCategory.Text = "Categoria";
             // 
             // flowLayoutPanelOrden
             // 
             this.flowLayoutPanelOrden.AutoScroll = true;
-            this.flowLayoutPanelOrden.Location = new System.Drawing.Point(1263, 121);
-            this.flowLayoutPanelOrden.Margin = new System.Windows.Forms.Padding(4);
+            this.flowLayoutPanelOrden.Location = new System.Drawing.Point(947, 98);
             this.flowLayoutPanelOrden.Name = "flowLayoutPanelOrden";
-            this.flowLayoutPanelOrden.Size = new System.Drawing.Size(260, 101);
+            this.flowLayoutPanelOrden.Size = new System.Drawing.Size(195, 82);
             this.flowLayoutPanelOrden.TabIndex = 16;
             // 
             // flowLayoutFiltrosCategory
             // 
             this.flowLayoutFiltrosCategory.AutoScroll = true;
-            this.flowLayoutFiltrosCategory.Location = new System.Drawing.Point(1263, 243);
-            this.flowLayoutFiltrosCategory.Margin = new System.Windows.Forms.Padding(4);
+            this.flowLayoutFiltrosCategory.Location = new System.Drawing.Point(947, 197);
             this.flowLayoutFiltrosCategory.Name = "flowLayoutFiltrosCategory";
-            this.flowLayoutFiltrosCategory.Size = new System.Drawing.Size(260, 597);
+            this.flowLayoutFiltrosCategory.Size = new System.Drawing.Size(195, 485);
             this.flowLayoutFiltrosCategory.TabIndex = 15;
             // 
             // lblFiltros
             // 
             this.lblFiltros.AutoSize = true;
-            this.lblFiltros.Font = new System.Drawing.Font("Quicksand", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFiltros.Location = new System.Drawing.Point(1352, 93);
-            this.lblFiltros.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblFiltros.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFiltros.Location = new System.Drawing.Point(1014, 76);
             this.lblFiltros.Name = "lblFiltros";
-            this.lblFiltros.Size = new System.Drawing.Size(63, 25);
+            this.lblFiltros.Size = new System.Drawing.Size(53, 17);
             this.lblFiltros.TabIndex = 14;
             this.lblFiltros.Text = "Filtros";
             // 
             // frmViewProductsDetail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1582, 853);
+            this.ClientSize = new System.Drawing.Size(1186, 693);
             this.Controls.Add(this.lblFilterCategory);
             this.Controls.Add(this.flowLayoutPanelProduct);
             this.Controls.Add(this.label1);
@@ -169,6 +166,7 @@ namespace GeekHub.Presentation
             this.Controls.Add(this.flowLayoutPanelOrden);
             this.Controls.Add(this.flowLayoutFiltrosCategory);
             this.Controls.Add(this.lblFiltros);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmViewProductsDetail";
             this.Text = "ViewProductsDetail";
             this.Load += new System.EventHandler(this.frmViewProductsDetail_Load);

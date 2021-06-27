@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GeekHub
+namespace GeekHub.Presentation.DetallesContacto
 {
 
     public partial class DetallesContacto : Form

@@ -1,5 +1,5 @@
 ﻿
-namespace GeekHub
+namespace GeekHub.Presentation.DetallesContacto
 {
     partial class SellerMain
     {

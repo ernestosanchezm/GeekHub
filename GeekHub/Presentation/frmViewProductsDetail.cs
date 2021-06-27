@@ -90,5 +90,10 @@ namespace GeekHub.Presentation
         {
             populateItems();
         }
+
+        private void flowLayoutPanelProduct_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

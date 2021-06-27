@@ -57,20 +57,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-      <Compile Include="Helpers\ConvertHelper.cs" />
+    <Compile Include="Helpers\ConvertHelper.cs" />
     <Compile Include="Helpers\Constants.cs" />
-    <Compile Include="Presentation\DetallesContacto\MuestraDetalles.cs">
     <Compile Include="Presentation\DetallesContacto\SellerMain.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Presentation\DetallesContacto\SellerMain.Designer.cs">
       <DependentUpon>SellerMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Presentation\MuestraDetalles.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentation\MuestraDetalles.Designer.cs">
-      <DependentUpon>MuestraDetalles.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\frmAdminMain.cs">
       <SubType>Form</SubType>
@@ -132,16 +125,16 @@
     <Compile Include="Presentation\DetallesContacto\DetallesContacto.Designer.cs">
       <DependentUpon>DetallesContacto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\DetallesContacto\MuestraDetalles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\DetallesContacto\MuestraDetalles.Designer.cs">
+      <DependentUpon>MuestraDetalles.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Presentation\DetallesContacto\DetallesContacto.resx">
-      <DependentUpon>DetallesContacto.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\DetallesContacto\SellerMain.resx">
       <DependentUpon>SellerMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\MuestraDetalles.resx">
-      <DependentUpon>MuestraDetalles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmAdminMain.resx">
       <DependentUpon>frmAdminMain.cs</DependentUpon>
@@ -151,12 +144,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmClientMain.resx">
       <DependentUpon>frmClientMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\frmSellerMain.resx">
-      <DependentUpon>frmSellerMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\frmViewCategory.resx">
-      <DependentUpon>frmViewCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\itemsList\ListItem.resx">
       <DependentUpon>ListItem.cs</DependentUpon>
@@ -169,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmViewProductsDetail.resx">
       <DependentUpon>frmViewProductsDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\DetallesContacto\MuestraDetalles.resx">
+      <DependentUpon>MuestraDetalles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -221,10 +211,6 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <Content Include="Files\Logos\contacto.png" />
-    <Content Include="Files\Logos\facebook.png" />
-    <Content Include="Files\Logos\instagram.png" />
-    <Content Include="Files\Logos\telegram.png" />
     <Content Include="Files\Logos\wsplogo.png" />
     <None Include="Resources\btn.png" />
   </ItemGroup>
