@@ -33,12 +33,7 @@ namespace GeekHub.Presentation.itemsList
             get { return _nameProduct; }
             set { _nameProduct = value; lblNameProduct.Text = value; }
         }
-        [Category("Product props")]
-        public string DetailProduct
-        {
-            get { return _detailProduct; }
-            set { _detailProduct = value; lblDescription.Text = value; }
-        }
+
         [Category("Product props")]
         public string PriceProduct
         {
@@ -51,12 +46,7 @@ namespace GeekHub.Presentation.itemsList
             get { return _categoryProduct; }
             set { _categoryProduct = value; lblCategory.Text = value; }
         }
-        [Category("Product props")]
-        public string DescuentoProducto
-        {
-            get { return _descuentoProduct; }
-            set { _descuentoProduct = value; lblDescuento.Text = value; }
-        }
+
 
         [Category("Product props")]
         public Image ImageProduct

@@ -190,6 +190,7 @@ namespace GeekHub.Presentation
             this.Name = "LoginSellers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginSellers";
+            this.Load += new System.EventHandler(this.LoginSellers_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

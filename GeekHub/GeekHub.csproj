@@ -59,6 +59,12 @@
     </Compile>
     <Compile Include="Helpers\ConvertHelper.cs" />
     <Compile Include="Helpers\Constants.cs" />
+    <Compile Include="Presentation\DetalleProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\DetalleProducto.Designer.cs">
+      <DependentUpon>DetalleProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\DetallesContacto\RegistrarUsuario.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -187,6 +193,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Presentation\DetalleProducto.resx">
+      <DependentUpon>DetalleProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\DetallesContacto\RegistrarUsuario.resx">
       <DependentUpon>RegistrarUsuario.cs</DependentUpon>
     </EmbeddedResource>

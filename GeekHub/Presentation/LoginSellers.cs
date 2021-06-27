@@ -27,5 +27,10 @@ namespace GeekHub.Presentation
             login = new frmLogin();
             login.Show();
         }
+
+        private void LoginSellers_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

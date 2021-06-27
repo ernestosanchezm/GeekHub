@@ -29,48 +29,14 @@ namespace GeekHub.Presentation.itemsList
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblDescuento = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblDescription = new System.Windows.Forms.Label();
             this.lblNameProduct = new System.Windows.Forms.Label();
             this.lblPrice = new System.Windows.Forms.Label();
             this.lblCategory = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label0 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblDescuento
-            // 
-            this.lblDescuento.AutoSize = true;
-            this.lblDescuento.Font = new System.Drawing.Font("Quicksand", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lblDescuento.Location = new System.Drawing.Point(382, 168);
-            this.lblDescuento.Name = "lblDescuento";
-            this.lblDescuento.Size = new System.Drawing.Size(85, 35);
-            this.lblDescuento.TabIndex = 20;
-            this.lblDescuento.Text = "label5";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Quicksand", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label3.Location = new System.Drawing.Point(220, 168);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(144, 35);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Descuento:";
-            // 
-            // lblDescription
-            // 
-            this.lblDescription.AutoSize = true;
-            this.lblDescription.Font = new System.Drawing.Font("Quicksand", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lblDescription.Location = new System.Drawing.Point(382, 133);
-            this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(85, 35);
-            this.lblDescription.TabIndex = 18;
-            this.lblDescription.Text = "label5";
             // 
             // lblNameProduct
             // 
@@ -90,7 +56,7 @@ namespace GeekHub.Presentation.itemsList
             // 
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Quicksand", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lblPrice.Location = new System.Drawing.Point(382, 98);
+            this.lblPrice.Location = new System.Drawing.Point(382, 135);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(88, 35);
             this.lblPrice.TabIndex = 17;
@@ -100,27 +66,17 @@ namespace GeekHub.Presentation.itemsList
             // 
             this.lblCategory.AutoSize = true;
             this.lblCategory.Font = new System.Drawing.Font("Quicksand", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lblCategory.Location = new System.Drawing.Point(382, 63);
+            this.lblCategory.Location = new System.Drawing.Point(382, 86);
             this.lblCategory.Name = "lblCategory";
             this.lblCategory.Size = new System.Drawing.Size(84, 35);
             this.lblCategory.TabIndex = 16;
             this.lblCategory.Text = "label3";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Quicksand", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label2.Location = new System.Drawing.Point(220, 133);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(160, 35);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "Description: ";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Quicksand", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label1.Location = new System.Drawing.Point(220, 98);
+            this.label1.Location = new System.Drawing.Point(227, 135);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 35);
             this.label1.TabIndex = 14;
@@ -130,7 +86,7 @@ namespace GeekHub.Presentation.itemsList
             // 
             this.label0.AutoSize = true;
             this.label0.Font = new System.Drawing.Font("Quicksand", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label0.Location = new System.Drawing.Point(220, 63);
+            this.label0.Location = new System.Drawing.Point(227, 86);
             this.label0.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label0.Name = "label0";
             this.label0.Size = new System.Drawing.Size(137, 35);
@@ -152,13 +108,9 @@ namespace GeekHub.Presentation.itemsList
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.lblDescuento);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.lblNameProduct);
             this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.lblCategory);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label0);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -171,13 +123,9 @@ namespace GeekHub.Presentation.itemsList
         }
 
         #endregion
-        private System.Windows.Forms.Label lblDescuento;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lblDescription;
         private System.Windows.Forms.Label lblNameProduct;
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.Label lblCategory;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label0;
         private System.Windows.Forms.PictureBox pictureBox1;
