@@ -13,6 +13,7 @@ namespace GeekHub.Presentation
     public partial class PerfilUsuario : Form
     {
         private EditarUsuario eu;
+        private OtherEditUsuario oe;
         public PerfilUsuario()
         {
             InitializeComponent();
@@ -39,6 +40,13 @@ namespace GeekHub.Presentation
         {
             //logica del edit de la foto
 
+        }
+
+        private void bttOptions_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            oe = new OtherEditUsuario();
+            oe.Show();
         }
     }
 }

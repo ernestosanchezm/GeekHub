@@ -17,6 +17,7 @@ namespace GeekHub.Presentation
     {
         private PerfilUsuario perfil;
         private frmLogin login;
+        private OtherEditUsuario oe;
 
         List<ListItem> listItems;
         public frmMainView()
@@ -62,7 +63,9 @@ namespace GeekHub.Presentation
 
         private void bttOptions_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            oe = new OtherEditUsuario();
+            oe.Show();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
