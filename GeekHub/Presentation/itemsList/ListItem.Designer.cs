@@ -40,9 +40,10 @@ namespace GeekHub.Presentation.itemsList
             // lblCategoryProduct
             // 
             this.lblCategoryProduct.AutoSize = true;
-            this.lblCategoryProduct.Location = new System.Drawing.Point(5, 138);
+            this.lblCategoryProduct.Font = new System.Drawing.Font("Quicksand", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategoryProduct.Location = new System.Drawing.Point(6, 138);
             this.lblCategoryProduct.Name = "lblCategoryProduct";
-            this.lblCategoryProduct.Size = new System.Drawing.Size(73, 17);
+            this.lblCategoryProduct.Size = new System.Drawing.Size(82, 21);
             this.lblCategoryProduct.TabIndex = 2;
             this.lblCategoryProduct.Text = "Category: ";
             // 
@@ -62,7 +63,7 @@ namespace GeekHub.Presentation.itemsList
             // 
             this.lblNameProduct.AutoEllipsis = true;
             this.lblNameProduct.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.lblNameProduct.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameProduct.Font = new System.Drawing.Font("Quicksand", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameProduct.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblNameProduct.Location = new System.Drawing.Point(3, 105);
             this.lblNameProduct.Name = "lblNameProduct";

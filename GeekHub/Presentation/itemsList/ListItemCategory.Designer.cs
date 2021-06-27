@@ -38,7 +38,7 @@ namespace GeekHub.Presentation.itemsList
             // 
             this.lblNameCategory.AutoEllipsis = true;
             this.lblNameCategory.BackColor = System.Drawing.SystemColors.Control;
-            this.lblNameCategory.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameCategory.Font = new System.Drawing.Font("Quicksand", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameCategory.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblNameCategory.Location = new System.Drawing.Point(29, 205);
             this.lblNameCategory.Name = "lblNameCategory";
