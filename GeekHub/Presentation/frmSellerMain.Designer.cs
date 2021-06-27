@@ -46,7 +46,7 @@ namespace GeekHub.Presentation
             this.bttLogOut.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bttLogOut.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.bttLogOut.Font = new System.Drawing.Font("Quicksand", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttLogOut.Location = new System.Drawing.Point(1406, 11);
+            this.bttLogOut.Location = new System.Drawing.Point(1394, 13);
             this.bttLogOut.Margin = new System.Windows.Forms.Padding(2);
             this.bttLogOut.Name = "bttLogOut";
             this.bttLogOut.Size = new System.Drawing.Size(154, 71);
@@ -96,7 +96,7 @@ namespace GeekHub.Presentation
             this.btnAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAdd.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnAdd.Font = new System.Drawing.Font("Quicksand", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(856, 12);
+            this.btnAdd.Location = new System.Drawing.Point(856, 11);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(202, 69);
@@ -135,7 +135,7 @@ namespace GeekHub.Presentation
             this.Panel01.AllowDrop = true;
             this.Panel01.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Panel01.AutoScroll = true;
-            this.Panel01.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Panel01.BackColor = System.Drawing.Color.White;
             this.Panel01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Panel01.ImeMode = System.Windows.Forms.ImeMode.On;
             this.Panel01.Location = new System.Drawing.Point(63, 308);
@@ -155,6 +155,7 @@ namespace GeekHub.Presentation
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox1);
             this.Name = "frmSellerMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSellerMain";
             this.Load += new System.EventHandler(this.frmSellerMain_Load);
             this.panel1.ResumeLayout(false);
@@ -171,8 +172,8 @@ namespace GeekHub.Presentation
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btn_Filtrar;
         private System.Windows.Forms.FlowLayoutPanel Panel01;
+        private System.Windows.Forms.Button btnAdd;
     }
 }

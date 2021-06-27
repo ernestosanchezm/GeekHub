@@ -55,5 +55,10 @@ namespace GeekHub.Presentation
         {
             populateItems();
         }
+
+        private void bttOptions_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

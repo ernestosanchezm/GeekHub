@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GeekHub.Presentation.DetallesContacto;
 
 namespace GeekHub
 {
@@ -24,10 +25,11 @@ namespace GeekHub
             panel1.BackColor = Color.FromArgb(50, Color.White);
 
         }
+        private fmrRegister registro;
+        private LoginSellers sellers;
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-
         }
 
         private void btLogin_Click(object sender, EventArgs e)
@@ -83,6 +85,32 @@ namespace GeekHub
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btn_Register_Click(object sender, EventArgs e)
+        {
+            registro = new fmrRegister();
+            registro.Show();
+            this.Hide();
+
+        }
+
+        private void btnclose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void lblUsers_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Vendedores_Click(object sender, EventArgs e)
+        {
+            sellers = new LoginSellers();
+            sellers.Show();
+            this.Hide();
 
         }
     }

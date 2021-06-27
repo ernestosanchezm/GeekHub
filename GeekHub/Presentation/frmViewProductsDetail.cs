@@ -95,5 +95,15 @@ namespace GeekHub.Presentation
         {
 
         }
+
+        private void lblFilterCategory_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblFiltros_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
