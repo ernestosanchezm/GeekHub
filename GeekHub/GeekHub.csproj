@@ -189,27 +189,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\GeekHubWS\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\GeekHubWS\GeekHubWS.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\GeekHubWS\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\GeekHubWS\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\GeekHubWS\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Animes fisicos.jpg" />
@@ -248,6 +232,13 @@
     <None Include="Resources\Webtoons Fisicos.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\GeekHubWS\GeekHubWS.disco" />
+    <None Include="Connected Services\GeekHubWS\configuration91.svcinfo" />
+    <None Include="Connected Services\GeekHubWS\configuration.svcinfo" />
+    <None Include="Connected Services\GeekHubWS\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Files\Logos\wsplogo.png" />
     <None Include="Resources\btn.png" />
   </ItemGroup>

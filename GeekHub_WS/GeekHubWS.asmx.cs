@@ -67,28 +67,28 @@ namespace GeekHub_WS
         [WebMethod]
         public UserLogin loginFindByEmailAndPassword(string email, string password)
         {
-            DataSet dataSet= default(DataSet);
+            DataSet dataSet = default(DataSet);
             UserLogin objLogin = default(UserLogin);
             try
             {
                 string query = "select * from [User] where t_email='" + email + "' and t_password='" + password + "'";
                 SqlDataAdapter cmd = new SqlDataAdapter(query, Conexion.Conectar());
-                dataSet=new DataSet();
+                dataSet = new DataSet();
                 cmd.Fill(dataSet, "DevuelveLista");
                 var userList = dataSet.Tables[0].AsEnumerable()
                               .Select(dataRow => new UserLogin
                               {
                                   RoleId = dataRow.Field<int>("id_role"),
-                                  Email= dataRow.Field<string>("t_email"),
+                                  Email = dataRow.Field<string>("t_email"),
                                   Name = dataRow.Field<string>("t_name"),
                                   LastName = dataRow.Field<string>("t_last_name")
                               }).ToList();
-                
+
                 if (userList.Count() == 1)
                 {
-                    objLogin= userList.First();
+                    objLogin = userList.First();
 
-                }     
+                }
             }
             catch { }
             return objLogin;
