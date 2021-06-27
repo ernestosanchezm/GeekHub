@@ -10,8 +10,8 @@
 
 namespace GeekHub.Properties {
     using System;
-    
-    
+
+
     /// <summary>
     ///   Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
     /// </summary>
@@ -23,15 +23,15 @@ namespace GeekHub.Properties {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
-        
+
         private static global::System.Resources.ResourceManager resourceMan;
-        
+
         private static global::System.Globalization.CultureInfo resourceCulture;
-        
+
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal Resources() {
         }
-        
+
         /// <summary>
         ///   Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
         /// </summary>
@@ -45,7 +45,7 @@ namespace GeekHub.Properties {
                 return resourceMan;
             }
         }
-        
+
         /// <summary>
         ///   Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
         ///   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
@@ -59,7 +59,7 @@ namespace GeekHub.Properties {
                 resourceCulture = value;
             }
         }
-        
+
         /// <summary>
         ///   Busca una cadena traducida similar a .
         /// </summary>
@@ -68,7 +68,7 @@ namespace GeekHub.Properties {
                 return ResourceManager.GetString("Animes fisicos", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
@@ -78,7 +78,7 @@ namespace GeekHub.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
+
         /// <summary>
         ///   Busca una cadena traducida similar a .
         /// </summary>
@@ -87,7 +87,7 @@ namespace GeekHub.Properties {
                 return ResourceManager.GetString("comics", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
@@ -97,7 +97,7 @@ namespace GeekHub.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
+
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
@@ -107,7 +107,7 @@ namespace GeekHub.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
+
         /// <summary>
         ///   Busca una cadena traducida similar a .
         /// </summary>
@@ -116,7 +116,7 @@ namespace GeekHub.Properties {
                 return ResourceManager.GetString("Discos Popo", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Busca una cadena traducida similar a .
         /// </summary>
@@ -125,7 +125,7 @@ namespace GeekHub.Properties {
                 return ResourceManager.GetString("figuras", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
@@ -135,7 +135,7 @@ namespace GeekHub.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
+
         /// <summary>
         ///   Busca una cadena traducida similar a .
         /// </summary>
@@ -144,7 +144,7 @@ namespace GeekHub.Properties {
                 return ResourceManager.GetString("fundas", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
@@ -154,7 +154,7 @@ namespace GeekHub.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
+
         /// <summary>
         ///   Busca una cadena traducida similar a .
         /// </summary>
@@ -163,7 +163,7 @@ namespace GeekHub.Properties {
                 return ResourceManager.GetString("Lighstick", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
@@ -173,7 +173,7 @@ namespace GeekHub.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
+
         /// <summary>
         ///   Busca una cadena traducida similar a .
         /// </summary>
@@ -182,7 +182,7 @@ namespace GeekHub.Properties {
                 return ResourceManager.GetString("manga", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
@@ -192,7 +192,7 @@ namespace GeekHub.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
+
         /// <summary>
         ///   Busca una cadena traducida similar a .
         /// </summary>
@@ -201,7 +201,7 @@ namespace GeekHub.Properties {
                 return ResourceManager.GetString("ropa", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
@@ -211,7 +211,7 @@ namespace GeekHub.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
+
         /// <summary>
         ///   Busca una cadena traducida similar a .
         /// </summary>
@@ -220,13 +220,17 @@ namespace GeekHub.Properties {
                 return ResourceManager.GetString("user", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap user1 {
             get {
                 object obj = ResourceManager.GetObject("user1", resourceCulture);
+        /// </summary>
+        internal static System.Drawing.Bitmap wsplogo {
+            get {
+                object obj = ResourceManager.GetObject("wsplogo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
