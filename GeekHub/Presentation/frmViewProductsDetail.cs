@@ -16,6 +16,9 @@ namespace GeekHub.Presentation
     {
         private PerfilUsuario perfil;
         private frmLogin login;
+        private OtherEditUsuario oeu;
+        private frmClientMain cmain;
+
 
         List<ListItemProductDetail> listProductsDetail;
         List<RadioButton> listFilterCategories;
@@ -119,6 +122,25 @@ namespace GeekHub.Presentation
             login = new frmLogin();
             login.Show();
             this.Hide();
+        }
+
+        private void btHome_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            cmain = new frmClientMain();
+            cmain.Show();
+        }
+
+        private void tbSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bttOptions_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            oeu = new OtherEditUsuario();
+            oeu.Show();
         }
     }
 }

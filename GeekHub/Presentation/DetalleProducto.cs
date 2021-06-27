@@ -16,6 +16,8 @@ namespace GeekHub.Presentation
         private OtherEditUsuario oeu;
         private DetallesContacto.DetallesContacto dc;
         private frmLogin login;
+        private frmClientMain cmain;
+
         public DetalleProducto()
         {
             InitializeComponent();
@@ -50,6 +52,13 @@ namespace GeekHub.Presentation
         private void bt_SelProf_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btHome_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            cmain = new frmClientMain();
+            cmain.Show();
         }
     }
 }

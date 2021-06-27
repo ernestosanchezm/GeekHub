@@ -29,7 +29,6 @@ namespace GeekHub.Presentation
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bttLogOut = new System.Windows.Forms.Button();
@@ -51,20 +50,12 @@ namespace GeekHub.Presentation
             this.lbSeller = new System.Windows.Forms.Label();
             this.bt_SelProf = new System.Windows.Forms.Button();
             this.bt_contactos = new System.Windows.Forms.Button();
+            this.btHome = new System.Windows.Forms.Button();
+            this.tbSearch = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbProduct)).BeginInit();
             this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
-            this.textBox1.Location = new System.Drawing.Point(158, 27);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(896, 68);
-            this.textBox1.TabIndex = 4;
             // 
             // pictureBox1
             // 
@@ -83,7 +74,8 @@ namespace GeekHub.Presentation
             this.panel1.AllowDrop = true;
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.btHome);
+            this.panel1.Controls.Add(this.tbSearch);
             this.panel1.Controls.Add(this.bttLogOut);
             this.panel1.Controls.Add(this.bttOptions);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -310,6 +302,30 @@ namespace GeekHub.Presentation
             this.bt_contactos.UseVisualStyleBackColor = true;
             this.bt_contactos.Click += new System.EventHandler(this.bt_contactos_Click);
             // 
+            // btHome
+            // 
+            this.btHome.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btHome.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btHome.Font = new System.Drawing.Font("Quicksand", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btHome.Location = new System.Drawing.Point(874, 25);
+            this.btHome.Margin = new System.Windows.Forms.Padding(2);
+            this.btHome.Name = "btHome";
+            this.btHome.Size = new System.Drawing.Size(202, 69);
+            this.btHome.TabIndex = 7;
+            this.btHome.Text = "Inicio";
+            this.btHome.UseVisualStyleBackColor = true;
+            this.btHome.Click += new System.EventHandler(this.btHome_Click);
+            // 
+            // tbSearch
+            // 
+            this.tbSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
+            this.tbSearch.Location = new System.Drawing.Point(112, 26);
+            this.tbSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.tbSearch.Name = "tbSearch";
+            this.tbSearch.Size = new System.Drawing.Size(732, 68);
+            this.tbSearch.TabIndex = 6;
+            // 
             // DetalleProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -346,8 +362,6 @@ namespace GeekHub.Presentation
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button bttLogOut;
@@ -369,5 +383,7 @@ namespace GeekHub.Presentation
         private System.Windows.Forms.Label lbSeller;
         private System.Windows.Forms.Button bt_SelProf;
         private System.Windows.Forms.Button bt_contactos;
+        private System.Windows.Forms.Button btHome;
+        private System.Windows.Forms.TextBox tbSearch;
     }
 }

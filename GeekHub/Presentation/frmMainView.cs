@@ -18,6 +18,7 @@ namespace GeekHub.Presentation
         private PerfilUsuario perfil;
         private frmLogin login;
         private OtherEditUsuario oe;
+        private frmClientMain cmain;
 
         List<ListItem> listItems;
         public frmMainView()
@@ -86,6 +87,13 @@ namespace GeekHub.Presentation
             this.Hide();
             login = new frmLogin();
             login.Show();
+        }
+
+        private void btHome_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            cmain = new frmClientMain();
+            cmain.Show();
         }
     }
 }

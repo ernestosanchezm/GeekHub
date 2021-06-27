@@ -14,6 +14,8 @@ namespace GeekHub.Presentation
     {
         private EditarUsuario eu;
         private OtherEditUsuario oe;
+        private frmClientMain cmain;
+
         public PerfilUsuario()
         {
             InitializeComponent();
@@ -47,6 +49,13 @@ namespace GeekHub.Presentation
             this.Hide();
             oe = new OtherEditUsuario();
             oe.Show();
+        }
+
+        private void btHome_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            cmain = new frmClientMain();
+            cmain.Show();
         }
     }
 }

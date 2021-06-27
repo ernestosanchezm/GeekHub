@@ -31,11 +31,12 @@ namespace GeekHub.Presentation
         {
             this.flowLayoutPanelProducts = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bttOptions = new System.Windows.Forms.Button();
             this.bttLogOut = new System.Windows.Forms.Button();
+            this.btHome = new System.Windows.Forms.Button();
+            this.tbSearch = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -65,16 +66,6 @@ namespace GeekHub.Presentation
             this.label1.TabIndex = 3;
             this.label1.Text = "Products";
             // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
-            this.textBox1.Location = new System.Drawing.Point(169, 53);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(897, 68);
-            this.textBox1.TabIndex = 4;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -93,8 +84,9 @@ namespace GeekHub.Presentation
             this.panel1.AllowDrop = true;
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btHome);
+            this.panel1.Controls.Add(this.tbSearch);
             this.panel1.Controls.Add(this.bttOptions);
-            this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.bttLogOut);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(11, 11);
@@ -108,10 +100,10 @@ namespace GeekHub.Presentation
             this.bttOptions.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bttOptions.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.bttOptions.Font = new System.Drawing.Font("Quicksand", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttOptions.Location = new System.Drawing.Point(1113, 39);
+            this.bttOptions.Location = new System.Drawing.Point(1124, 54);
             this.bttOptions.Margin = new System.Windows.Forms.Padding(2);
             this.bttOptions.Name = "bttOptions";
-            this.bttOptions.Size = new System.Drawing.Size(202, 84);
+            this.bttOptions.Size = new System.Drawing.Size(202, 69);
             this.bttOptions.TabIndex = 2;
             this.bttOptions.Text = "Opciones";
             this.bttOptions.UseVisualStyleBackColor = true;
@@ -130,6 +122,30 @@ namespace GeekHub.Presentation
             this.bttLogOut.Text = "Cerrar sesion";
             this.bttLogOut.UseVisualStyleBackColor = true;
             this.bttLogOut.Click += new System.EventHandler(this.bttLogOut_Click);
+            // 
+            // btHome
+            // 
+            this.btHome.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btHome.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btHome.Font = new System.Drawing.Font("Quicksand", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btHome.Location = new System.Drawing.Point(907, 54);
+            this.btHome.Margin = new System.Windows.Forms.Padding(2);
+            this.btHome.Name = "btHome";
+            this.btHome.Size = new System.Drawing.Size(202, 69);
+            this.btHome.TabIndex = 9;
+            this.btHome.Text = "Inicio";
+            this.btHome.UseVisualStyleBackColor = true;
+            this.btHome.Click += new System.EventHandler(this.btHome_Click);
+            // 
+            // tbSearch
+            // 
+            this.tbSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
+            this.tbSearch.Location = new System.Drawing.Point(149, 55);
+            this.tbSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.tbSearch.Name = "tbSearch";
+            this.tbSearch.Size = new System.Drawing.Size(732, 68);
+            this.tbSearch.TabIndex = 8;
             // 
             // frmMainView
             // 
@@ -157,10 +173,11 @@ namespace GeekHub.Presentation
         #endregion
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelProducts;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button bttOptions;
         private System.Windows.Forms.Button bttLogOut;
+        private System.Windows.Forms.Button btHome;
+        private System.Windows.Forms.TextBox tbSearch;
     }
 }
