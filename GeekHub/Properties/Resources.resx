@@ -115,6 +115,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <data name="Animes fisicos" xml:space="preserve">
     <value />
   </data>
@@ -188,6 +189,8 @@
   <data name="Webtoons_Fisicos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Webtoons Fisicos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+=======
+>>>>>>> parent of fc9258e (Primer avance)
 =======
 >>>>>>> parent of fc9258e (Primer avance)
 </root>

@@ -67,6 +67,7 @@ namespace GeekHub.Properties
             }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         
         /// <summary>
         ///   Busca una cadena traducida similar a .
@@ -238,6 +239,8 @@ namespace GeekHub.Properties
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+=======
+>>>>>>> parent of fc9258e (Primer avance)
 =======
 >>>>>>> parent of fc9258e (Primer avance)
     }

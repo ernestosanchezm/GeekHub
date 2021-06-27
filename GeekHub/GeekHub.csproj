@@ -60,6 +60,7 @@
       <DependentUpon>ViewCategory.cs</DependentUpon>
     </Compile>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="ViewProductsDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +109,10 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
 >>>>>>> parent of fc9258e (Primer avance)
+=======
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+>>>>>>> parent of fc9258e (Primer avance)
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -130,6 +135,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <ItemGroup>
     <None Include="Resources\ropa.jpg" />
@@ -170,6 +176,8 @@
   <ItemGroup>
     <None Include="Resources\user.png" />
   </ItemGroup>
+=======
+>>>>>>> parent of fc9258e (Primer avance)
 =======
 >>>>>>> parent of fc9258e (Primer avance)
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
