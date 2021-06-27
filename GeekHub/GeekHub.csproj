@@ -254,7 +254,10 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Files\Logos\contacto.png" />
     <Content Include="Files\Logos\facebook.png" />
+    <Content Include="Files\Logos\instagram.png" />
+    <Content Include="Files\Logos\telegram.png" />
     <Content Include="Files\Logos\wsplogo.png" />
     <None Include="Resources\btn.png" />
   </ItemGroup>
