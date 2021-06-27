@@ -214,6 +214,9 @@
     <EmbeddedResource Include="Presentation\LoginSellers.resx">
       <DependentUpon>LoginSellers.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\OtherEditSeller.resx">
+      <DependentUpon>OtherEditSeller.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\PerfilUsuario.resx">
       <DependentUpon>PerfilUsuario.cs</DependentUpon>
     </EmbeddedResource>

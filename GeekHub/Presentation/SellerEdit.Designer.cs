@@ -147,11 +147,11 @@ namespace GeekHub.Presentation
             // 
             this.btnOther.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnOther.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
-            this.btnOther.Location = new System.Drawing.Point(271, 499);
+            this.btnOther.Location = new System.Drawing.Point(281, 501);
             this.btnOther.Name = "btnOther";
-            this.btnOther.Size = new System.Drawing.Size(188, 83);
+            this.btnOther.Size = new System.Drawing.Size(195, 88);
             this.btnOther.TabIndex = 49;
-            this.btnOther.Text = "Otros Datos";
+            this.btnOther.Text = "Metodos de Contacto";
             this.btnOther.UseVisualStyleBackColor = true;
             this.btnOther.Click += new System.EventHandler(this.button1_Click);
             // 

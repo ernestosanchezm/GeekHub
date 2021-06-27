@@ -14,7 +14,11 @@ namespace GeekHub.Presentation
     {
         public SellerEdit()
         {
+
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.ControlBox = false;
+            this.Text = String.Empty;
         }
 
         private void label2_Click(object sender, EventArgs e)

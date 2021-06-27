@@ -21,6 +21,7 @@ namespace GeekHub.Presentation
             this.Text = String.Empty;
             panel2.BackColor = Color.FromArgb(50, Color.White);
 
+
         }
 
 
