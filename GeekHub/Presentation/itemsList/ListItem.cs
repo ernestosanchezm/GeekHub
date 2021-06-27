@@ -14,6 +14,9 @@ namespace GeekHub.Presentation.itemsList
     {
         public ListItem()
         {
+            panel1.BackColor= Color.FromArgb(153, 153, 255);
+            lblNameProduct.BackColor = Color.FromArgb(153, 153, 255);
+
             InitializeComponent();
         }
         #region Properties

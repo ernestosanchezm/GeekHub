@@ -14,6 +14,9 @@ namespace GeekHub.Presentation
 {
     public partial class frmViewProductsDetail : Form
     {
+        private PerfilUsuario perfil;
+        private frmLogin login;
+
         List<ListItemProductDetail> listProductsDetail;
         List<RadioButton> listFilterCategories;
         List<string> categories;
@@ -104,6 +107,22 @@ namespace GeekHub.Presentation
         private void lblFiltros_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+           perfil = new PerfilUsuario();
+           perfil.Show();
+           this.Hide();
+
+        }
+
+        private void bttLogOut_Click(object sender, EventArgs e)
+        {
+            //Logica de Logout
+            login = new frmLogin();
+            login.Show();
+            this.Hide();
         }
     }
 }
