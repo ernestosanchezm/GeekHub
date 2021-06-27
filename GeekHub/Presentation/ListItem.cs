@@ -41,5 +41,10 @@ namespace GeekHub
             set { _imageProduct= value; pictureBox1.Image = value; }
         }
         #endregion
+
+        private void ListItem_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

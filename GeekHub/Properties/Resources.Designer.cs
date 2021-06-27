@@ -57,10 +57,7 @@ namespace GeekHub.Properties {
             }
             set {
                 resourceCulture = value;
-            }
-            set {
-                resourceCulture = value;
-            }
+            }          
         }
 
         /// <summary>
@@ -196,16 +193,7 @@ namespace GeekHub.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a .
-        /// </summary>
-        internal static string Animes_fisicos {
-            get {
-                return ResourceManager.GetString("Animes fisicos", resourceCulture);
-            }
-        }
-        
+    
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
@@ -216,14 +204,7 @@ namespace GeekHub.Properties {
             }
         }
         
-        /// <summary>
-        ///   Busca una cadena traducida similar a .
-        /// </summary>
-        internal static string comics {
-            get {
-                return ResourceManager.GetString("comics", resourceCulture);
-            }
-        }
+    
         
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -235,15 +216,7 @@ namespace GeekHub.Properties {
             }
         }
         
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Discos_KPopo {
-            get {
-                object obj = ResourceManager.GetObject("Discos_KPopo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
+
         
         /// <summary>
         ///   Busca una cadena traducida similar a .
@@ -254,14 +227,7 @@ namespace GeekHub.Properties {
             }
         }
         
-        /// <summary>
-        ///   Busca una cadena traducida similar a .
-        /// </summary>
-        internal static string figuras {
-            get {
-                return ResourceManager.GetString("figuras", resourceCulture);
-            }
-        }
+
         
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -273,15 +239,7 @@ namespace GeekHub.Properties {
             }
         }
         
-        /// <summary>
-        ///   Busca una cadena traducida similar a .
-        /// </summary>
-        internal static string fundas {
-            get {
-                return ResourceManager.GetString("fundas", resourceCulture);
-            }
-        }
-        
+ 
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
@@ -292,14 +250,7 @@ namespace GeekHub.Properties {
             }
         }
         
-        /// <summary>
-        ///   Busca una cadena traducida similar a .
-        /// </summary>
-        internal static string Lighstick {
-            get {
-                return ResourceManager.GetString("Lighstick", resourceCulture);
-            }
-        }
+ 
         
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -311,14 +262,7 @@ namespace GeekHub.Properties {
             }
         }
         
-        /// <summary>
-        ///   Busca una cadena traducida similar a .
-        /// </summary>
-        internal static string manga {
-            get {
-                return ResourceManager.GetString("manga", resourceCulture);
-            }
-        }
+
         
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -330,14 +274,7 @@ namespace GeekHub.Properties {
             }
         }
         
-        /// <summary>
-        ///   Busca una cadena traducida similar a .
-        /// </summary>
-        internal static string ropa {
-            get {
-                return ResourceManager.GetString("ropa", resourceCulture);
-            }
-        }
+ 
         
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -348,15 +285,7 @@ namespace GeekHub.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a .
-        /// </summary>
-        internal static string user {
-            get {
-                return ResourceManager.GetString("user", resourceCulture);
-            }
-        }
+
         
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
