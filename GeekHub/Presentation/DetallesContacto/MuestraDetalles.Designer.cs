@@ -1,7 +1,7 @@
 ﻿
 namespace GeekHub
 {
-    partial class Form1
+    partial class DetallesContacto
     {
         /// <summary>
         /// Required designer variable.

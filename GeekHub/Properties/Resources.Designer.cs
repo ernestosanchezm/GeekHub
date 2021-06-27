@@ -173,9 +173,15 @@ namespace GeekHub.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Webtoons_Fisicos {
-            get {
+        internal static System.Drawing.Bitmap Webtoons_Fisicos
+        {
+            get
+            {
                 object obj = ResourceManager.GetObject("Webtoons_Fisicos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+
+            }
+        }
 
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
