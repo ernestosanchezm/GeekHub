@@ -43,9 +43,10 @@ namespace GeekHub.Presentation
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 96);
+            this.label1.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(21, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 17);
+            this.label1.Size = new System.Drawing.Size(119, 30);
             this.label1.TabIndex = 6;
             this.label1.Text = "Categories";
             // 
@@ -57,23 +58,25 @@ namespace GeekHub.Presentation
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(14, 13);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(776, 80);
+            this.panel1.Size = new System.Drawing.Size(1556, 80);
             this.panel1.TabIndex = 5;
             // 
             // bttLogOut
             // 
-            this.bttLogOut.Location = new System.Drawing.Point(619, 23);
+            this.bttLogOut.Font = new System.Drawing.Font("Quicksand", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttLogOut.Location = new System.Drawing.Point(1399, 14);
             this.bttLogOut.Name = "bttLogOut";
-            this.bttLogOut.Size = new System.Drawing.Size(141, 23);
+            this.bttLogOut.Size = new System.Drawing.Size(146, 39);
             this.bttLogOut.TabIndex = 3;
             this.bttLogOut.Text = "Cerrar sesion";
             this.bttLogOut.UseVisualStyleBackColor = true;
             // 
             // bttOptions
             // 
-            this.bttOptions.Location = new System.Drawing.Point(531, 23);
+            this.bttOptions.Font = new System.Drawing.Font("Quicksand", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttOptions.Location = new System.Drawing.Point(1290, 14);
             this.bttOptions.Name = "bttOptions";
-            this.bttOptions.Size = new System.Drawing.Size(82, 23);
+            this.bttOptions.Size = new System.Drawing.Size(88, 39);
             this.bttOptions.TabIndex = 2;
             this.bttOptions.Text = "Opciones";
             this.bttOptions.UseVisualStyleBackColor = true;
@@ -82,7 +85,7 @@ namespace GeekHub.Presentation
             // 
             this.textBox1.Location = new System.Drawing.Point(93, 23);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(401, 22);
+            this.textBox1.Size = new System.Drawing.Size(1152, 22);
             this.textBox1.TabIndex = 1;
             // 
             // pictureBox1
@@ -100,14 +103,14 @@ namespace GeekHub.Presentation
             this.flowLayoutPanelCateg.AutoScroll = true;
             this.flowLayoutPanelCateg.Location = new System.Drawing.Point(14, 132);
             this.flowLayoutPanelCateg.Name = "flowLayoutPanelCateg";
-            this.flowLayoutPanelCateg.Size = new System.Drawing.Size(776, 306);
+            this.flowLayoutPanelCateg.Size = new System.Drawing.Size(1500, 830);
             this.flowLayoutPanelCateg.TabIndex = 4;
             // 
             // frmViewCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1582, 853);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flowLayoutPanelCateg);
