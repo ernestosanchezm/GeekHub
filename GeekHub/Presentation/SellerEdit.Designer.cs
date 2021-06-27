@@ -124,7 +124,7 @@ namespace GeekHub.Presentation
             // btnsave
             // 
             this.btnsave.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
-            this.btnsave.Location = new System.Drawing.Point(40, 415);
+            this.btnsave.Location = new System.Drawing.Point(54, 424);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(181, 79);
             this.btnsave.TabIndex = 47;
@@ -173,6 +173,7 @@ namespace GeekHub.Presentation
             this.Name = "SellerEdit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SellerEdit";
+            this.Load += new System.EventHandler(this.SellerEdit_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

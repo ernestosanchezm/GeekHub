@@ -130,7 +130,7 @@ namespace GeekHub.Presentation
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Location = new System.Drawing.Point(386, 270);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(350, 58);
+            this.checkedListBox1.Size = new System.Drawing.Size(350, 49);
             this.checkedListBox1.TabIndex = 53;
             // 
             // lblDoc
@@ -206,6 +206,7 @@ namespace GeekHub.Presentation
             this.Controls.Add(this.lblReg);
             this.Name = "OtherEditSeller";
             this.Text = "OtherEditSeller";
+            this.Load += new System.EventHandler(this.OtherEditSeller_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

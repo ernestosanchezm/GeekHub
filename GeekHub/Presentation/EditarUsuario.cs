@@ -10,43 +10,31 @@ using System.Windows.Forms;
 
 namespace GeekHub.Presentation
 {
-    public partial class SellerEdit : Form
+    public partial class EditarUsuario : Form
     {
-        public SellerEdit()
-        {
+        private frmClientMain main;
 
+        public EditarUsuario()
+        {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
             this.ControlBox = false;
             this.Text = String.Empty;
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-            
-            this.Hide();
-
-        }
-
         private void btnsave_Click(object sender, EventArgs e)
         {
-
+            //Logica del save
+            this.Hide();
+            main = new frmClientMain();
+            main.Show();
         }
 
-        private void SellerEdit_Load(object sender, EventArgs e)
+        private void btncancel_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            main = new frmClientMain();
+            main.Show();
         }
     }
 }

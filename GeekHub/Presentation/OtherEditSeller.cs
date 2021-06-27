@@ -19,7 +19,12 @@ namespace GeekHub.Presentation
 
         public OtherEditSeller()
         {
+
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.ControlBox = false;
+            this.Text = String.Empty;
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -51,6 +56,11 @@ namespace GeekHub.Presentation
             this.Hide();
             smain = new frmSellerMain();
             smain.Show();
+        }
+
+        private void OtherEditSeller_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

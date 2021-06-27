@@ -71,6 +71,12 @@
     <Compile Include="Presentation\DetallesContacto\SellerMain.Designer.cs">
       <DependentUpon>SellerMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\EditarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\EditarUsuario.Designer.cs">
+      <DependentUpon>EditarUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\fmrRegister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\DetallesContacto\SellerMain.resx">
       <DependentUpon>SellerMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\EditarUsuario.resx">
+      <DependentUpon>EditarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\fmrRegister.resx">
       <DependentUpon>fmrRegister.cs</DependentUpon>
