@@ -12,11 +12,13 @@ namespace GeekHub.Presentation.itemsList
 {
     public partial class ListItem : UserControl
     {
-        public ListItem()
+        public ListItem(string nameProduct, string categoryProduct,string imageProduct )
         {
             panel1.BackColor= Color.FromArgb(153, 153, 255);
             lblNameProduct.BackColor = Color.FromArgb(153, 153, 255);
-
+            this._nameProduct = nameProduct;
+            this._categoryProduct = categoryProduct;
+            productImage.ImageLocation = imageProduct;
             InitializeComponent();
         }
         #region Properties
@@ -41,7 +43,7 @@ namespace GeekHub.Presentation.itemsList
         public Image ImageProduct
         {
             get { return _imageProduct; }
-            set { _imageProduct = value; pictureBox1.Image = value; }
+            set { _imageProduct = value; productImage.Image = value; }
         }
         #endregion
 

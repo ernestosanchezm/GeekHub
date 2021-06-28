@@ -12,10 +12,15 @@ namespace GeekHub.Presentation.itemsList
 {
     public partial class ListItemProductDetail : UserControl
     {
-        public ListItemProductDetail()
-        {            
-            InitializeComponent();
+        public ListItemProductDetail(string nameProduct, string categoryProduct,string priceProduct, string imageLocation)
+        {
             lblNameProduct.BackColor = Color.FromArgb(153, 153, 255);
+            InitializeComponent();
+            this._categoryProduct = categoryProduct;
+            this._nameProduct = nameProduct;
+            this._priceProduct = priceProduct;
+            productImage.ImageLocation = imageLocation;
+
         }
         public int ProductoId { get; set; }
         public int CategoryId { get; set; }
@@ -51,7 +56,7 @@ namespace GeekHub.Presentation.itemsList
         public Image ImageProduct
         {
             get { return _imageProduct; }
-            set { _imageProduct = value; pictureBox1.Image = value; }
+            set { _imageProduct = value; productImage.Image = value; }
         }
         #endregion
     }

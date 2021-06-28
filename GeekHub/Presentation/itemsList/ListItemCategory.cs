@@ -13,9 +13,11 @@ namespace GeekHub.Presentation.itemsList
 {
     public partial class ListItemCategory : UserControl
     {
-        public ListItemCategory()
+        public ListItemCategory(string nameCategory, string imageCategory)
         {
             InitializeComponent();
+            this._nameCategory = nameCategory;
+            categoryImage.ImageLocation = imageCategory;
         }
         List<ListItemProductDetail> listProduct;
 
@@ -34,7 +36,7 @@ namespace GeekHub.Presentation.itemsList
         public Image ImageCategory
         {
             get { return _imageCategory; }
-            set { _imageCategory = value; pictureBox1.Image = value; }
+            set { _imageCategory = value; categoryImage.Image = value; }
         }
 
         #endregion

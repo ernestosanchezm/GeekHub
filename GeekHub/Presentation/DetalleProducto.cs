@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using GeekHub.Presentation.DetallesContacto;
+using GeekHub.Presentation.itemsList;
 
 namespace GeekHub.Presentation
 {
@@ -17,6 +18,7 @@ namespace GeekHub.Presentation
         private DetallesContacto.DetallesContacto dc;
         private frmLogin login;
         private frmClientMain cmain;
+        private ListItemProductDetail product;
 
         public DetalleProducto()
         {
