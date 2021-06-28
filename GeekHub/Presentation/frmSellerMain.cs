@@ -23,6 +23,7 @@ namespace GeekHub.Presentation
         {
             InitializeComponent();
             cargarMetodos();
+            this.BackColor = Color.FromArgb(153, 153, 255);
 
         }
 

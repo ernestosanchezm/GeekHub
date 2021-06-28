@@ -37,10 +37,10 @@ namespace GeekHub.Presentation
             this.lblFiltros = new System.Windows.Forms.Label();
             this.bttLogOut = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bttOptions = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btHome = new System.Windows.Forms.Button();
             this.tbSearch = new System.Windows.Forms.TextBox();
+            this.bttOptions = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -49,6 +49,7 @@ namespace GeekHub.Presentation
             // 
             this.flowLayoutPanelProduct.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.flowLayoutPanelProduct.AutoScroll = true;
+            this.flowLayoutPanelProduct.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanelProduct.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanelProduct.Location = new System.Drawing.Point(6, 170);
             this.flowLayoutPanelProduct.Name = "flowLayoutPanelProduct";
@@ -83,6 +84,7 @@ namespace GeekHub.Presentation
             // 
             this.flowLayoutPanelOrden.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.flowLayoutPanelOrden.AutoScroll = true;
+            this.flowLayoutPanelOrden.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanelOrden.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanelOrden.Location = new System.Drawing.Point(1377, 170);
             this.flowLayoutPanelOrden.Name = "flowLayoutPanelOrden";
@@ -93,6 +95,7 @@ namespace GeekHub.Presentation
             // 
             this.flowLayoutFiltrosCategory.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.flowLayoutFiltrosCategory.AutoScroll = true;
+            this.flowLayoutFiltrosCategory.BackColor = System.Drawing.Color.White;
             this.flowLayoutFiltrosCategory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutFiltrosCategory.Location = new System.Drawing.Point(1376, 345);
             this.flowLayoutFiltrosCategory.Name = "flowLayoutFiltrosCategory";
@@ -106,9 +109,9 @@ namespace GeekHub.Presentation
             this.lblFiltros.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.lblFiltros.Location = new System.Drawing.Point(1426, 136);
             this.lblFiltros.Name = "lblFiltros";
-            this.lblFiltros.Size = new System.Drawing.Size(96, 31);
+            this.lblFiltros.Size = new System.Drawing.Size(94, 31);
             this.lblFiltros.TabIndex = 14;
-            this.lblFiltros.Text = "Filtros";
+            this.lblFiltros.Text = "Orden";
             this.lblFiltros.Click += new System.EventHandler(this.lblFiltros_Click);
             // 
             // bttLogOut
@@ -129,6 +132,7 @@ namespace GeekHub.Presentation
             // 
             this.panel1.AllowDrop = true;
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btHome);
             this.panel1.Controls.Add(this.tbSearch);
@@ -140,6 +144,31 @@ namespace GeekHub.Presentation
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1562, 123);
             this.panel1.TabIndex = 19;
+            // 
+            // btHome
+            // 
+            this.btHome.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btHome.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btHome.Font = new System.Drawing.Font("Quicksand", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btHome.Location = new System.Drawing.Point(870, 26);
+            this.btHome.Margin = new System.Windows.Forms.Padding(2);
+            this.btHome.Name = "btHome";
+            this.btHome.Size = new System.Drawing.Size(202, 69);
+            this.btHome.TabIndex = 11;
+            this.btHome.Text = "Inicio";
+            this.btHome.UseVisualStyleBackColor = true;
+            this.btHome.Click += new System.EventHandler(this.btHome_Click);
+            // 
+            // tbSearch
+            // 
+            this.tbSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
+            this.tbSearch.Location = new System.Drawing.Point(112, 27);
+            this.tbSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.tbSearch.Name = "tbSearch";
+            this.tbSearch.Size = new System.Drawing.Size(732, 68);
+            this.tbSearch.TabIndex = 10;
+            this.tbSearch.TextChanged += new System.EventHandler(this.tbSearch_TextChanged);
             // 
             // bttOptions
             // 
@@ -167,31 +196,6 @@ namespace GeekHub.Presentation
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // btHome
-            // 
-            this.btHome.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btHome.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btHome.Font = new System.Drawing.Font("Quicksand", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btHome.Location = new System.Drawing.Point(870, 26);
-            this.btHome.Margin = new System.Windows.Forms.Padding(2);
-            this.btHome.Name = "btHome";
-            this.btHome.Size = new System.Drawing.Size(202, 69);
-            this.btHome.TabIndex = 11;
-            this.btHome.Text = "Inicio";
-            this.btHome.UseVisualStyleBackColor = true;
-            this.btHome.Click += new System.EventHandler(this.btHome_Click);
-            // 
-            // tbSearch
-            // 
-            this.tbSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
-            this.tbSearch.Location = new System.Drawing.Point(112, 27);
-            this.tbSearch.Margin = new System.Windows.Forms.Padding(2);
-            this.tbSearch.Name = "tbSearch";
-            this.tbSearch.Size = new System.Drawing.Size(732, 68);
-            this.tbSearch.TabIndex = 10;
-            this.tbSearch.TextChanged += new System.EventHandler(this.tbSearch_TextChanged);
             // 
             // frmViewProductsDetail
             // 

@@ -31,6 +31,8 @@ namespace GeekHub.Presentation
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btHome = new System.Windows.Forms.Button();
+            this.tbSearch = new System.Windows.Forms.TextBox();
             this.bttLogOut = new System.Windows.Forms.Button();
             this.bttOptions = new System.Windows.Forms.Button();
             this.pbProduct = new System.Windows.Forms.PictureBox();
@@ -50,8 +52,6 @@ namespace GeekHub.Presentation
             this.lbSeller = new System.Windows.Forms.Label();
             this.bt_SelProf = new System.Windows.Forms.Button();
             this.bt_contactos = new System.Windows.Forms.Button();
-            this.btHome = new System.Windows.Forms.Button();
-            this.tbSearch = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbProduct)).BeginInit();
@@ -84,6 +84,30 @@ namespace GeekHub.Presentation
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1562, 123);
             this.panel1.TabIndex = 21;
+            // 
+            // btHome
+            // 
+            this.btHome.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btHome.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btHome.Font = new System.Drawing.Font("Quicksand", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btHome.Location = new System.Drawing.Point(874, 25);
+            this.btHome.Margin = new System.Windows.Forms.Padding(2);
+            this.btHome.Name = "btHome";
+            this.btHome.Size = new System.Drawing.Size(202, 69);
+            this.btHome.TabIndex = 7;
+            this.btHome.Text = "Inicio";
+            this.btHome.UseVisualStyleBackColor = true;
+            this.btHome.Click += new System.EventHandler(this.btHome_Click);
+            // 
+            // tbSearch
+            // 
+            this.tbSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
+            this.tbSearch.Location = new System.Drawing.Point(112, 26);
+            this.tbSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.tbSearch.Name = "tbSearch";
+            this.tbSearch.Size = new System.Drawing.Size(732, 68);
+            this.tbSearch.TabIndex = 6;
             // 
             // bttLogOut
             // 
@@ -302,30 +326,6 @@ namespace GeekHub.Presentation
             this.bt_contactos.UseVisualStyleBackColor = true;
             this.bt_contactos.Click += new System.EventHandler(this.bt_contactos_Click);
             // 
-            // btHome
-            // 
-            this.btHome.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btHome.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btHome.Font = new System.Drawing.Font("Quicksand", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btHome.Location = new System.Drawing.Point(874, 25);
-            this.btHome.Margin = new System.Windows.Forms.Padding(2);
-            this.btHome.Name = "btHome";
-            this.btHome.Size = new System.Drawing.Size(202, 69);
-            this.btHome.TabIndex = 7;
-            this.btHome.Text = "Inicio";
-            this.btHome.UseVisualStyleBackColor = true;
-            this.btHome.Click += new System.EventHandler(this.btHome_Click);
-            // 
-            // tbSearch
-            // 
-            this.tbSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
-            this.tbSearch.Location = new System.Drawing.Point(112, 26);
-            this.tbSearch.Margin = new System.Windows.Forms.Padding(2);
-            this.tbSearch.Name = "tbSearch";
-            this.tbSearch.Size = new System.Drawing.Size(732, 68);
-            this.tbSearch.TabIndex = 6;
-            // 
             // DetalleProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -352,6 +352,7 @@ namespace GeekHub.Presentation
             this.Name = "DetalleProducto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DetalleProducto";
+            this.Load += new System.EventHandler(this.DetalleProducto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

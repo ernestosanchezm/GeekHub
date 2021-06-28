@@ -14,12 +14,13 @@ namespace GeekHub.Presentation.itemsList
     {
         public ListItem(string nameProduct, string categoryProduct,string imageProduct )
         {
-            panel1.BackColor= Color.FromArgb(153, 153, 255);
+
+            InitializeComponent();
+            panel1.BackColor = Color.FromArgb(153, 153, 255);
             lblNameProduct.BackColor = Color.FromArgb(153, 153, 255);
             this._nameProduct = nameProduct;
             this._categoryProduct = categoryProduct;
             productImage.ImageLocation = imageProduct;
-            InitializeComponent();
         }
         #region Properties
         private string _nameProduct;

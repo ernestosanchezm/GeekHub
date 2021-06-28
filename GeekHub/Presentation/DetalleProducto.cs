@@ -62,5 +62,10 @@ namespace GeekHub.Presentation
             cmain = new frmClientMain();
             cmain.Show();
         }
+
+        private void DetalleProducto_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

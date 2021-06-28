@@ -24,6 +24,8 @@ namespace GeekHub.Presentation
             this.FormBorderStyle = FormBorderStyle.None;
             this.ControlBox = false;
             this.Text = String.Empty;
+            this.BackColor = Color.FromArgb(153, 153, 255);
+
 
         }
 
@@ -37,6 +39,7 @@ namespace GeekHub.Presentation
         {
             bool condition = true;
             this.Close();
+            
             //si se modifico correo y/o password
             if (condition)
             {
@@ -59,6 +62,11 @@ namespace GeekHub.Presentation
         }
 
         private void OtherEditSeller_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblReg_Click(object sender, EventArgs e)
         {
 
         }

@@ -18,6 +18,11 @@ namespace GeekHub.Presentation
         public OtherEditUsuario()
         {
             InitializeComponent();
+            InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.BackColor = Color.FromArgb(153, 153, 255);
+            this.ControlBox = false;
+            this.Text = String.Empty;
         }
 
         private void btncancel_Click(object sender, EventArgs e)
@@ -33,6 +38,11 @@ namespace GeekHub.Presentation
             this.Hide();
             login = new frmLogin();
             login.Show();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

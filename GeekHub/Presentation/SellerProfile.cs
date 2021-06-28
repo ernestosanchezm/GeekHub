@@ -19,6 +19,10 @@ namespace GeekHub.Presentation
         public SellerProfile()
         {
             InitializeComponent();
+            this.BackColor = Color.FromArgb(153, 153, 255);
+            lblName.ForeColor = Color.FromArgb(61, 61, 61);
+            lblApell.ForeColor = Color.FromArgb(61, 61, 61);
+            label1.ForeColor = Color.FromArgb(61, 61, 61);
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -45,6 +49,16 @@ namespace GeekHub.Presentation
             this.Hide();
             other = new OtherEditSeller();
             other.Show();
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SellerProfile_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

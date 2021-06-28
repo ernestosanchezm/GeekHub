@@ -28,6 +28,11 @@ namespace GeekHub.Presentation
             InitializeComponent();
             instanceListItems();
             instanceListFilterCategory();
+            this.BackColor = Color.FromArgb(153, 153, 255);
+            this.label1.ForeColor = Color.FromArgb(61, 61, 61);
+            this.lblFilterCategory.ForeColor = Color.FromArgb(61, 61, 61);
+            this.lblFiltros.ForeColor = Color.FromArgb(61, 61, 61);
+
         }
 
         private void instanceListItems()

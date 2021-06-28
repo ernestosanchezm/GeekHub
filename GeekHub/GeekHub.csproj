@@ -300,6 +300,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\botones.png" />
     <None Include="Resources\comics.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -308,6 +309,8 @@
   <ItemGroup>
     <Content Include="Resources\edit.png" />
     <None Include="Resources\portada.jpg" />
+    <None Include="Resources\fondo.png" />
+    <None Include="Resources\lkl.png" />
     <Content Include="Resources\portadaRegister.png" />
     <None Include="Connected Services\GeekHubWS\GeekHubWS.disco" />
     <None Include="Connected Services\GeekHubWS\configuration91.svcinfo" />

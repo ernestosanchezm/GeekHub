@@ -31,13 +31,15 @@ namespace GeekHub.Presentation
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tbCorreo = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblName = new System.Windows.Forms.Label();
-            this.lblReg = new System.Windows.Forms.Label();
-            this.lbDni = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.btnsave = new System.Windows.Forms.Button();
             this.btncancel = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblName = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lbDni = new System.Windows.Forms.Label();
+            this.lblReg = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
@@ -62,63 +64,6 @@ namespace GeekHub.Presentation
             this.tbCorreo.Size = new System.Drawing.Size(350, 32);
             this.tbCorreo.TabIndex = 49;
             // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(63, 202);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(219, 58);
-            this.label1.TabIndex = 48;
-            this.label1.Text = "APELLIDO:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblName
-            // 
-            this.lblName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblName.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
-            this.lblName.Location = new System.Drawing.Point(63, 136);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(219, 58);
-            this.lblName.TabIndex = 47;
-            this.lblName.Text = "NOMBRE:";
-            this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblReg
-            // 
-            this.lblReg.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblReg.AutoSize = true;
-            this.lblReg.BackColor = System.Drawing.Color.Transparent;
-            this.lblReg.Font = new System.Drawing.Font("Quicksand", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReg.ForeColor = System.Drawing.Color.Black;
-            this.lblReg.Location = new System.Drawing.Point(212, 27);
-            this.lblReg.Name = "lblReg";
-            this.lblReg.Size = new System.Drawing.Size(265, 59);
-            this.lblReg.TabIndex = 46;
-            this.lblReg.Text = "Editar Datos";
-            // 
-            // lbDni
-            // 
-            this.lbDni.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbDni.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
-            this.lbDni.Location = new System.Drawing.Point(196, 291);
-            this.lbDni.Name = "lbDni";
-            this.lbDni.Size = new System.Drawing.Size(86, 58);
-            this.lbDni.TabIndex = 51;
-            this.lbDni.Text = "DNI:";
-            this.lbDni.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.Font = new System.Drawing.Font("Quicksand", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Black;
-            this.textBox2.Location = new System.Drawing.Point(341, 305);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(350, 32);
-            this.textBox2.TabIndex = 52;
-            // 
             // btnsave
             // 
             this.btnsave.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
@@ -141,6 +86,81 @@ namespace GeekHub.Presentation
             this.btncancel.UseVisualStyleBackColor = true;
             this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = global::GeekHub.Properties.Resources.lkl;
+            this.panel1.Controls.Add(this.lblName);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.lbDni);
+            this.panel1.Controls.Add(this.lblReg);
+            this.panel1.Location = new System.Drawing.Point(94, 33);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(643, 491);
+            this.panel1.TabIndex = 55;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // lblName
+            // 
+            this.lblName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblName.BackColor = System.Drawing.Color.Transparent;
+            this.lblName.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
+            this.lblName.Location = new System.Drawing.Point(3, 103);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(219, 58);
+            this.lblName.TabIndex = 47;
+            this.lblName.Text = "NOMBRE:";
+            this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(22, 169);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(219, 58);
+            this.label1.TabIndex = 48;
+            this.label1.Text = "APELLIDO:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox2.BackColor = System.Drawing.Color.White;
+            this.textBox2.Font = new System.Drawing.Font("Quicksand", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.Black;
+            this.textBox2.Location = new System.Drawing.Point(247, 272);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(350, 32);
+            this.textBox2.TabIndex = 52;
+            // 
+            // lbDni
+            // 
+            this.lbDni.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbDni.BackColor = System.Drawing.Color.Transparent;
+            this.lbDni.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
+            this.lbDni.Location = new System.Drawing.Point(126, 258);
+            this.lbDni.Name = "lbDni";
+            this.lbDni.Size = new System.Drawing.Size(86, 58);
+            this.lbDni.TabIndex = 51;
+            this.lbDni.Text = "DNI:";
+            this.lbDni.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblReg
+            // 
+            this.lblReg.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblReg.AutoSize = true;
+            this.lblReg.BackColor = System.Drawing.Color.Transparent;
+            this.lblReg.Font = new System.Drawing.Font("Quicksand", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReg.ForeColor = System.Drawing.Color.Black;
+            this.lblReg.Location = new System.Drawing.Point(190, 28);
+            this.lblReg.Name = "lblReg";
+            this.lblReg.Size = new System.Drawing.Size(265, 59);
+            this.lblReg.TabIndex = 46;
+            this.lblReg.Text = "Editar Datos";
+            // 
             // EditarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -148,16 +168,15 @@ namespace GeekHub.Presentation
             this.ClientSize = new System.Drawing.Size(794, 621);
             this.Controls.Add(this.btncancel);
             this.Controls.Add(this.btnsave);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.lbDni);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.tbCorreo);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblName);
-            this.Controls.Add(this.lblReg);
+            this.Controls.Add(this.panel1);
             this.Name = "EditarUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditarUsuario";
+            this.Load += new System.EventHandler(this.EditarUsuario_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,5 +193,6 @@ namespace GeekHub.Presentation
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.Button btncancel;
+        private System.Windows.Forms.Panel panel1;
     }
 }

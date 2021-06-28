@@ -19,6 +19,10 @@ namespace GeekHub.Presentation
         public PerfilUsuario()
         {
             InitializeComponent();
+            this.BackColor = Color.FromArgb(153, 153, 255);
+            this.lblName.ForeColor = Color.FromArgb(61, 61, 61);
+            this.lblApell.ForeColor = Color.FromArgb(61, 61, 61);
+
         }
 
         private void label1_Click(object sender, EventArgs e)

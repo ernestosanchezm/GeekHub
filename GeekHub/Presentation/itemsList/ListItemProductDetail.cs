@@ -14,8 +14,9 @@ namespace GeekHub.Presentation.itemsList
     {
         public ListItemProductDetail(string nameProduct, string categoryProduct,string priceProduct, string imageLocation)
         {
-            lblNameProduct.BackColor = Color.FromArgb(153, 153, 255);
             InitializeComponent();
+            lblNameProduct.BackColor = Color.FromArgb(153, 153, 255);
+
             this._categoryProduct = categoryProduct;
             this._nameProduct = nameProduct;
             this._priceProduct = priceProduct;

@@ -18,8 +18,10 @@ namespace GeekHub.Presentation
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
+            this.BackColor = Color.FromArgb(153, 153, 255);
             this.ControlBox = false;
             this.Text = String.Empty;
+            
         }
 
         private void btnsave_Click(object sender, EventArgs e)
@@ -35,6 +37,16 @@ namespace GeekHub.Presentation
             this.Hide();
             main = new frmClientMain();
             main.Show();
+        }
+
+        private void EditarUsuario_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

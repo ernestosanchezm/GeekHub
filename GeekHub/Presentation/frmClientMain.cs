@@ -26,6 +26,8 @@ namespace GeekHub.Presentation
         public frmClientMain()
         {
             InitializeComponent();
+            this.BackColor = Color.FromArgb(153, 153, 255);
+            this.label1= = Color.FromArgb(61, 61, 61);
         }
 
         private void CargarCategorias()

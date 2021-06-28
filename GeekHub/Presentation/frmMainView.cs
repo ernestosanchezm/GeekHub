@@ -25,6 +25,8 @@ namespace GeekHub.Presentation
         {
             instanceListItems();
             InitializeComponent();
+            this.BackColor = Color.FromArgb(153, 153, 255);
+            label1.ForeColor = Color.FromArgb(61, 61, 61);
         }
 
         private void populateItems()

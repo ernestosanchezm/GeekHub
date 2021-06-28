@@ -82,6 +82,7 @@ namespace GeekHub.Presentation
             // 
             this.panel1.AllowDrop = true;
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.bttLogOut);
             this.panel1.Controls.Add(this.bttOptions);
@@ -140,9 +141,9 @@ namespace GeekHub.Presentation
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1584, 861);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.Panel01);
             this.Controls.Add(this.btn_Filtrar);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox1);
             this.Name = "frmSellerMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -21,6 +21,11 @@ namespace GeekHub.Presentation
         public PerfilSerllerUserView()
         {
             InitializeComponent();
+            this.BackColor = Color.FromArgb(153, 153, 255);
+            this.lbNombre.ForeColor = Color.FromArgb(61,61,61);
+            this.lbDir.ForeColor = Color.FromArgb(61, 61, 61);
+            this.label1.ForeColor = Color.FromArgb(61, 61, 61);
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -53,6 +58,13 @@ namespace GeekHub.Presentation
             this.Hide();
             perfil = new PerfilUsuario();
             perfil.Show();
+        }
+
+        private void bttLogOut_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            login = new frmLogin();
+            login.Show();
         }
     }
 }
