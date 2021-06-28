@@ -273,6 +273,9 @@
     <None Include="Connected Services\GeekHubWS\GeekHub.GeekHubWS.ItCategoria.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\GeekHubWS\GeekHub.GeekHubWS.ItProducto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\GeekHubWS\GeekHub.GeekHubWS.UserLogin.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -306,9 +309,6 @@
     <None Include="Resources\user.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\edit.png" />
-    <None Include="Resources\portada.jpg" />
-    <Content Include="Resources\portadaRegister.png" />
     <None Include="Connected Services\GeekHubWS\GeekHubWS.disco" />
     <None Include="Connected Services\GeekHubWS\configuration91.svcinfo" />
     <None Include="Connected Services\GeekHubWS\configuration.svcinfo" />
@@ -316,6 +316,9 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Resources\edit.png" />
+    <None Include="Resources\portada.jpg" />
+    <Content Include="Resources\portadaRegister.png" />
     <Content Include="Files\Logos\contacto.png" />
     <Content Include="Files\Logos\facebook.png" />
     <Content Include="Files\Logos\instagram.png" />

@@ -31,6 +31,8 @@ namespace GeekHub.Presentation
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btHome = new System.Windows.Forms.Button();
+            this.tbSearch = new System.Windows.Forms.TextBox();
             this.bttLogOut = new System.Windows.Forms.Button();
             this.bttOptions = new System.Windows.Forms.Button();
             this.pbProduct = new System.Windows.Forms.PictureBox();
@@ -50,8 +52,6 @@ namespace GeekHub.Presentation
             this.lbSeller = new System.Windows.Forms.Label();
             this.bt_SelProf = new System.Windows.Forms.Button();
             this.bt_contactos = new System.Windows.Forms.Button();
-            this.btHome = new System.Windows.Forms.Button();
-            this.tbSearch = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbProduct)).BeginInit();
@@ -85,11 +85,35 @@ namespace GeekHub.Presentation
             this.panel1.Size = new System.Drawing.Size(1562, 123);
             this.panel1.TabIndex = 21;
             // 
+            // btHome
+            // 
+            this.btHome.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btHome.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btHome.Location = new System.Drawing.Point(874, 25);
+            this.btHome.Margin = new System.Windows.Forms.Padding(2);
+            this.btHome.Name = "btHome";
+            this.btHome.Size = new System.Drawing.Size(202, 69);
+            this.btHome.TabIndex = 7;
+            this.btHome.Text = "Inicio";
+            this.btHome.UseVisualStyleBackColor = true;
+            this.btHome.Click += new System.EventHandler(this.btHome_Click);
+            // 
+            // tbSearch
+            // 
+            this.tbSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
+            this.tbSearch.Location = new System.Drawing.Point(112, 26);
+            this.tbSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.tbSearch.Name = "tbSearch";
+            this.tbSearch.Size = new System.Drawing.Size(732, 68);
+            this.tbSearch.TabIndex = 6;
+            // 
             // bttLogOut
             // 
             this.bttLogOut.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bttLogOut.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.bttLogOut.Font = new System.Drawing.Font("Quicksand", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttLogOut.Location = new System.Drawing.Point(1333, -1);
             this.bttLogOut.Margin = new System.Windows.Forms.Padding(2);
             this.bttLogOut.Name = "bttLogOut";
@@ -103,7 +127,7 @@ namespace GeekHub.Presentation
             // 
             this.bttOptions.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bttOptions.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.bttOptions.Font = new System.Drawing.Font("Quicksand", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttOptions.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttOptions.Location = new System.Drawing.Point(1099, 26);
             this.bttOptions.Margin = new System.Windows.Forms.Padding(2);
             this.bttOptions.Name = "bttOptions";
@@ -126,10 +150,10 @@ namespace GeekHub.Presentation
             // 
             this.lbN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbN.AutoSize = true;
-            this.lbN.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
+            this.lbN.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.lbN.Location = new System.Drawing.Point(1065, 167);
             this.lbN.Name = "lbN";
-            this.lbN.Size = new System.Drawing.Size(138, 40);
+            this.lbN.Size = new System.Drawing.Size(133, 31);
             this.lbN.TabIndex = 23;
             this.lbN.Text = "Nombre: ";
             // 
@@ -137,10 +161,10 @@ namespace GeekHub.Presentation
             // 
             this.lbNProducto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbNProducto.AutoSize = true;
-            this.lbNProducto.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
+            this.lbNProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.lbNProducto.Location = new System.Drawing.Point(1245, 167);
             this.lbNProducto.Name = "lbNProducto";
-            this.lbNProducto.Size = new System.Drawing.Size(285, 40);
+            this.lbNProducto.Size = new System.Drawing.Size(312, 31);
             this.lbNProducto.TabIndex = 24;
             this.lbNProducto.Text = "NOMBRE PRODUCTO";
             // 
@@ -148,10 +172,10 @@ namespace GeekHub.Presentation
             // 
             this.lbC.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbC.AutoSize = true;
-            this.lbC.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
+            this.lbC.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.lbC.Location = new System.Drawing.Point(1050, 244);
             this.lbC.Name = "lbC";
-            this.lbC.Size = new System.Drawing.Size(153, 40);
+            this.lbC.Size = new System.Drawing.Size(150, 31);
             this.lbC.TabIndex = 25;
             this.lbC.Text = "Categoria:";
             // 
@@ -159,10 +183,10 @@ namespace GeekHub.Presentation
             // 
             this.lbCategory.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbCategory.AutoSize = true;
-            this.lbCategory.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
+            this.lbCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.lbCategory.Location = new System.Drawing.Point(1245, 244);
             this.lbCategory.Name = "lbCategory";
-            this.lbCategory.Size = new System.Drawing.Size(318, 40);
+            this.lbCategory.Size = new System.Drawing.Size(357, 31);
             this.lbCategory.TabIndex = 26;
             this.lbCategory.Text = "CATEGORIA PRODUCTO";
             // 
@@ -170,10 +194,10 @@ namespace GeekHub.Presentation
             // 
             this.lbdscfc.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbdscfc.AutoSize = true;
-            this.lbdscfc.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
+            this.lbdscfc.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.lbdscfc.Location = new System.Drawing.Point(901, 323);
             this.lbdscfc.Name = "lbdscfc";
-            this.lbdscfc.Size = new System.Drawing.Size(302, 40);
+            this.lbdscfc.Size = new System.Drawing.Size(302, 31);
             this.lbdscfc.TabIndex = 27;
             this.lbdscfc.Text = "Descuento por Fecha:";
             // 
@@ -181,10 +205,10 @@ namespace GeekHub.Presentation
             // 
             this.lbdscFech.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbdscFech.AutoSize = true;
-            this.lbdscFech.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
+            this.lbdscFech.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.lbdscFech.Location = new System.Drawing.Point(1245, 323);
             this.lbdscFech.Name = "lbdscFech";
-            this.lbdscFech.Size = new System.Drawing.Size(237, 40);
+            this.lbdscFech.Size = new System.Drawing.Size(234, 31);
             this.lbdscFech.TabIndex = 28;
             this.lbdscFech.Text = "descuento si hay";
             // 
@@ -192,10 +216,10 @@ namespace GeekHub.Presentation
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.label3.Location = new System.Drawing.Point(1033, 386);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(170, 40);
+            this.label3.Size = new System.Drawing.Size(171, 31);
             this.label3.TabIndex = 29;
             this.label3.Text = "Descuento :";
             // 
@@ -203,10 +227,10 @@ namespace GeekHub.Presentation
             // 
             this.lbQdesc.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbQdesc.AutoSize = true;
-            this.lbQdesc.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
+            this.lbQdesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.lbQdesc.Location = new System.Drawing.Point(1245, 386);
             this.lbQdesc.Name = "lbQdesc";
-            this.lbQdesc.Size = new System.Drawing.Size(237, 40);
+            this.lbQdesc.Size = new System.Drawing.Size(234, 31);
             this.lbQdesc.TabIndex = 30;
             this.lbQdesc.Text = "descuento si hay";
             // 
@@ -214,10 +238,10 @@ namespace GeekHub.Presentation
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.label5.Location = new System.Drawing.Point(1099, 449);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(104, 40);
+            this.label5.Size = new System.Drawing.Size(106, 31);
             this.label5.TabIndex = 31;
             this.label5.Text = "Precio:";
             // 
@@ -225,10 +249,10 @@ namespace GeekHub.Presentation
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.label6.Location = new System.Drawing.Point(1022, 507);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(181, 40);
+            this.label6.Size = new System.Drawing.Size(187, 31);
             this.label6.TabIndex = 32;
             this.label6.Text = "Precio Envio:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -237,10 +261,10 @@ namespace GeekHub.Presentation
             // 
             this.lbPrice.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbPrice.AutoSize = true;
-            this.lbPrice.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
+            this.lbPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.lbPrice.Location = new System.Drawing.Point(1245, 449);
             this.lbPrice.Name = "lbPrice";
-            this.lbPrice.Size = new System.Drawing.Size(98, 40);
+            this.lbPrice.Size = new System.Drawing.Size(94, 31);
             this.lbPrice.TabIndex = 33;
             this.lbPrice.Text = "precio";
             // 
@@ -248,10 +272,10 @@ namespace GeekHub.Presentation
             // 
             this.lbSendPrice.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbSendPrice.AutoSize = true;
-            this.lbSendPrice.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
+            this.lbSendPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.lbSendPrice.Location = new System.Drawing.Point(1245, 507);
             this.lbSendPrice.Name = "lbSendPrice";
-            this.lbSendPrice.Size = new System.Drawing.Size(98, 40);
+            this.lbSendPrice.Size = new System.Drawing.Size(94, 31);
             this.lbSendPrice.TabIndex = 34;
             this.lbSendPrice.Text = "precio";
             // 
@@ -259,10 +283,10 @@ namespace GeekHub.Presentation
             // 
             this.lbS.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbS.AutoSize = true;
-            this.lbS.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
+            this.lbS.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.lbS.Location = new System.Drawing.Point(1090, 574);
             this.lbS.Name = "lbS";
-            this.lbS.Size = new System.Drawing.Size(113, 40);
+            this.lbS.Size = new System.Drawing.Size(112, 31);
             this.lbS.TabIndex = 35;
             this.lbS.Text = "Tienda:";
             this.lbS.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -273,16 +297,16 @@ namespace GeekHub.Presentation
             this.lbSeller.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbSeller.AutoSize = true;
             this.lbSeller.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.lbSeller.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
+            this.lbSeller.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.lbSeller.Location = new System.Drawing.Point(1245, 574);
             this.lbSeller.Name = "lbSeller";
-            this.lbSeller.Size = new System.Drawing.Size(234, 40);
+            this.lbSeller.Size = new System.Drawing.Size(254, 31);
             this.lbSeller.TabIndex = 36;
             this.lbSeller.Text = "NOMBRE TIENDA";
             // 
             // bt_SelProf
             // 
-            this.bt_SelProf.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
+            this.bt_SelProf.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.bt_SelProf.Location = new System.Drawing.Point(1006, 675);
             this.bt_SelProf.Name = "bt_SelProf";
             this.bt_SelProf.Size = new System.Drawing.Size(197, 97);
@@ -293,7 +317,7 @@ namespace GeekHub.Presentation
             // 
             // bt_contactos
             // 
-            this.bt_contactos.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
+            this.bt_contactos.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.bt_contactos.Location = new System.Drawing.Point(1282, 675);
             this.bt_contactos.Name = "bt_contactos";
             this.bt_contactos.Size = new System.Drawing.Size(197, 97);
@@ -301,30 +325,6 @@ namespace GeekHub.Presentation
             this.bt_contactos.Text = "Medios de Contacto";
             this.bt_contactos.UseVisualStyleBackColor = true;
             this.bt_contactos.Click += new System.EventHandler(this.bt_contactos_Click);
-            // 
-            // btHome
-            // 
-            this.btHome.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btHome.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btHome.Font = new System.Drawing.Font("Quicksand", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btHome.Location = new System.Drawing.Point(874, 25);
-            this.btHome.Margin = new System.Windows.Forms.Padding(2);
-            this.btHome.Name = "btHome";
-            this.btHome.Size = new System.Drawing.Size(202, 69);
-            this.btHome.TabIndex = 7;
-            this.btHome.Text = "Inicio";
-            this.btHome.UseVisualStyleBackColor = true;
-            this.btHome.Click += new System.EventHandler(this.btHome_Click);
-            // 
-            // tbSearch
-            // 
-            this.tbSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
-            this.tbSearch.Location = new System.Drawing.Point(112, 26);
-            this.tbSearch.Margin = new System.Windows.Forms.Padding(2);
-            this.tbSearch.Name = "tbSearch";
-            this.tbSearch.Size = new System.Drawing.Size(732, 68);
-            this.tbSearch.TabIndex = 6;
             // 
             // DetalleProducto
             // 
@@ -352,6 +352,7 @@ namespace GeekHub.Presentation
             this.Name = "DetalleProducto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DetalleProducto";
+            this.Load += new System.EventHandler(this.DetalleProducto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

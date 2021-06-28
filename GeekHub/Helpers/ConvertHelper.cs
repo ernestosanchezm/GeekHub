@@ -11,10 +11,10 @@ namespace GeekHub.Helpers
 {
     public static class ConvertHelper
     {
-        public static Bitmap ToBitmap(string pathImg,string nameImg,string extension) {
+        public static Bitmap ToBitmap(string pathImg,string nameImg,string extension="") {
             try
             {
-                string imageUrl = pathImg + "/" + nameImg+"."+extension;
+                string imageUrl = pathImg + "/" + nameImg+extension;
                 WebClient client = new WebClient();
                 Stream stream = client.OpenRead(imageUrl);
                 Bitmap bitmap;

@@ -23,6 +23,7 @@ namespace GeekHub.Presentation
         private frmClientMain cmain;
 
         List<ListItemCategory> listCategory;
+
         public frmClientMain()
         {
             InitializeComponent();
@@ -37,36 +38,18 @@ namespace GeekHub.Presentation
 
                 foreach (var elem in resultCats)
                 {
-                    Bitmap bitmap= ConvertHelper.ToBitmap(Constants.URL_BASE_FILESERVER+"/Categorias", "cat" + elem.CateogoriaId.ToString(),"jpg"); 
+                    Bitmap bitmap= ConvertHelper.ToBitmap(Constants.URL_BASE_FILESERVER+"Categorias", "cat" + elem.CateogoriaId.ToString(),".jpg"); 
                
                     flowLayoutPanelCateg.Controls.Add(new ListItemCategory
                     {
                         NameCategory=elem.NCategoria,
-                        ImageCategory=bitmap
+                        ImageCategory=bitmap,
+                        CategoryId=elem.CateogoriaId
                     });
-                }
-                //loop through each item
-             
-              
-                //for (int i = 0; i < 2; i++)
-                //{
-                //    if (i % 2 == 0)
-                //    {
-                //        listCategory[i].NameCategory = "Ropa";
-                //        listCategory[i].ImageCategory = new Bitmap(@"https://files.cdn.spilcloud.com/thumbs-9-0/200X120_177890_1623932027.png");
-                //    }
-                //    else
-                //    {
-                //        listCategory[i].NameCategory = "Mangas";
-                //        listCategory[i].ImageCategory = Resources.manga;
-                //    }
-                //    flowLayoutPanelCateg.Controls.Add(listCategory[i]);
-
-                //}
-            }
-               
-
+                }                
+            }       
         }
+
         private void frmClientMain_Load(object sender, EventArgs e)
         {
             CargarCategorias();

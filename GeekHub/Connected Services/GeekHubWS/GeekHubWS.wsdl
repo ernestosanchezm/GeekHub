@@ -2,6 +2,35 @@
 <wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
     <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ListarProductosPorCategoria">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="categoryId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarProductosPorCategoriaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarProductosPorCategoriaResult" type="tns:ArrayOfItProducto" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfItProducto">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ItProducto" nillable="true" type="tns:ItProducto" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ItProducto">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="NProducto" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProductoId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Price" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="CategoriaId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NCategoria" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="URL_Image" type="s:string" />
+        </s:sequence>
+      </s:complexType>
       <s:element name="ListarCategorias">
         <s:complexType />
       </s:element>
@@ -111,6 +140,12 @@
       </s:element>
     </s:schema>
   </wsdl:types>
+  <wsdl:message name="ListarProductosPorCategoriaSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarProductosPorCategoria" />
+  </wsdl:message>
+  <wsdl:message name="ListarProductosPorCategoriaSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarProductosPorCategoriaResponse" />
+  </wsdl:message>
   <wsdl:message name="ListarCategoriasSoapIn">
     <wsdl:part name="parameters" element="tns:ListarCategorias" />
   </wsdl:message>
@@ -142,6 +177,10 @@
     <wsdl:part name="parameters" element="tns:SendEmailResponse" />
   </wsdl:message>
   <wsdl:portType name="GeekHubWSSoap">
+    <wsdl:operation name="ListarProductosPorCategoria">
+      <wsdl:input message="tns:ListarProductosPorCategoriaSoapIn" />
+      <wsdl:output message="tns:ListarProductosPorCategoriaSoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="ListarCategorias">
       <wsdl:input message="tns:ListarCategoriasSoapIn" />
       <wsdl:output message="tns:ListarCategoriasSoapOut" />
@@ -165,6 +204,15 @@
   </wsdl:portType>
   <wsdl:binding name="GeekHubWSSoap" type="tns:GeekHubWSSoap">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListarProductosPorCategoria">
+      <soap:operation soapAction="http://tempuri.org/ListarProductosPorCategoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="ListarCategorias">
       <soap:operation soapAction="http://tempuri.org/ListarCategorias" style="document" />
       <wsdl:input>
@@ -213,6 +261,15 @@
   </wsdl:binding>
   <wsdl:binding name="GeekHubWSSoap12" type="tns:GeekHubWSSoap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListarProductosPorCategoria">
+      <soap12:operation soapAction="http://tempuri.org/ListarProductosPorCategoria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="ListarCategorias">
       <soap12:operation soapAction="http://tempuri.org/ListarCategorias" style="document" />
       <wsdl:input>

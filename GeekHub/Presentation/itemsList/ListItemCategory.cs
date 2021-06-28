@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GeekHub.Helpers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,7 +17,10 @@ namespace GeekHub.Presentation.itemsList
         {
             InitializeComponent();
         }
-        #region Properties
+        List<ListItemProductDetail> listProduct;
+
+        #region Properties      
+        public int CategoryId { get; set; }
         private string _nameCategory;
         private Image _imageCategory;
 
@@ -32,6 +36,20 @@ namespace GeekHub.Presentation.itemsList
             get { return _imageCategory; }
             set { _imageCategory = value; pictureBox1.Image = value; }
         }
+
         #endregion
+
+        private void lblNameCategory_Click(object sender, EventArgs e)
+        {
+            this.Parent.Parent.Dispose();
+
+            var frmProductsDetail = new frmViewProductsDetail(CategoryId);
+            frmProductsDetail.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
