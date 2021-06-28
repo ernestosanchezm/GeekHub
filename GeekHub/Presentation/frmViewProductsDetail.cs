@@ -26,15 +26,13 @@ namespace GeekHub.Presentation
         
         public frmViewProductsDetail()
         {
-            InitializeComponent();
-            instanceListItems();
+            InitializeComponent();       
             instanceListFilterCategory();
         }
 
         public frmViewProductsDetail(int CategoryId)
         {
-            InitializeComponent();
-            instanceListItems();
+            InitializeComponent();  
             instanceListFilterCategory();
             CargarProductosPorCategoria(CategoryId);
         }
@@ -65,22 +63,13 @@ namespace GeekHub.Presentation
 
         private void ActualizarListaProductos(string nombreProducto)
         {
-            var FiltroItemsProd=listProductsDetail.Where(e=>e.NameProduct.Replace(" ",",").ToLower()== nombreProducto.Replace(" ", ",").ToLower()).ToList();
+            var FiltroItemsProd=listProductsDetail.Where(e=>e.NameProduct.Replace(" ",",").ToLower().Contains(nombreProducto.Replace(" ", ",").ToLower())).ToList();
 
             flowLayoutPanelProduct.Controls.Clear();
 
             FiltroItemsProd.ForEach(e=> {
                 flowLayoutPanelProduct.Controls.Add(e);
             });           
-        }
-
-        private void instanceListItems()
-        {
-            this.listProductsDetail = new List<ListItemProductDetail>();
-            for (int i = 0; i < 20; i++)
-            {
-                this.listProductsDetail.Add(new ListItemProductDetail("","","",""));
-            }
         }
 
         private void instanceListFilterCategory()

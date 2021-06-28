@@ -13,14 +13,19 @@ namespace GeekHub.Presentation.itemsList
     public partial class ListItemProductDetail : UserControl
     {
         public ListItemProductDetail(string nameProduct, string categoryProduct,string priceProduct, string imageLocation)
-        {
-            lblNameProduct.BackColor = Color.FromArgb(153, 153, 255);
+        {           
             InitializeComponent();
+            lblNameProduct.BackColor = Color.FromArgb(153, 153, 255);
             this._categoryProduct = categoryProduct;
             this._nameProduct = nameProduct;
             this._priceProduct = priceProduct;
             productImage.ImageLocation = imageLocation;
 
+        }
+        public ListItemProductDetail()
+        {          
+            InitializeComponent();
+            lblNameProduct.BackColor = Color.FromArgb(153, 153, 255);
         }
         public int ProductoId { get; set; }
         public int CategoryId { get; set; }
