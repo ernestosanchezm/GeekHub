@@ -65,6 +65,18 @@
     <Compile Include="Presentation\DetalleProducto.Designer.cs">
       <DependentUpon>DetalleProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\DetallesContacto\EditarContacto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\DetallesContacto\EditarContacto.Designer.cs">
+      <DependentUpon>EditarContacto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DetallesContacto\EditarContactos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\DetallesContacto\EditarContactos.Designer.cs">
+      <DependentUpon>EditarContactos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\DetallesContacto\RegistrarUsuario.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -94,6 +106,12 @@
     </Compile>
     <Compile Include="Presentation\frmAdminMain.Designer.cs">
       <DependentUpon>frmAdminMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\FrmEditContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\FrmEditContact.Designer.cs">
+      <DependentUpon>FrmEditContact.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\frmLogin.cs">
       <SubType>Form</SubType>
@@ -202,6 +220,15 @@
     <EmbeddedResource Include="Presentation\DetalleProducto.resx">
       <DependentUpon>DetalleProducto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\DetallesContacto\DetallesContacto.resx">
+      <DependentUpon>DetallesContacto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\DetallesContacto\EditarContacto.resx">
+      <DependentUpon>EditarContacto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\DetallesContacto\EditarContactos.resx">
+      <DependentUpon>EditarContactos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\DetallesContacto\RegistrarUsuario.resx">
       <DependentUpon>RegistrarUsuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -216,6 +243,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmAdminMain.resx">
       <DependentUpon>frmAdminMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\FrmEditContact.resx">
+      <DependentUpon>FrmEditContact.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmMainView.resx">
       <DependentUpon>frmMainView.cs</DependentUpon>

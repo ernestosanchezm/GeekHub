@@ -90,5 +90,10 @@ namespace GeekHub.Presentation
         {
 
         }
+
+        private void flowLayoutPanelCateg_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

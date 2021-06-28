@@ -12,6 +12,8 @@ namespace GeekHub.Presentation
 {
     public partial class SellerEdit : Form
     {
+        
+        
         protected override void OnPaint(PaintEventArgs e)
         {
 
@@ -46,8 +48,8 @@ namespace GeekHub.Presentation
         private void button1_Click(object sender, EventArgs e)
         {
             
-            
             this.Hide();
+            
 
         }
 

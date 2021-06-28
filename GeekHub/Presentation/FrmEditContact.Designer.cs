@@ -1,7 +1,7 @@
 ﻿
-namespace GeekHub.Presentation.DetallesContacto
+namespace GeekHub.Presentation
 {
-    partial class DetallesContacto
+    partial class FrmEditContact
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,24 @@ namespace GeekHub.Presentation.DetallesContacto
         /// </summary>
         private void InitializeComponent()
         {
+            this.Panel = new System.Windows.Forms.FlowLayoutPanel();
             this.Contact_Methods = new System.Windows.Forms.Label();
-            this.Panel01 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnclose = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // Panel
+            // 
+            this.Panel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Panel.AutoScroll = true;
+            this.Panel.BackColor = System.Drawing.Color.White;
+            this.Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Panel.ForeColor = System.Drawing.Color.Black;
+            this.Panel.Location = new System.Drawing.Point(0, 55);
+            this.Panel.Name = "Panel";
+            this.Panel.Size = new System.Drawing.Size(794, 569);
+            this.Panel.TabIndex = 0;
+            this.Panel.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Paint);
             // 
             // Contact_Methods
             // 
@@ -48,60 +62,44 @@ namespace GeekHub.Presentation.DetallesContacto
             this.Contact_Methods.Location = new System.Drawing.Point(0, 0);
             this.Contact_Methods.Margin = new System.Windows.Forms.Padding(0);
             this.Contact_Methods.Name = "Contact_Methods";
-            this.Contact_Methods.Size = new System.Drawing.Size(794, 61);
-            this.Contact_Methods.TabIndex = 0;
+            this.Contact_Methods.Size = new System.Drawing.Size(794, 52);
+            this.Contact_Methods.TabIndex = 1;
             this.Contact_Methods.Text = "MEDIOS DE CONTACTO";
             this.Contact_Methods.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Contact_Methods.Click += new System.EventHandler(this.Contact_Methods_Click);
-            // 
-            // Panel01
-            // 
-            this.Panel01.AllowDrop = true;
-            this.Panel01.AutoScroll = true;
-            this.Panel01.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Panel01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Panel01.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.Panel01.Location = new System.Drawing.Point(0, 63);
-            this.Panel01.Margin = new System.Windows.Forms.Padding(100);
-            this.Panel01.Name = "Panel01";
-            this.Panel01.Padding = new System.Windows.Forms.Padding(10);
-            this.Panel01.Size = new System.Drawing.Size(792, 561);
-            this.Panel01.TabIndex = 2;
-            this.Panel01.Visible = false;
-            this.Panel01.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel01_Paint);
             // 
             // btnclose
             // 
             this.btnclose.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnclose.BackgroundImage = global::GeekHub.Properties.Resources.btn;
             this.btnclose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnclose.Location = new System.Drawing.Point(745, 0);
+            this.btnclose.Location = new System.Drawing.Point(745, 3);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(47, 40);
-            this.btnclose.TabIndex = 1;
+            this.btnclose.TabIndex = 2;
             this.btnclose.UseVisualStyleBackColor = true;
             this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
             // 
-            // DetallesContacto
+            // FrmEditContact
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(794, 621);
-            this.Controls.Add(this.btnclose);
-            this.Controls.Add(this.Panel01);
             this.Controls.Add(this.Contact_Methods);
-            this.Name = "DetallesContacto";
+            this.Controls.Add(this.btnclose);
+            this.Controls.Add(this.Panel);
+            this.Name = "FrmEditContact";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Text = "FrmEditContact";
+            this.Load += new System.EventHandler(this.FrmEditContact_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.FlowLayoutPanel Panel01;
-        private System.Windows.Forms.Label Contact_Methods;
+
+        private System.Windows.Forms.FlowLayoutPanel Panel;
         private System.Windows.Forms.Button btnclose;
+        private System.Windows.Forms.Label Contact_Methods;
     }
 }
-

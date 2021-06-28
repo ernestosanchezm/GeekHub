@@ -60,6 +60,7 @@ namespace GeekHub.Presentation
             this.flowLayoutPanelCateg.Name = "flowLayoutPanelCateg";
             this.flowLayoutPanelCateg.Size = new System.Drawing.Size(1562, 597);
             this.flowLayoutPanelCateg.TabIndex = 4;
+            this.flowLayoutPanelCateg.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanelCateg_Paint);
             // 
             // panel1
             // 

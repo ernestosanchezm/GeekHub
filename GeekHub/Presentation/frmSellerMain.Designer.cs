@@ -135,6 +135,7 @@ namespace GeekHub.Presentation
             this.Panel01.Padding = new System.Windows.Forms.Padding(10);
             this.Panel01.Size = new System.Drawing.Size(1496, 540);
             this.Panel01.TabIndex = 7;
+            this.Panel01.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel01_Paint);
             // 
             // frmSellerMain
             // 

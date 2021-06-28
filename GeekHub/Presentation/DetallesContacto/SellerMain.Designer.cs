@@ -30,10 +30,10 @@ namespace GeekHub.Presentation.DetallesContacto
         private void InitializeComponent()
         {
             this.NombreProducto = new System.Windows.Forms.Label();
-            this.ContactImage = new System.Windows.Forms.PictureBox();
             this.btn_eliminar = new System.Windows.Forms.Button();
             this.lblprecio = new System.Windows.Forms.Label();
             this.lbldt = new System.Windows.Forms.Label();
+            this.ContactImage = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ContactImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,18 +51,6 @@ namespace GeekHub.Presentation.DetallesContacto
             this.NombreProducto.TabIndex = 4;
             this.NombreProducto.Text = "NOMBRE";
             this.NombreProducto.Click += new System.EventHandler(this.NombreProducto_Click);
-            // 
-            // ContactImage
-            // 
-            this.ContactImage.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ContactImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ContactImage.ImageLocation = "";
-            this.ContactImage.Location = new System.Drawing.Point(20, 15);
-            this.ContactImage.Name = "ContactImage";
-            this.ContactImage.Size = new System.Drawing.Size(223, 198);
-            this.ContactImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ContactImage.TabIndex = 3;
-            this.ContactImage.TabStop = false;
             // 
             // btn_eliminar
             // 
@@ -108,6 +96,18 @@ namespace GeekHub.Presentation.DetallesContacto
             this.lbldt.Text = "FECHA PUBLICACION";
             this.lbldt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // ContactImage
+            // 
+            this.ContactImage.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ContactImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ContactImage.ImageLocation = "";
+            this.ContactImage.Location = new System.Drawing.Point(20, 15);
+            this.ContactImage.Name = "ContactImage";
+            this.ContactImage.Size = new System.Drawing.Size(223, 198);
+            this.ContactImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ContactImage.TabIndex = 3;
+            this.ContactImage.TabStop = false;
+            // 
             // SellerMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -120,7 +120,7 @@ namespace GeekHub.Presentation.DetallesContacto
             this.Controls.Add(this.btn_eliminar);
             this.Controls.Add(this.NombreProducto);
             this.Controls.Add(this.ContactImage);
-            this.Margin = new System.Windows.Forms.Padding(20);
+            this.Margin = new System.Windows.Forms.Padding(250, 10, 0, 10);
             this.Name = "SellerMain";
             this.Size = new System.Drawing.Size(992, 224);
             this.Load += new System.EventHandler(this.SellerMain_Load);

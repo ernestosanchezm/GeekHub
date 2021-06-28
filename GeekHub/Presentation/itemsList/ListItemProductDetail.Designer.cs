@@ -97,7 +97,7 @@ namespace GeekHub.Presentation.itemsList
             // productImage
             // 
             this.productImage.Location = new System.Drawing.Point(30, 15);
-            this.productImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.productImage.Margin = new System.Windows.Forms.Padding(2);
             this.productImage.Name = "productImage";
             this.productImage.Size = new System.Drawing.Size(185, 188);
             this.productImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -118,6 +118,7 @@ namespace GeekHub.Presentation.itemsList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.productImage);
@@ -129,6 +130,7 @@ namespace GeekHub.Presentation.itemsList
             this.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
             this.Name = "ListItemProductDetail";
             this.Size = new System.Drawing.Size(1165, 232);
+            this.Load += new System.EventHandler(this.ListItemProductDetail_Load);
             ((System.ComponentModel.ISupportInitialize)(this.productImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -23,6 +23,7 @@ namespace GeekHub.Presentation.DetallesContacto
             this.FormBorderStyle = FormBorderStyle.None;
             this.ControlBox = false;
             this.Text = String.Empty;
+            
         }
 
         private void cargarMetodos()
@@ -52,7 +53,7 @@ namespace GeekHub.Presentation.DetallesContacto
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Panel01.ForeColor = Color.FromArgb(255, 239, 156);
+            Panel01.BackColor = Color.FromArgb(255, 239, 156);
 
         }
 

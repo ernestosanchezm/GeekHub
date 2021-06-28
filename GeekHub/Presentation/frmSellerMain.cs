@@ -91,5 +91,10 @@ namespace GeekHub.Presentation
             other = new OtherEditSeller();
             other.Show();
         }
+
+        private void Panel01_Paint(object sender, PaintEventArgs e)
+        {
+            Panel01.BackColor = Color.FromArgb(255, 239, 156);
+        }
     }
 }
