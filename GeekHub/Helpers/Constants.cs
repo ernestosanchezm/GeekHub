@@ -8,7 +8,7 @@ namespace GeekHub.Helpers
 {
     public static class Constants
     {
-        public static string URL_BASE_FILESERVER = "https://localhost:44383/Fileserver";
+        public static string URL_BASE_FILESERVER = "https://localhost:44383/Fileserver/";
         public static string URL_BASE_RESOURCE = "";
     }
 }

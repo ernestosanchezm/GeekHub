@@ -38,14 +38,16 @@ namespace GeekHub.Presentation.itemsList
             // 
             this.lblNameCategory.AutoEllipsis = true;
             this.lblNameCategory.BackColor = System.Drawing.SystemColors.Control;
-            this.lblNameCategory.Font = new System.Drawing.Font("Quicksand", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameCategory.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblNameCategory.Location = new System.Drawing.Point(29, 205);
+            this.lblNameCategory.Location = new System.Drawing.Point(22, 167);
+            this.lblNameCategory.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNameCategory.Name = "lblNameCategory";
-            this.lblNameCategory.Size = new System.Drawing.Size(184, 33);
+            this.lblNameCategory.Size = new System.Drawing.Size(138, 27);
             this.lblNameCategory.TabIndex = 3;
             this.lblNameCategory.Text = "Category";
             this.lblNameCategory.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblNameCategory.Click += new System.EventHandler(this.lblNameCategory_Click);
             // 
             // categoryImage
             // 
@@ -59,7 +61,7 @@ namespace GeekHub.Presentation.itemsList
             // 
             // ListItemCategory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lblNameCategory);
             this.Controls.Add(this.categoryImage);

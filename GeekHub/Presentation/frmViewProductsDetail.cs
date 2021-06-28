@@ -1,4 +1,5 @@
-﻿using GeekHub.Presentation.itemsList;
+﻿using GeekHub.Helpers;
+using GeekHub.Presentation.itemsList;
 using GeekHub.Properties;
 using System;
 using System.Collections.Generic;
@@ -22,11 +23,10 @@ namespace GeekHub.Presentation
 
         List<ListItemProductDetail> listProductsDetail;
         List<RadioButton> listFilterCategories;
-        List<string> categories;
+        
         public frmViewProductsDetail()
         {
-            InitializeComponent();
-            instanceListItems();
+            InitializeComponent();       
             instanceListFilterCategory();
             this.BackColor = Color.FromArgb(153, 153, 255);
             this.label1.ForeColor = Color.FromArgb(61, 61, 61);
@@ -35,67 +35,75 @@ namespace GeekHub.Presentation
 
         }
 
-        private void instanceListItems()
+        public frmViewProductsDetail(int CategoryId)
         {
-            this.listProductsDetail = new List<ListItemProductDetail>();
-            for (int i = 0; i < 20; i++)
+            InitializeComponent();  
+            instanceListFilterCategory();
+            CargarProductosPorCategoria(CategoryId);
+        }
+
+        private void CargarProductosPorCategoria(int CategoryId) {
+            flowLayoutPanelProduct.Controls.Clear();
+            using (GeekHubWS.GeekHubWSSoapClient instWS = new GeekHubWS.GeekHubWSSoapClient())
             {
-                this.listProductsDetail.Add(new ListItemProductDetail("","","",""));
+                var resultProds = instWS.ListarProductosPorCategoria(CategoryId);
+                listProductsDetail = new List<ListItemProductDetail>();
+                foreach (var elem in resultProds)
+                {
+                    Bitmap bitmap = ConvertHelper.ToBitmap(Constants.URL_BASE_FILESERVER, elem.URL_Image);
+                    var objItemProd = new ListItemProductDetail
+                    {
+                        NameProduct = elem.NProducto,
+                        PriceProduct = elem.Price.ToString(),
+                        CategoryProduct = elem.NCategoria,
+                        ProductoId = elem.ProductoId,
+                        CategoryId = elem.CategoriaId,
+                        ImageProduct = bitmap
+                    };
+                    flowLayoutPanelProduct.Controls.Add(objItemProd);
+                    listProductsDetail.Add(objItemProd);
+                }
             }
         }
+
+        private void ActualizarListaProductos(string nombreProducto)
+        {
+            var FiltroItemsProd=listProductsDetail.Where(e=>e.NameProduct.Replace(" ",",").ToLower().Contains(nombreProducto.Replace(" ", ",").ToLower())).ToList();
+
+            flowLayoutPanelProduct.Controls.Clear();
+
+            FiltroItemsProd.ForEach(e=> {
+                flowLayoutPanelProduct.Controls.Add(e);
+            });           
+        }
+
         private void instanceListFilterCategory()
         {
-            categories = new List<string>();
-            listFilterCategories = new List<RadioButton>();
+            using (GeekHubWS.GeekHubWSSoapClient instWS = new GeekHubWS.GeekHubWSSoapClient())
+            {                
+                var resultCats = instWS.ListarCategorias();
+                listFilterCategories = new List<RadioButton>();
+                listFilterCategories = resultCats.Select(e=>new RadioButton {
+                    Tag=e.CateogoriaId.ToString(),
+                    Text=e.NCategoria
+                }).ToList();
 
-            categories.Add("Ropa");
-            categories.Add("Comida Asiatica");
-            categories.Add("Celulares");
-            categories.Add("Figuras");
-            categories.Add("Mangas");
-            categories.Add("Lighstick Kpop");
-            categories.Add("Disco Kpop");
-            categories.Add("Animes Físicos");
-            categories.Add("Webtoons Físicos");
-            categories.Add("Merchandising de Anime");
-            categories.Add("Merchandising de Kpop");
-            categories.Add("Merchandising de Comics");
-            for (int i = 0; i < categories.Count; i++)
-            {
-                listFilterCategories.Add(new RadioButton());
-                listFilterCategories[i].Text = categories[i];
-                flowLayoutFiltrosCategory.Controls.Add(listFilterCategories[i]);
+                listFilterCategories.ForEach(e=> {
+                    e.CheckedChanged += new EventHandler(radioButtons_CheckedChanged);
+                    flowLayoutFiltrosCategory.Controls.Add(e);
+                });
             }
-
         }
-        private void populateItems()
+
+        private void radioButtons_CheckedChanged(object sender, EventArgs e)
         {
-            //loop through each item
-            for (int i = 0; i < listProductsDetail.Count; i++)
-            {
-                if (i % 2 == 0)
-                {
-                    listProductsDetail[i].NameProduct = "name";
-                    listProductsDetail[i].CategoryProduct = "Ropa";
-                    listProductsDetail[i].PriceProduct = "25";
-                    //listProductsDetail[i].ImageProduct = Resources.ropa;
-                }
-                else
-                {
-                    listProductsDetail[i].NameProduct = "name";
-                    listProductsDetail[i].CategoryProduct = "Manga";
-                    listProductsDetail[i].PriceProduct = "25";
-                   // listProductsDetail[i].ImageProduct = Resources.manga;
-                }
-                flowLayoutPanelProduct.Controls.Add(listProductsDetail[i]);
-
-            }
-
+            RadioButton radioButton = sender as RadioButton;
+            CargarProductosPorCategoria(Convert.ToInt32(radioButton.Tag));          
         }
 
         private void frmViewProductsDetail_Load(object sender, EventArgs e)
         {
-            populateItems();
+            
         }
 
         private void flowLayoutPanelProduct_Paint(object sender, PaintEventArgs e)
@@ -138,7 +146,7 @@ namespace GeekHub.Presentation
 
         private void tbSearch_TextChanged(object sender, EventArgs e)
         {
-
+            ActualizarListaProductos(tbSearch.Text);
         }
 
         private void bttOptions_Click(object sender, EventArgs e)

@@ -16,6 +16,13 @@ namespace GeekHub.GeekHubWS {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="GeekHubWS.GeekHubWSSoap")]
     public interface GeekHubWSSoap {
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ListarProductosPorCategoria", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        GeekHub.GeekHubWS.ItProducto[] ListarProductosPorCategoria(int categoryId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ListarProductosPorCategoria", ReplyAction="*")]
+        System.Threading.Tasks.Task<GeekHub.GeekHubWS.ItProducto[]> ListarProductosPorCategoriaAsync(int categoryId);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ListarCategorias", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         GeekHub.GeekHubWS.ItCategoria[] ListarCategorias();
@@ -58,14 +65,70 @@ namespace GeekHub.GeekHubWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class ItCategoria : object, System.ComponentModel.INotifyPropertyChanged {
+    public partial class ItProducto : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string nProductoField;
+        
+        private int productoIdField;
+        
+        private decimal priceField;
+        
+        private int categoriaIdField;
         
         private string nCategoriaField;
         
-        private int cateogoriaIdField;
+        private string uRL_ImageField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public string NProducto {
+            get {
+                return this.nProductoField;
+            }
+            set {
+                this.nProductoField = value;
+                this.RaisePropertyChanged("NProducto");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        public int ProductoId {
+            get {
+                return this.productoIdField;
+            }
+            set {
+                this.productoIdField = value;
+                this.RaisePropertyChanged("ProductoId");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        public decimal Price {
+            get {
+                return this.priceField;
+            }
+            set {
+                this.priceField = value;
+                this.RaisePropertyChanged("Price");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        public int CategoriaId {
+            get {
+                return this.categoriaIdField;
+            }
+            set {
+                this.categoriaIdField = value;
+                this.RaisePropertyChanged("CategoriaId");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
         public string NCategoria {
             get {
                 return this.nCategoriaField;
@@ -77,14 +140,14 @@ namespace GeekHub.GeekHubWS {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public int CateogoriaId {
+        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        public string URL_Image {
             get {
-                return this.cateogoriaIdField;
+                return this.uRL_ImageField;
             }
             set {
-                this.cateogoriaIdField = value;
-                this.RaisePropertyChanged("CateogoriaId");
+                this.uRL_ImageField = value;
+                this.RaisePropertyChanged("URL_Image");
             }
         }
         
@@ -172,6 +235,52 @@ namespace GeekHub.GeekHubWS {
         }
     }
     
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class ItCategoria : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string nCategoriaField;
+        
+        private int cateogoriaIdField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public string NCategoria {
+            get {
+                return this.nCategoriaField;
+            }
+            set {
+                this.nCategoriaField = value;
+                this.RaisePropertyChanged("NCategoria");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        public int CateogoriaId {
+            get {
+                return this.cateogoriaIdField;
+            }
+            set {
+                this.cateogoriaIdField = value;
+                this.RaisePropertyChanged("CateogoriaId");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface GeekHubWSSoapChannel : GeekHub.GeekHubWS.GeekHubWSSoap, System.ServiceModel.IClientChannel {
     }
@@ -197,6 +306,14 @@ namespace GeekHub.GeekHubWS {
         
         public GeekHubWSSoapClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
+        }
+        
+        public GeekHub.GeekHubWS.ItProducto[] ListarProductosPorCategoria(int categoryId) {
+            return base.Channel.ListarProductosPorCategoria(categoryId);
+        }
+        
+        public System.Threading.Tasks.Task<GeekHub.GeekHubWS.ItProducto[]> ListarProductosPorCategoriaAsync(int categoryId) {
+            return base.Channel.ListarProductosPorCategoriaAsync(categoryId);
         }
         
         public GeekHub.GeekHubWS.ItCategoria[] ListarCategorias() {

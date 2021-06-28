@@ -20,7 +20,7 @@ namespace GeekHub
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmSellerMain());
+            Application.Run(new frmLogin());
         }
     }
 }

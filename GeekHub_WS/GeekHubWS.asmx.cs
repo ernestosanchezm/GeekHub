@@ -29,6 +29,31 @@ namespace GeekHub_WS
         }
 
 
+        [WebMethod]
+        public List<ItProducto> ListarProductosPorCategoria(int categoryId)
+        {
+            DataSet dataSet = default(DataSet);
+            List<ItProducto> ListProductos = default(List<ItProducto>);
+            try
+            {
+                string query = "select * from vwProductos where CategoryId=" + categoryId.ToString();
+                SqlDataAdapter cmd = new SqlDataAdapter(query, Conexion.Conectar());
+                dataSet = new DataSet();
+                cmd.Fill(dataSet, "DevuelveLista");
+                ListProductos = dataSet.Tables[0].AsEnumerable()
+                              .Select(dataRow => new ItProducto
+                              {
+                                  NProducto = dataRow.Field<string>("NProducto"),
+                                  ProductoId = dataRow.Field<int>("ProductoId"),
+                                  CategoriaId = dataRow.Field<int>("CategoryId"),
+                                  NCategoria = dataRow.Field<string>("NCategory"),
+                                  Price = dataRow.Field<decimal>("Precio"),
+                                  URL_Image = dataRow.Field<string>("UrlImage")    
+                              }).ToList();
+            }
+            catch { }
+            return ListProductos;
+        }
 
         [WebMethod]
         public List<ItCategoria> ListarCategorias()
@@ -172,10 +197,11 @@ namespace GeekHub_WS
         {
 
             public static SqlConnectionStringBuilder sqlConnection = new SqlConnectionStringBuilder
-            {
-                IntegratedSecurity = true,
-                DataSource = "DESKTOP-B14EN9G\\RYZEN7",
-                InitialCatalog = "db-geekhub"
+            {                
+                DataSource = "35.239.167.4",
+                InitialCatalog = "db-geekhub",
+                UserID= "geekhub-admin",
+                Password= "Lavacalola13"
             };
 
             public static SqlConnection Conectar()
