@@ -119,6 +119,12 @@
     <Compile Include="Presentation\frmClientMain.Designer.cs">
       <DependentUpon>frmClientMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\frmViewAdminProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmViewAdminProducts.Designer.cs">
+      <DependentUpon>frmViewAdminProducts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\itemsList\ListItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -154,6 +160,18 @@
     </Compile>
     <Compile Include="Presentation\DetallesContacto\MuestraDetalles.Designer.cs">
       <DependentUpon>MuestraDetalles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\itemsList\ListItemSeller.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\itemsList\ListItemSeller.Designer.cs">
+      <DependentUpon>ListItemSeller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\itemsList\ProductDetailAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\itemsList\ProductDetailAdmin.Designer.cs">
+      <DependentUpon>ProductDetailAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\LoginSellers.cs">
       <SubType>Form</SubType>
@@ -226,6 +244,9 @@
     <EmbeddedResource Include="Presentation\frmSellerMain.resx">
       <DependentUpon>frmSellerMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmViewAdminProducts.resx">
+      <DependentUpon>frmViewAdminProducts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\itemsList\ListItem.resx">
       <DependentUpon>ListItem.cs</DependentUpon>
     </EmbeddedResource>
@@ -240,6 +261,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\DetallesContacto\MuestraDetalles.resx">
       <DependentUpon>MuestraDetalles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\itemsList\ListItemSeller.resx">
+      <DependentUpon>ListItemSeller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\itemsList\ProductDetailAdmin.resx">
+      <DependentUpon>ProductDetailAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\LoginSellers.resx">
       <DependentUpon>LoginSellers.cs</DependentUpon>
