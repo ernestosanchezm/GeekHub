@@ -48,11 +48,11 @@ namespace GeekHub.Presentation
             this.flowLayoutPanelProducts.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanelProducts.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanelProducts.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.flowLayoutPanelProducts.Location = new System.Drawing.Point(11, 274);
+            this.flowLayoutPanelProducts.Location = new System.Drawing.Point(36, 265);
             this.flowLayoutPanelProducts.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.flowLayoutPanelProducts.Name = "flowLayoutPanelProducts";
             this.flowLayoutPanelProducts.Padding = new System.Windows.Forms.Padding(1);
-            this.flowLayoutPanelProducts.Size = new System.Drawing.Size(775, 566);
+            this.flowLayoutPanelProducts.Size = new System.Drawing.Size(760, 566);
             this.flowLayoutPanelProducts.TabIndex = 21;
             // 
             // pictureBox1
@@ -126,7 +126,7 @@ namespace GeekHub.Presentation
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(300, 220);
+            this.label1.Location = new System.Drawing.Point(328, 220);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(168, 50);
             this.label1.TabIndex = 24;
@@ -137,7 +137,7 @@ namespace GeekHub.Presentation
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(1088, 220);
+            this.label2.Location = new System.Drawing.Point(1165, 220);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(115, 50);
             this.label2.TabIndex = 25;
@@ -150,11 +150,11 @@ namespace GeekHub.Presentation
             this.flowLayoutPanelSellers.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanelSellers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanelSellers.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.flowLayoutPanelSellers.Location = new System.Drawing.Point(822, 274);
+            this.flowLayoutPanelSellers.Location = new System.Drawing.Point(867, 265);
             this.flowLayoutPanelSellers.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.flowLayoutPanelSellers.Name = "flowLayoutPanelSellers";
             this.flowLayoutPanelSellers.Padding = new System.Windows.Forms.Padding(1);
-            this.flowLayoutPanelSellers.Size = new System.Drawing.Size(721, 566);
+            this.flowLayoutPanelSellers.Size = new System.Drawing.Size(676, 566);
             this.flowLayoutPanelSellers.TabIndex = 22;
             // 
             // frmViewAdminProducts

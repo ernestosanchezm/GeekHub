@@ -40,6 +40,8 @@ namespace GeekHub.Presentation.itemsList
             this.lblNameSeller = new System.Windows.Forms.Label();
             this.label11221 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bttEditar = new System.Windows.Forms.Button();
+            this.bttEstado = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imageSeller)).BeginInit();
             this.SuspendLayout();
             // 
@@ -123,11 +125,10 @@ namespace GeekHub.Presentation.itemsList
             // 
             // lblNameSeller
             // 
-            this.lblNameSeller.AutoSize = true;
             this.lblNameSeller.Font = new System.Drawing.Font("Quicksand", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameSeller.Location = new System.Drawing.Point(142, 0);
+            this.lblNameSeller.Location = new System.Drawing.Point(138, 0);
             this.lblNameSeller.Name = "lblNameSeller";
-            this.lblNameSeller.Size = new System.Drawing.Size(155, 35);
+            this.lblNameSeller.Size = new System.Drawing.Size(505, 35);
             this.lblNameSeller.TabIndex = 9;
             this.lblNameSeller.Text = "Name Seller";
             // 
@@ -149,10 +150,32 @@ namespace GeekHub.Presentation.itemsList
             this.panel1.Size = new System.Drawing.Size(140, 163);
             this.panel1.TabIndex = 11;
             // 
+            // bttEditar
+            // 
+            this.bttEditar.Font = new System.Drawing.Font("Quicksand", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttEditar.Location = new System.Drawing.Point(554, 76);
+            this.bttEditar.Name = "bttEditar";
+            this.bttEditar.Size = new System.Drawing.Size(86, 35);
+            this.bttEditar.TabIndex = 12;
+            this.bttEditar.Text = "Editar";
+            this.bttEditar.UseVisualStyleBackColor = true;
+            // 
+            // bttEstado
+            // 
+            this.bttEstado.Font = new System.Drawing.Font("Quicksand", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttEstado.Location = new System.Drawing.Point(554, 118);
+            this.bttEstado.Name = "bttEstado";
+            this.bttEstado.Size = new System.Drawing.Size(86, 35);
+            this.bttEstado.TabIndex = 13;
+            this.bttEstado.Text = "Estado";
+            this.bttEstado.UseVisualStyleBackColor = true;
+            // 
             // ListItemSeller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.bttEstado);
+            this.Controls.Add(this.bttEditar);
             this.Controls.Add(this.label11221);
             this.Controls.Add(this.lblNameSeller);
             this.Controls.Add(this.lblDocument);
@@ -165,7 +188,7 @@ namespace GeekHub.Presentation.itemsList
             this.Controls.Add(this.imageSeller);
             this.Controls.Add(this.panel1);
             this.Name = "ListItemSeller";
-            this.Size = new System.Drawing.Size(579, 163);
+            this.Size = new System.Drawing.Size(643, 163);
             ((System.ComponentModel.ISupportInitialize)(this.imageSeller)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -185,5 +208,7 @@ namespace GeekHub.Presentation.itemsList
         private System.Windows.Forms.Label lblNameSeller;
         private System.Windows.Forms.Label label11221;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button bttEditar;
+        private System.Windows.Forms.Button bttEstado;
     }
 }

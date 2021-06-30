@@ -36,6 +36,8 @@ namespace GeekHub.Presentation.itemsList
             this.lblCategory = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label0 = new System.Windows.Forms.Label();
+            this.bttEstado = new System.Windows.Forms.Button();
+            this.bttEditar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.productImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,7 +70,7 @@ namespace GeekHub.Presentation.itemsList
             this.lblNameProduct.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblNameProduct.Location = new System.Drawing.Point(185, 11);
             this.lblNameProduct.Name = "lblNameProduct";
-            this.lblNameProduct.Size = new System.Drawing.Size(522, 36);
+            this.lblNameProduct.Size = new System.Drawing.Size(522, 41);
             this.lblNameProduct.TabIndex = 20;
             this.lblNameProduct.Text = "NameProduct";
             this.lblNameProduct.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -116,10 +118,32 @@ namespace GeekHub.Presentation.itemsList
             this.label0.TabIndex = 21;
             this.label0.Text = "Category: ";
             // 
+            // bttEstado
+            // 
+            this.bttEstado.Font = new System.Drawing.Font("Quicksand", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttEstado.Location = new System.Drawing.Point(621, 127);
+            this.bttEstado.Name = "bttEstado";
+            this.bttEstado.Size = new System.Drawing.Size(86, 35);
+            this.bttEstado.TabIndex = 27;
+            this.bttEstado.Text = "Estado";
+            this.bttEstado.UseVisualStyleBackColor = true;
+            // 
+            // bttEditar
+            // 
+            this.bttEditar.Font = new System.Drawing.Font("Quicksand", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttEditar.Location = new System.Drawing.Point(621, 75);
+            this.bttEditar.Name = "bttEditar";
+            this.bttEditar.Size = new System.Drawing.Size(86, 35);
+            this.bttEditar.TabIndex = 26;
+            this.bttEditar.Text = "Editar";
+            this.bttEditar.UseVisualStyleBackColor = true;
+            // 
             // ProductDetailAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.bttEstado);
+            this.Controls.Add(this.bttEditar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.productImage);
             this.Controls.Add(this.lblNameProduct);
@@ -144,5 +168,7 @@ namespace GeekHub.Presentation.itemsList
         private System.Windows.Forms.Label lblCategory;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label0;
+        private System.Windows.Forms.Button bttEstado;
+        private System.Windows.Forms.Button bttEditar;
     }
 }
