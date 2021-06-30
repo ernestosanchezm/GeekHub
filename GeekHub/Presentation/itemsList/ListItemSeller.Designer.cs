@@ -153,9 +153,9 @@ namespace GeekHub.Presentation.itemsList
             // bttEditar
             // 
             this.bttEditar.Font = new System.Drawing.Font("Quicksand", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttEditar.Location = new System.Drawing.Point(554, 76);
+            this.bttEditar.Location = new System.Drawing.Point(501, 62);
             this.bttEditar.Name = "bttEditar";
-            this.bttEditar.Size = new System.Drawing.Size(86, 35);
+            this.bttEditar.Size = new System.Drawing.Size(142, 35);
             this.bttEditar.TabIndex = 12;
             this.bttEditar.Text = "Editar";
             this.bttEditar.UseVisualStyleBackColor = true;
@@ -163,9 +163,9 @@ namespace GeekHub.Presentation.itemsList
             // bttEstado
             // 
             this.bttEstado.Font = new System.Drawing.Font("Quicksand", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttEstado.Location = new System.Drawing.Point(554, 118);
+            this.bttEstado.Location = new System.Drawing.Point(501, 104);
             this.bttEstado.Name = "bttEstado";
-            this.bttEstado.Size = new System.Drawing.Size(86, 35);
+            this.bttEstado.Size = new System.Drawing.Size(142, 35);
             this.bttEstado.TabIndex = 13;
             this.bttEstado.Text = "Estado";
             this.bttEstado.UseVisualStyleBackColor = true;
@@ -174,6 +174,7 @@ namespace GeekHub.Presentation.itemsList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.bttEstado);
             this.Controls.Add(this.bttEditar);
             this.Controls.Add(this.label11221);
@@ -188,7 +189,7 @@ namespace GeekHub.Presentation.itemsList
             this.Controls.Add(this.imageSeller);
             this.Controls.Add(this.panel1);
             this.Name = "ListItemSeller";
-            this.Size = new System.Drawing.Size(643, 163);
+            this.Size = new System.Drawing.Size(641, 161);
             ((System.ComponentModel.ISupportInitialize)(this.imageSeller)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

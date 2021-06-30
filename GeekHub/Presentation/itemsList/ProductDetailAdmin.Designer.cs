@@ -121,9 +121,9 @@ namespace GeekHub.Presentation.itemsList
             // bttEstado
             // 
             this.bttEstado.Font = new System.Drawing.Font("Quicksand", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttEstado.Location = new System.Drawing.Point(621, 127);
+            this.bttEstado.Location = new System.Drawing.Point(584, 127);
             this.bttEstado.Name = "bttEstado";
-            this.bttEstado.Size = new System.Drawing.Size(86, 35);
+            this.bttEstado.Size = new System.Drawing.Size(123, 35);
             this.bttEstado.TabIndex = 27;
             this.bttEstado.Text = "Estado";
             this.bttEstado.UseVisualStyleBackColor = true;
@@ -131,9 +131,9 @@ namespace GeekHub.Presentation.itemsList
             // bttEditar
             // 
             this.bttEditar.Font = new System.Drawing.Font("Quicksand", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttEditar.Location = new System.Drawing.Point(621, 75);
+            this.bttEditar.Location = new System.Drawing.Point(584, 75);
             this.bttEditar.Name = "bttEditar";
-            this.bttEditar.Size = new System.Drawing.Size(86, 35);
+            this.bttEditar.Size = new System.Drawing.Size(123, 35);
             this.bttEditar.TabIndex = 26;
             this.bttEditar.Text = "Editar";
             this.bttEditar.UseVisualStyleBackColor = true;
@@ -142,6 +142,7 @@ namespace GeekHub.Presentation.itemsList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Controls.Add(this.bttEstado);
             this.Controls.Add(this.bttEditar);
             this.Controls.Add(this.button1);
@@ -152,7 +153,7 @@ namespace GeekHub.Presentation.itemsList
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label0);
             this.Name = "ProductDetailAdmin";
-            this.Size = new System.Drawing.Size(719, 174);
+            this.Size = new System.Drawing.Size(715, 170);
             ((System.ComponentModel.ISupportInitialize)(this.productImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

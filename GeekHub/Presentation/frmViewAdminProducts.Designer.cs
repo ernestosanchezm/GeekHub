@@ -126,7 +126,7 @@ namespace GeekHub.Presentation
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(328, 220);
+            this.label1.Location = new System.Drawing.Point(305, 220);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(168, 50);
             this.label1.TabIndex = 24;
@@ -137,7 +137,7 @@ namespace GeekHub.Presentation
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(1165, 220);
+            this.label2.Location = new System.Drawing.Point(1151, 220);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(115, 50);
             this.label2.TabIndex = 25;
