@@ -64,5 +64,10 @@ namespace GeekHub.Presentation.itemsList
             set { _imageProduct = value; productImage.Image = value; }
         }
         #endregion
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

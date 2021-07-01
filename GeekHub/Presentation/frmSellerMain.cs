@@ -17,6 +17,7 @@ namespace GeekHub.Presentation
         private OtherEditSeller other;
         private LoginSellers login;
         private SellerProfile profile;
+        private frmSellerMain smain;
 
 
         public frmSellerMain()
@@ -38,9 +39,9 @@ namespace GeekHub.Presentation
             date = "11/12/2000";
             string workingDirectory = Environment.CurrentDirectory;
 
-            string projectDirectory = Directory.GetParent(workingDirectory).Parent.FullName;
+            string projectDirectory = Directory.GetParent(workingDirectory).Parent.Parent.FullName;
 
-            string image = projectDirectory + @"\Files\Logos\wsplogo.png";
+            string image = projectDirectory + @"\GeekHub_WS\Fileserver\Productos\p_02_01.jpg";
             int CantidadDeContactos = 3;
             
 
@@ -90,6 +91,14 @@ namespace GeekHub.Presentation
             this.Hide();
             other = new OtherEditSeller();
             other.Show();
+        }
+
+        private void btHome_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            smain = new frmSellerMain();
+            smain.Refresh();
+            smain.Show();
         }
     }
 }

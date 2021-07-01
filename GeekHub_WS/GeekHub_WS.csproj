@@ -79,6 +79,9 @@
     <Content Include="Fileserver\Categorias\cat7.jpg" />
     <Content Include="Fileserver\Categorias\cat8.jpg" />
     <Content Include="Fileserver\Categorias\cat9.jpg" />
+    <Content Include="Fileserver\Productos\p_02_01.jpg" />
+    <Content Include="Fileserver\Productos\p_02_02.jpg" />
+    <Content Include="Fileserver\Productos\p_02_03.jpg" />
     <Content Include="GeekHubWS.asmx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -101,9 +104,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Fileserver\Productos\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -29,6 +29,7 @@ namespace GeekHub.Presentation
         {
             this.Hide();
             smain = new frmMainView();
+            smain.Refresh();
             smain.Show();
         }
 

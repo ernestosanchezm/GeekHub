@@ -31,7 +31,6 @@ namespace GeekHub.Presentation.DetallesContacto
         {
             this.NombreProducto = new System.Windows.Forms.Label();
             this.ContactImage = new System.Windows.Forms.PictureBox();
-            this.btn_eliminar = new System.Windows.Forms.Button();
             this.lblprecio = new System.Windows.Forms.Label();
             this.lbldt = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ContactImage)).BeginInit();
@@ -63,22 +62,6 @@ namespace GeekHub.Presentation.DetallesContacto
             this.ContactImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ContactImage.TabIndex = 3;
             this.ContactImage.TabStop = false;
-            // 
-            // btn_eliminar
-            // 
-            this.btn_eliminar.AllowDrop = true;
-            this.btn_eliminar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_eliminar.BackColor = System.Drawing.SystemColors.Control;
-            this.btn_eliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_eliminar.Font = new System.Drawing.Font("Quicksand", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_eliminar.ForeColor = System.Drawing.Color.Black;
-            this.btn_eliminar.Location = new System.Drawing.Point(827, 96);
-            this.btn_eliminar.Name = "btn_eliminar";
-            this.btn_eliminar.Size = new System.Drawing.Size(140, 50);
-            this.btn_eliminar.TabIndex = 6;
-            this.btn_eliminar.Text = "ELIMINAR";
-            this.btn_eliminar.UseVisualStyleBackColor = false;
-            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
             // 
             // lblprecio
             // 
@@ -117,7 +100,6 @@ namespace GeekHub.Presentation.DetallesContacto
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.lbldt);
             this.Controls.Add(this.lblprecio);
-            this.Controls.Add(this.btn_eliminar);
             this.Controls.Add(this.NombreProducto);
             this.Controls.Add(this.ContactImage);
             this.Margin = new System.Windows.Forms.Padding(20);
@@ -132,7 +114,6 @@ namespace GeekHub.Presentation.DetallesContacto
         #endregion
         private System.Windows.Forms.Label NombreProducto;
         private System.Windows.Forms.PictureBox ContactImage;
-        private System.Windows.Forms.Button btn_eliminar;
         private System.Windows.Forms.Label lblprecio;
         private System.Windows.Forms.Label lbldt;
     }

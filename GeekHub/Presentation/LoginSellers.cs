@@ -32,5 +32,34 @@ namespace GeekHub.Presentation
         {
 
         }
+
+        private void btLogin_Click(object sender, EventArgs e)
+        {
+            GeekHubWS.GeekHubWSSoapClient instWS = new GeekHubWS.GeekHubWSSoapClient();
+            //var resLogin = instWS.loginFindByEmailAndPassword("tommy.s@gmail.com", "1234");
+            //var resLogin = instWS.loginFindByEmailAndPassword("solange.s@gmail.com", "1234");
+            var resLogin = instWS.loginFindByEmailAndPassword("cielo.s@gmail.com", "1234"); 
+
+            if (resLogin != null)
+            {
+                switch (resLogin.RoleId)
+                {
+                    case 1:
+                        var frmAdm = new frmAdminMain();
+                        frmAdm.Show();
+                        break;
+                    case 2:
+                        var frmSeller = new frmSellerMain();
+                        frmSeller.Show();
+                        break;
+                }
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Credenciales erradas", "Error Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
     }
 }

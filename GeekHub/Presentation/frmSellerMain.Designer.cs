@@ -36,6 +36,7 @@ namespace GeekHub.Presentation
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_Filtrar = new System.Windows.Forms.Button();
             this.Panel01 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btHome = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -84,6 +85,7 @@ namespace GeekHub.Presentation
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btHome);
             this.panel1.Controls.Add(this.bttLogOut);
             this.panel1.Controls.Add(this.bttOptions);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -136,6 +138,20 @@ namespace GeekHub.Presentation
             this.Panel01.Size = new System.Drawing.Size(1496, 540);
             this.Panel01.TabIndex = 7;
             // 
+            // btHome
+            // 
+            this.btHome.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btHome.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btHome.Font = new System.Drawing.Font("Quicksand", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btHome.Location = new System.Drawing.Point(897, 19);
+            this.btHome.Margin = new System.Windows.Forms.Padding(2);
+            this.btHome.Name = "btHome";
+            this.btHome.Size = new System.Drawing.Size(202, 69);
+            this.btHome.TabIndex = 10;
+            this.btHome.Text = "Inicio";
+            this.btHome.UseVisualStyleBackColor = true;
+            this.btHome.Click += new System.EventHandler(this.btHome_Click);
+            // 
             // frmSellerMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -165,5 +181,6 @@ namespace GeekHub.Presentation
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_Filtrar;
         private System.Windows.Forms.FlowLayoutPanel Panel01;
+        private System.Windows.Forms.Button btHome;
     }
 }

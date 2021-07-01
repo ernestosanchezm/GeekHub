@@ -15,6 +15,8 @@ namespace GeekHub.Presentation
         private LoginSellers login;
         private SellerProfile perfil;
         private OtherEditSeller other;
+        private frmSellerMain smain;
+        private SellerEdit sedit;
 
         public SellerProfile()
         {
@@ -57,6 +59,26 @@ namespace GeekHub.Presentation
         }
 
         private void SellerProfile_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void btHome_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            smain = new frmSellerMain();
+            smain.Refresh();
+            smain.Show();
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            sedit = new SellerEdit();
+            sedit.Refresh();
+            sedit.Show();
+        }
+
+        private void lblName_Click(object sender, EventArgs e)
         {
 
         }

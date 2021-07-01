@@ -95,6 +95,8 @@ namespace GeekHub.Presentation
             }
         }
 
+
+
         private void radioButtons_CheckedChanged(object sender, EventArgs e)
         {
             RadioButton radioButton = sender as RadioButton;
@@ -154,6 +156,16 @@ namespace GeekHub.Presentation
             this.Hide();
             oeu = new OtherEditUsuario();
             oeu.Show();
+        }
+
+        private void flowLayoutPanelOrden_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void flowLayoutFiltrosCategory_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

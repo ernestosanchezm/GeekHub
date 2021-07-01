@@ -19,7 +19,6 @@ namespace GeekHub.Presentation.itemsList
             this._nameCategory = nameCategory;
             categoryImage.ImageLocation = imageCategory;
         }
-        List<ListItemProductDetail> listProduct;
 
         #region Properties      
         public int CategoryId { get; set; }

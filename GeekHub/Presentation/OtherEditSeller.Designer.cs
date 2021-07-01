@@ -36,7 +36,7 @@ namespace GeekHub.Presentation
             this.lblReg = new System.Windows.Forms.Label();
             this.lblRecibo = new System.Windows.Forms.Label();
             this.lbExpiracion = new System.Windows.Forms.Label();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.DNI = new System.Windows.Forms.CheckedListBox();
             this.lblDoc = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -127,14 +127,14 @@ namespace GeekHub.Presentation
             this.lbExpiracion.Text = "AQUI VA LA FECHA DE EXPIRACION DE LA BD";
             this.lbExpiracion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // checkedListBox1
+            // DNI
             // 
-            this.checkedListBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(267, 258);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(350, 49);
-            this.checkedListBox1.TabIndex = 53;
+            this.DNI.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DNI.FormattingEnabled = true;
+            this.DNI.Location = new System.Drawing.Point(267, 258);
+            this.DNI.Name = "DNI";
+            this.DNI.Size = new System.Drawing.Size(350, 49);
+            this.DNI.TabIndex = 53;
             // 
             // lblDoc
             // 
@@ -196,7 +196,7 @@ namespace GeekHub.Presentation
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.btnsave);
-            this.panel1.Controls.Add(this.checkedListBox1);
+            this.panel1.Controls.Add(this.DNI);
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.lblReg);
@@ -236,7 +236,7 @@ namespace GeekHub.Presentation
         private System.Windows.Forms.Label lblReg;
         private System.Windows.Forms.Label lblRecibo;
         private System.Windows.Forms.Label lbExpiracion;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.CheckedListBox DNI;
         private System.Windows.Forms.Label lblDoc;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;

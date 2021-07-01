@@ -97,7 +97,7 @@ namespace GeekHub.Presentation.itemsList
             // productImage
             // 
             this.productImage.Location = new System.Drawing.Point(30, 15);
-            this.productImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.productImage.Margin = new System.Windows.Forms.Padding(2);
             this.productImage.Name = "productImage";
             this.productImage.Size = new System.Drawing.Size(185, 188);
             this.productImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -113,6 +113,7 @@ namespace GeekHub.Presentation.itemsList
             this.button1.TabIndex = 18;
             this.button1.Text = "Detalles";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ListItemProductDetail
             // 

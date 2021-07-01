@@ -18,8 +18,8 @@ namespace GeekHub.Presentation
         private DetallesContacto.DetallesContacto dc;
         private frmLogin login;
         private frmClientMain cmain;
-        private ListItemProductDetail product;
-
+        private PerfilSerllerUserView psv;
+        
         public DetalleProducto()
         {
             InitializeComponent();
@@ -53,7 +53,10 @@ namespace GeekHub.Presentation
 
         private void bt_SelProf_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            psv = new PerfilSerllerUserView();
+            psv.Refresh();
+            psv.Show();
         }
 
         private void btHome_Click(object sender, EventArgs e)

@@ -27,6 +27,7 @@ namespace GeekHub.Presentation
             InitializeComponent();
             this.BackColor = Color.FromArgb(153, 153, 255);
             label1.ForeColor = Color.FromArgb(61, 61, 61);
+            Refresh();
         }
 
         private void populateItems()

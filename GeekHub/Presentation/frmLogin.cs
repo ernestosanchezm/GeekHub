@@ -44,16 +44,9 @@ namespace GeekHub.Presentation
                 switch (resLogin.RoleId)
                 {
                     case 1:
-                        var frmAdm = new frmAdminMain();
-                        frmAdm.Show();
-                        break;
-                    case 2:
-                        var frmSeller = new frmSellerMain();
-                        frmSeller.Show();
-                        break;
-                    case 3:
                         var frmClient = new frmClientMain();
                         frmClient.Show();
+                        frmClient.Refresh();
                         break;
                 }
                 this.Hide();

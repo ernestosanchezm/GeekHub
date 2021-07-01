@@ -41,6 +41,9 @@ namespace GeekHub.Presentation
             this.tbSearch = new System.Windows.Forms.TextBox();
             this.bttOptions = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.flowLayoutPanelOrden.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -61,11 +64,11 @@ namespace GeekHub.Presentation
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(0, 136);
+            this.label1.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(4, 134);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(214, 31);
+            this.label1.Size = new System.Drawing.Size(217, 40);
             this.label1.TabIndex = 12;
             this.label1.Text = "Products Detail";
             // 
@@ -86,10 +89,13 @@ namespace GeekHub.Presentation
             this.flowLayoutPanelOrden.AutoScroll = true;
             this.flowLayoutPanelOrden.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanelOrden.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.flowLayoutPanelOrden.Controls.Add(this.radioButton1);
+            this.flowLayoutPanelOrden.Controls.Add(this.radioButton2);
             this.flowLayoutPanelOrden.Location = new System.Drawing.Point(1377, 170);
             this.flowLayoutPanelOrden.Name = "flowLayoutPanelOrden";
             this.flowLayoutPanelOrden.Size = new System.Drawing.Size(195, 129);
             this.flowLayoutPanelOrden.TabIndex = 16;
+            this.flowLayoutPanelOrden.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanelOrden_Paint);
             // 
             // flowLayoutFiltrosCategory
             // 
@@ -101,6 +107,7 @@ namespace GeekHub.Presentation
             this.flowLayoutFiltrosCategory.Name = "flowLayoutFiltrosCategory";
             this.flowLayoutFiltrosCategory.Size = new System.Drawing.Size(195, 504);
             this.flowLayoutFiltrosCategory.TabIndex = 15;
+            this.flowLayoutFiltrosCategory.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutFiltrosCategory_Paint);
             // 
             // lblFiltros
             // 
@@ -197,6 +204,30 @@ namespace GeekHub.Presentation
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Quicksand", 10F, System.Drawing.FontStyle.Bold);
+            this.radioButton1.Location = new System.Drawing.Point(3, 3);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(160, 25);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "De mayor a  menor";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Quicksand", 10F, System.Drawing.FontStyle.Bold);
+            this.radioButton2.Location = new System.Drawing.Point(3, 34);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(156, 25);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "De menor a mayor";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
             // frmViewProductsDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -214,6 +245,8 @@ namespace GeekHub.Presentation
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewProductsDetail";
             this.Load += new System.EventHandler(this.frmViewProductsDetail_Load);
+            this.flowLayoutPanelOrden.ResumeLayout(false);
+            this.flowLayoutPanelOrden.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -236,5 +269,7 @@ namespace GeekHub.Presentation
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btHome;
         private System.Windows.Forms.TextBox tbSearch;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
     }
 }

@@ -71,6 +71,7 @@ namespace GeekHub.Presentation
             this.btLogin.TabIndex = 6;
             this.btLogin.Text = "Ingresar";
             this.btLogin.UseVisualStyleBackColor = false;
+            this.btLogin.Click += new System.EventHandler(this.btLogin_Click);
             // 
             // txPsw
             // 
