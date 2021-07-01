@@ -19,6 +19,7 @@ namespace GeekHub.Presentation
         private frmLogin login;
         private OtherEditUsuario oe;
         private frmClientMain cmain;
+        private SoporteTecnico Stec;
 
         List<ListItem> listItems;
         public frmMainView()
@@ -28,6 +29,8 @@ namespace GeekHub.Presentation
             this.BackColor = Color.FromArgb(153, 153, 255);
             label1.ForeColor = Color.FromArgb(61, 61, 61);
             Refresh();
+            button1.BackColor = Color.FromArgb(50, Color.White);
+
         }
 
         private void populateItems()
@@ -97,6 +100,13 @@ namespace GeekHub.Presentation
             this.Hide();
             cmain = new frmClientMain();
             cmain.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Stec = new SoporteTecnico();
+            Stec.Show();
         }
     }
 }

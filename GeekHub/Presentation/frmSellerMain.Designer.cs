@@ -33,10 +33,11 @@ namespace GeekHub.Presentation
             this.bttOptions = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btHome = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_Filtrar = new System.Windows.Forms.Button();
             this.Panel01 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btHome = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -95,6 +96,20 @@ namespace GeekHub.Presentation
             this.panel1.Size = new System.Drawing.Size(1562, 106);
             this.panel1.TabIndex = 6;
             // 
+            // btHome
+            // 
+            this.btHome.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btHome.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btHome.Font = new System.Drawing.Font("Quicksand", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btHome.Location = new System.Drawing.Point(897, 19);
+            this.btHome.Margin = new System.Windows.Forms.Padding(2);
+            this.btHome.Name = "btHome";
+            this.btHome.Size = new System.Drawing.Size(202, 69);
+            this.btHome.TabIndex = 10;
+            this.btHome.Text = "Inicio";
+            this.btHome.UseVisualStyleBackColor = true;
+            this.btHome.Click += new System.EventHandler(this.btHome_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -135,28 +150,28 @@ namespace GeekHub.Presentation
             this.Panel01.Margin = new System.Windows.Forms.Padding(100);
             this.Panel01.Name = "Panel01";
             this.Panel01.Padding = new System.Windows.Forms.Padding(10);
-            this.Panel01.Size = new System.Drawing.Size(1496, 540);
+            this.Panel01.Size = new System.Drawing.Size(1496, 490);
             this.Panel01.TabIndex = 7;
             // 
-            // btHome
+            // button1
             // 
-            this.btHome.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btHome.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btHome.Font = new System.Drawing.Font("Quicksand", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btHome.Location = new System.Drawing.Point(897, 19);
-            this.btHome.Margin = new System.Windows.Forms.Padding(2);
-            this.btHome.Name = "btHome";
-            this.btHome.Size = new System.Drawing.Size(202, 69);
-            this.btHome.TabIndex = 10;
-            this.btHome.Text = "Inicio";
-            this.btHome.UseVisualStyleBackColor = true;
-            this.btHome.Click += new System.EventHandler(this.btHome_Click);
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Font = new System.Drawing.Font("Quicksand", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1420, 782);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(162, 80);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "SOPORTE TECNICO";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmSellerMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1584, 861);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Panel01);
             this.Controls.Add(this.btn_Filtrar);
@@ -182,5 +197,6 @@ namespace GeekHub.Presentation
         private System.Windows.Forms.Button btn_Filtrar;
         private System.Windows.Forms.FlowLayoutPanel Panel01;
         private System.Windows.Forms.Button btHome;
+        private System.Windows.Forms.Button button1;
     }
 }

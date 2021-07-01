@@ -30,6 +30,7 @@ namespace GeekHub.Presentation
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
+
         }
 
         private void btLogin_Click(object sender, EventArgs e)

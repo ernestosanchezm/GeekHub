@@ -18,13 +18,14 @@ namespace GeekHub.Presentation
         private LoginSellers login;
         private SellerProfile profile;
         private frmSellerMain smain;
-
+        private SoporteTecnico Stec;
 
         public frmSellerMain()
         {
             InitializeComponent();
             cargarMetodos();
             this.BackColor = Color.FromArgb(153, 153, 255);
+            button1.BackColor = Color.FromArgb(50, Color.White);
 
         }
 
@@ -99,6 +100,13 @@ namespace GeekHub.Presentation
             smain = new frmSellerMain();
             smain.Refresh();
             smain.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Stec = new SoporteTecnico();
+            Stec.Show();
         }
     }
 }

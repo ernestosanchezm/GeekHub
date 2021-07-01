@@ -36,6 +36,7 @@ namespace GeekHub.Presentation
             this.btHome = new System.Windows.Forms.Button();
             this.bttOptions = new System.Windows.Forms.Button();
             this.bttLogOut = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -137,12 +138,26 @@ namespace GeekHub.Presentation
             this.bttLogOut.UseVisualStyleBackColor = true;
             this.bttLogOut.Click += new System.EventHandler(this.bttLogOut_Click);
             // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Font = new System.Drawing.Font("Quicksand", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1426, 783);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(162, 80);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "SOPORTE TECNICO";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmMainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1584, 861);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.flowLayoutPanelProducts);
             this.Controls.Add(this.panel1);
@@ -167,5 +182,6 @@ namespace GeekHub.Presentation
         private System.Windows.Forms.Button bttOptions;
         private System.Windows.Forms.Button bttLogOut;
         private System.Windows.Forms.Button btHome;
+        private System.Windows.Forms.Button button1;
     }
 }
