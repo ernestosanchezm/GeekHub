@@ -16,6 +16,13 @@ namespace GeekHub.GeekHubWS {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="GeekHubWS.GeekHubWSSoap")]
     public interface GeekHubWSSoap {
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ListarProductosPorVendedor", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        GeekHub.GeekHubWS.ItProducto[] ListarProductosPorVendedor(int idVendedor);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ListarProductosPorVendedor", ReplyAction="*")]
+        System.Threading.Tasks.Task<GeekHub.GeekHubWS.ItProducto[]> ListarProductosPorVendedorAsync(int idVendedor);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ListarProductosPorCategoria", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         GeekHub.GeekHubWS.ItProducto[] ListarProductosPorCategoria(int categoryId);
@@ -78,6 +85,8 @@ namespace GeekHub.GeekHubWS {
         private string nCategoriaField;
         
         private string uRL_ImageField;
+        
+        private System.Nullable<System.DateTime> fRegistroField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Order=0)]
@@ -148,6 +157,18 @@ namespace GeekHub.GeekHubWS {
             set {
                 this.uRL_ImageField = value;
                 this.RaisePropertyChanged("URL_Image");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=6)]
+        public System.Nullable<System.DateTime> FRegistro {
+            get {
+                return this.fRegistroField;
+            }
+            set {
+                this.fRegistroField = value;
+                this.RaisePropertyChanged("FRegistro");
             }
         }
         
@@ -306,6 +327,14 @@ namespace GeekHub.GeekHubWS {
         
         public GeekHubWSSoapClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
+        }
+        
+        public GeekHub.GeekHubWS.ItProducto[] ListarProductosPorVendedor(int idVendedor) {
+            return base.Channel.ListarProductosPorVendedor(idVendedor);
+        }
+        
+        public System.Threading.Tasks.Task<GeekHub.GeekHubWS.ItProducto[]> ListarProductosPorVendedorAsync(int idVendedor) {
+            return base.Channel.ListarProductosPorVendedorAsync(idVendedor);
         }
         
         public GeekHub.GeekHubWS.ItProducto[] ListarProductosPorCategoria(int categoryId) {

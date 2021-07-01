@@ -13,5 +13,6 @@ namespace GeekHub_WS.Models
         public int CategoriaId { get; set; }
         public string NCategoria { get; set; }
         public string URL_Image { get; set; }
+        public DateTime? FRegistro{ get; set; }
     }
 }

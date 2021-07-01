@@ -42,13 +42,13 @@ namespace GeekHub.Presentation
 
             string image = projectDirectory + @"\Files\Logos\wsplogo.png";
             int CantidadDeContactos = 3;
+            
 
             SellerMain[] Detalles = new SellerMain[CantidadDeContactos];
-
+           
             for (int i = 0; i < CantidadDeContactos; i++)
             {
                 Detalles[i] = new SellerMain(titulo, precio,date,image, "1");
-
                 Panel01.Controls.Add(Detalles[i]);               
             }
 

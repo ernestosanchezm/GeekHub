@@ -36,7 +36,8 @@ namespace GeekHub.Presentation
         {
             GeekHubWS.GeekHubWSSoapClient instWS = new GeekHubWS.GeekHubWSSoapClient();
             //var resLogin=instWS.loginFindByEmailAndPassword("tommy.s@gmail.com", "1234");
-            var resLogin = instWS.loginFindByEmailAndPassword("solange.s@gmail.com", "1234"); 
+            //var resLogin = instWS.loginFindByEmailAndPassword("solange.s@gmail.com", "1234"); 
+            var resLogin = instWS.loginFindByEmailAndPassword("cielo.s@gmail.com", "1234"); 
 
             if (resLogin != null)
             {
