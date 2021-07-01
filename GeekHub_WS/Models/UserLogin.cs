@@ -11,5 +11,6 @@ namespace GeekHub_WS.Models
         public string LastName{ get; set; }
         public string Email{ get; set; }
         public int RoleId{ get; set; }
+        public int UsuarioId { get; set; }
     }
 }

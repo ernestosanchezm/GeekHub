@@ -198,6 +198,8 @@ namespace GeekHub.GeekHubWS {
         
         private int roleIdField;
         
+        private int usuarioIdField;
+        
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Order=0)]
         public string Name {
@@ -243,6 +245,18 @@ namespace GeekHub.GeekHubWS {
             set {
                 this.roleIdField = value;
                 this.RaisePropertyChanged("RoleId");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        public int UsuarioId {
+            get {
+                return this.usuarioIdField;
+            }
+            set {
+                this.usuarioIdField = value;
+                this.RaisePropertyChanged("UsuarioId");
             }
         }
         

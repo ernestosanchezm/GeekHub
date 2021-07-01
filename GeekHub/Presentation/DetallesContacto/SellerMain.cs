@@ -12,7 +12,7 @@ namespace GeekHub.Presentation.DetallesContacto
 {
     public partial class SellerMain : UserControl
     {
-
+        public SellerMain() { }
         public SellerMain(string np,string price, string date, string image, string id)
         {
                         InitializeComponent();
@@ -104,6 +104,11 @@ namespace GeekHub.Presentation.DetallesContacto
         }
 
         private void NombreProducto_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ContactImage_Click(object sender, EventArgs e)
         {
 
         }

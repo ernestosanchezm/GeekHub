@@ -43,7 +43,7 @@ namespace GeekHub.Presentation.DetallesContacto
             this.NombreProducto.AllowDrop = true;
             this.NombreProducto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.NombreProducto.Cursor = System.Windows.Forms.Cursors.Default;
-            this.NombreProducto.Font = new System.Drawing.Font("Quicksand", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NombreProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NombreProducto.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.NombreProducto.Location = new System.Drawing.Point(249, 15);
             this.NombreProducto.Name = "NombreProducto";
@@ -63,6 +63,7 @@ namespace GeekHub.Presentation.DetallesContacto
             this.ContactImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ContactImage.TabIndex = 3;
             this.ContactImage.TabStop = false;
+            this.ContactImage.Click += new System.EventHandler(this.ContactImage_Click);
             // 
             // btn_eliminar
             // 
@@ -70,7 +71,7 @@ namespace GeekHub.Presentation.DetallesContacto
             this.btn_eliminar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_eliminar.BackColor = System.Drawing.SystemColors.Control;
             this.btn_eliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_eliminar.Font = new System.Drawing.Font("Quicksand", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_eliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_eliminar.ForeColor = System.Drawing.Color.Black;
             this.btn_eliminar.Location = new System.Drawing.Point(827, 96);
             this.btn_eliminar.Name = "btn_eliminar";
@@ -85,7 +86,7 @@ namespace GeekHub.Presentation.DetallesContacto
             this.lblprecio.AccessibleName = "Name";
             this.lblprecio.AllowDrop = true;
             this.lblprecio.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblprecio.Font = new System.Drawing.Font("Quicksand", 15F, System.Drawing.FontStyle.Bold);
+            this.lblprecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.lblprecio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblprecio.Location = new System.Drawing.Point(249, 96);
             this.lblprecio.Name = "lblprecio";
@@ -99,7 +100,7 @@ namespace GeekHub.Presentation.DetallesContacto
             this.lbldt.AccessibleName = "Name";
             this.lbldt.AllowDrop = true;
             this.lbldt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbldt.Font = new System.Drawing.Font("Quicksand", 15F, System.Drawing.FontStyle.Bold);
+            this.lbldt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.lbldt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbldt.Location = new System.Drawing.Point(249, 162);
             this.lbldt.Name = "lbldt";

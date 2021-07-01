@@ -24,5 +24,10 @@ namespace GeekHub.Helpers
             catch { return null; }
          
         }
+
+        internal static Bitmap ToBitmap(string v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -113,6 +113,7 @@
           <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
           <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
           <s:element minOccurs="1" maxOccurs="1" name="RoleId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UsuarioId" type="s:int" />
         </s:sequence>
       </s:complexType>
       <s:element name="registerUser">

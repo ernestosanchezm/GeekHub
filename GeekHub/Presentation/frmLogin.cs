@@ -48,7 +48,7 @@ namespace GeekHub.Presentation
                         frmAdm.Show();
                         break;
                     case 2:
-                        var frmSeller = new frmSellerMain();
+                        var frmSeller = new frmSellerMain(resLogin.UsuarioId);
                         frmSeller.Show();
                         break;
                     case 3:

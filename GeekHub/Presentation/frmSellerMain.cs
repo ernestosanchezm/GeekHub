@@ -1,4 +1,5 @@
-﻿using GeekHub.Presentation.DetallesContacto;
+﻿using GeekHub.Helpers;
+using GeekHub.Presentation.DetallesContacto;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,7 +18,7 @@ namespace GeekHub.Presentation
         private OtherEditSeller other;
         private LoginSellers login;
         private SellerProfile profile;
-
+        private int SellerId;
 
         public frmSellerMain()
         {
@@ -27,6 +28,14 @@ namespace GeekHub.Presentation
 
         }
 
+        public frmSellerMain(int _SellerId)
+        {
+            InitializeComponent();
+            SellerId = _SellerId;
+            cargarMetodos();
+            this.BackColor = Color.FromArgb(153, 153, 255);
+           
+        }
 
         private void cargarMetodos()
         {
@@ -43,13 +52,28 @@ namespace GeekHub.Presentation
             string image = projectDirectory + @"\Files\Logos\wsplogo.png";
             int CantidadDeContactos = 3;
             
-
             SellerMain[] Detalles = new SellerMain[CantidadDeContactos];
+
+            GeekHubWS.GeekHubWSSoapClient instWS = new GeekHubWS.GeekHubWSSoapClient();
+            //var resLogin=instWS.loginFindByEmailAndPassword("tommy.s@gmail.com", "1234");
+            //var resLogin = instWS.loginFindByEmailAndPassword("solange.s@gmail.com", "1234"); 
+            var resLogin = instWS.loginFindByEmailAndPassword("tommy.s@gmail.com", "1234");
+            var prodsSeller = instWS.ListarProductosPorVendedor(SellerId);
+
+            foreach (var elem in prodsSeller) {
+                Bitmap bitmap = ConvertHelper.ToBitmap(Constants.URL_BASE_FILESERVER + elem.URL_Image);
+                Panel01.Controls.Add(new SellerMain { 
+                    MyTitle=elem.NProducto,
+                    MyPrice=elem.Price.ToString(),
+                    MyDate=elem.FRegistro.ToString(),
+                    MyImage= Constants.URL_BASE_FILESERVER + elem.URL_Image
+                });
+            }
            
             for (int i = 0; i < CantidadDeContactos; i++)
             {
                 Detalles[i] = new SellerMain(titulo, precio,date,image, "1");
-                Panel01.Controls.Add(Detalles[i]);               
+                              
             }
 
         }
