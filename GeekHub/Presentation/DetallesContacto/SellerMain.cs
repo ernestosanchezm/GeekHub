@@ -96,8 +96,6 @@ namespace GeekHub.Presentation.DetallesContacto
 
         private void SellerMain_Load(object sender, EventArgs e)
         {
-            btn_eliminar.BackColor = Color.FromArgb(153, 153, 255);
-            btn_eliminar.ForeColor = System.Drawing.Color.White;
             lblprecio.ForeColor = System.Drawing.Color.FromArgb(61, 61, 61);
             lbldt.ForeColor = System.Drawing.Color.FromArgb(61, 61, 61);
             NombreProducto.ForeColor = System.Drawing.Color.FromArgb(61, 61, 61);

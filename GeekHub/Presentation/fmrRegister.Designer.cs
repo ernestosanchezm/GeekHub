@@ -45,9 +45,9 @@ namespace GeekHub.Presentation
             this.clbsx = new System.Windows.Forms.CheckedListBox();
             this.tbCorreo = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblReg = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblReg = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -62,6 +62,7 @@ namespace GeekHub.Presentation
             this.btAcc.TabIndex = 38;
             this.btAcc.Text = "REGISTRARSE";
             this.btAcc.UseVisualStyleBackColor = false;
+            this.btAcc.Click += new System.EventHandler(this.btAcc_Click);
             // 
             // btcnl
             // 
@@ -245,32 +246,6 @@ namespace GeekHub.Presentation
             this.panel1.Size = new System.Drawing.Size(794, 621);
             this.panel1.TabIndex = 0;
             // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Quicksand", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(129, 79);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 30);
-            this.label3.TabIndex = 39;
-            this.label3.Text = "NOMBRE:";
-            // 
-            // lblReg
-            // 
-            this.lblReg.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblReg.AutoSize = true;
-            this.lblReg.BackColor = System.Drawing.Color.Transparent;
-            this.lblReg.Font = new System.Drawing.Font("Quicksand", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReg.ForeColor = System.Drawing.Color.Black;
-            this.lblReg.Location = new System.Drawing.Point(227, 0);
-            this.lblReg.Name = "lblReg";
-            this.lblReg.Size = new System.Drawing.Size(360, 59);
-            this.lblReg.TabIndex = 39;
-            this.lblReg.Text = "Registrar Usuario";
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.lblReg);
@@ -285,6 +260,32 @@ namespace GeekHub.Presentation
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(754, 535);
             this.panel2.TabIndex = 40;
+            // 
+            // lblReg
+            // 
+            this.lblReg.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblReg.AutoSize = true;
+            this.lblReg.BackColor = System.Drawing.Color.Transparent;
+            this.lblReg.Font = new System.Drawing.Font("Quicksand", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReg.ForeColor = System.Drawing.Color.Black;
+            this.lblReg.Location = new System.Drawing.Point(227, 0);
+            this.lblReg.Name = "lblReg";
+            this.lblReg.Size = new System.Drawing.Size(360, 59);
+            this.lblReg.TabIndex = 39;
+            this.lblReg.Text = "Registrar Usuario";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Quicksand", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(129, 79);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(102, 30);
+            this.label3.TabIndex = 39;
+            this.label3.Text = "NOMBRE:";
             // 
             // fmrRegister
             // 

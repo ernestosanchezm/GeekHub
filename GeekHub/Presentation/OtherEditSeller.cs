@@ -49,6 +49,7 @@ namespace GeekHub.Presentation
             else
             {
                 smain = new frmSellerMain();
+                smain.Refresh();
                 smain.Show();
             }
 
@@ -58,6 +59,7 @@ namespace GeekHub.Presentation
         {
             this.Hide();
             smain = new frmSellerMain();
+            smain.Refresh();
             smain.Show();
         }
 

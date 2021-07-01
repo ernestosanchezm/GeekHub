@@ -162,7 +162,7 @@ namespace GeekHub.Presentation
             this.lbNombre.Name = "lbNombre";
             this.lbNombre.Size = new System.Drawing.Size(715, 74);
             this.lbNombre.TabIndex = 33;
-            this.lbNombre.Text = "NOMBRE DE LA TIENDA";
+            this.lbNombre.Text = "KAMI STORE";
             this.lbNombre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbDir
@@ -173,7 +173,7 @@ namespace GeekHub.Presentation
             this.lbDir.Name = "lbDir";
             this.lbDir.Size = new System.Drawing.Size(1032, 74);
             this.lbDir.TabIndex = 34;
-            this.lbDir.Text = "DIRECCION DE LA TIENDA";
+            this.lbDir.Text = "AV.  PERU 1020";
             this.lbDir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnContact

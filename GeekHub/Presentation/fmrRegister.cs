@@ -13,6 +13,8 @@ namespace GeekHub.Presentation
 {
     public partial class fmrRegister : Form
     {
+        frmLogin lgin;
+
         public fmrRegister()
         {
             InitializeComponent();
@@ -21,13 +23,11 @@ namespace GeekHub.Presentation
             this.Text = String.Empty;
             panel2.BackColor = Color.FromArgb(50, Color.White);
 
-
         }
 
 
         private void fmrRegister_Load(object sender, EventArgs e)
         {
-
         }
 
         private void btn_cls_Click(object sender, EventArgs e)
@@ -37,11 +37,18 @@ namespace GeekHub.Presentation
 
         private void btcnl_Click(object sender, EventArgs e)
         {
+            lgin = new frmLogin();
+            lgin.Show();
+            this.Hide();
 
-            this.Close();
         }
 
         private void lbldni_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btAcc_Click(object sender, EventArgs e)
         {
 
         }

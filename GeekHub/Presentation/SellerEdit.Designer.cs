@@ -38,7 +38,6 @@ namespace GeekHub.Presentation
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.btnsave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.btnOther = new System.Windows.Forms.Button();
             this.pnlform = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlform.SuspendLayout();
@@ -150,18 +149,6 @@ namespace GeekHub.Presentation
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // btnOther
-            // 
-            this.btnOther.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnOther.Font = new System.Drawing.Font("Quicksand", 20F, System.Drawing.FontStyle.Bold);
-            this.btnOther.Location = new System.Drawing.Point(261, 396);
-            this.btnOther.Name = "btnOther";
-            this.btnOther.Size = new System.Drawing.Size(195, 88);
-            this.btnOther.TabIndex = 49;
-            this.btnOther.Text = "Metodos de Contacto";
-            this.btnOther.UseVisualStyleBackColor = true;
-            this.btnOther.Click += new System.EventHandler(this.button1_Click);
-            // 
             // pnlform
             // 
             this.pnlform.Controls.Add(this.panel1);
@@ -181,7 +168,6 @@ namespace GeekHub.Presentation
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btnsave);
-            this.panel1.Controls.Add(this.btnOther);
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.lblReg);
@@ -224,7 +210,6 @@ namespace GeekHub.Presentation
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button btnOther;
         private System.Windows.Forms.Panel pnlform;
         private System.Windows.Forms.Panel panel1;
     }

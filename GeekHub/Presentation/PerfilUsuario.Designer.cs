@@ -117,11 +117,11 @@ namespace GeekHub.Presentation
             // 
             this.lblName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblName.Font = new System.Drawing.Font("Quicksand", 30F, System.Drawing.FontStyle.Bold);
-            this.lblName.Location = new System.Drawing.Point(435, 613);
+            this.lblName.Location = new System.Drawing.Point(440, 613);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(521, 74);
             this.lblName.TabIndex = 24;
-            this.lblName.Text = "NOMBRE COMPLETO";
+            this.lblName.Text = "JUAN";
             this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblName.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -133,7 +133,7 @@ namespace GeekHub.Presentation
             this.lblApell.Name = "lblApell";
             this.lblApell.Size = new System.Drawing.Size(654, 70);
             this.lblApell.TabIndex = 25;
-            this.lblApell.Text = "APELLIDO";
+            this.lblApell.Text = "MEDINA";
             this.lblApell.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnEditDatos

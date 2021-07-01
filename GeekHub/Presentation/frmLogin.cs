@@ -30,14 +30,15 @@ namespace GeekHub.Presentation
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
+
         }
 
         private void btLogin_Click(object sender, EventArgs e)
         {
             GeekHubWS.GeekHubWSSoapClient instWS = new GeekHubWS.GeekHubWSSoapClient();
             //var resLogin=instWS.loginFindByEmailAndPassword("tommy.s@gmail.com", "1234");
-            //var resLogin = instWS.loginFindByEmailAndPassword("solange.s@gmail.com", "1234"); 
-            var resLogin = instWS.loginFindByEmailAndPassword("cielo.s@gmail.com", "1234"); 
+            var resLogin = instWS.loginFindByEmailAndPassword("solange.s@gmail.com", "1234"); 
+            //var resLogin = instWS.loginFindByEmailAndPassword("cielo.s@gmail.com", "1234"); 
 
             if (resLogin != null)
             {
@@ -54,6 +55,7 @@ namespace GeekHub.Presentation
                     case 3:
                         var frmClient = new frmClientMain();
                         frmClient.Show();
+                        frmClient.Refresh();
                         break;
                 }
                 this.Hide();
